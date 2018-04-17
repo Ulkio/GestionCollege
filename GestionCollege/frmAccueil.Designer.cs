@@ -37,7 +37,7 @@
             // 
             // btnMatieres
             // 
-            this.btnMatieres.Location = new System.Drawing.Point(355, 254);
+            this.btnMatieres.Location = new System.Drawing.Point(79, 182);
             this.btnMatieres.Name = "btnMatieres";
             this.btnMatieres.Size = new System.Drawing.Size(90, 23);
             this.btnMatieres.TabIndex = 9;
@@ -46,7 +46,7 @@
             // 
             // btnSalle
             // 
-            this.btnSalle.Location = new System.Drawing.Point(355, 297);
+            this.btnSalle.Location = new System.Drawing.Point(79, 225);
             this.btnSalle.Name = "btnSalle";
             this.btnSalle.Size = new System.Drawing.Size(90, 23);
             this.btnSalle.TabIndex = 8;
@@ -55,7 +55,7 @@
             // 
             // btnEtudiants
             // 
-            this.btnEtudiants.Location = new System.Drawing.Point(355, 212);
+            this.btnEtudiants.Location = new System.Drawing.Point(79, 140);
             this.btnEtudiants.Name = "btnEtudiants";
             this.btnEtudiants.Size = new System.Drawing.Size(90, 23);
             this.btnEtudiants.TabIndex = 7;
@@ -64,7 +64,7 @@
             // 
             // btnEnseignants
             // 
-            this.btnEnseignants.Location = new System.Drawing.Point(355, 171);
+            this.btnEnseignants.Location = new System.Drawing.Point(79, 99);
             this.btnEnseignants.Name = "btnEnseignants";
             this.btnEnseignants.Size = new System.Drawing.Size(90, 23);
             this.btnEnseignants.TabIndex = 6;
@@ -73,7 +73,7 @@
             // 
             // btnDepartements
             // 
-            this.btnDepartements.Location = new System.Drawing.Point(355, 131);
+            this.btnDepartements.Location = new System.Drawing.Point(79, 59);
             this.btnDepartements.Name = "btnDepartements";
             this.btnDepartements.Size = new System.Drawing.Size(90, 23);
             this.btnDepartements.TabIndex = 5;
@@ -84,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(247, 304);
             this.Controls.Add(this.btnMatieres);
             this.Controls.Add(this.btnSalle);
             this.Controls.Add(this.btnEtudiants);

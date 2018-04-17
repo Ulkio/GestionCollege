@@ -40,7 +40,7 @@
             // 
             // btnAccueil
             // 
-            this.btnAccueil.Location = new System.Drawing.Point(432, 285);
+            this.btnAccueil.Location = new System.Drawing.Point(150, 151);
             this.btnAccueil.Name = "btnAccueil";
             this.btnAccueil.Size = new System.Drawing.Size(75, 23);
             this.btnAccueil.TabIndex = 20;
@@ -49,7 +49,7 @@
             // 
             // btnRetour
             // 
-            this.btnRetour.Location = new System.Drawing.Point(432, 256);
+            this.btnRetour.Location = new System.Drawing.Point(150, 122);
             this.btnRetour.Name = "btnRetour";
             this.btnRetour.Size = new System.Drawing.Size(75, 23);
             this.btnRetour.TabIndex = 19;
@@ -58,7 +58,7 @@
             // 
             // btnFiche
             // 
-            this.btnFiche.Location = new System.Drawing.Point(294, 198);
+            this.btnFiche.Location = new System.Drawing.Point(12, 64);
             this.btnFiche.Name = "btnFiche";
             this.btnFiche.Size = new System.Drawing.Size(75, 23);
             this.btnFiche.TabIndex = 18;
@@ -67,7 +67,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(294, 285);
+            this.button1.Location = new System.Drawing.Point(12, 151);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 17;
@@ -76,7 +76,7 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(294, 256);
+            this.btnSupprimer.Location = new System.Drawing.Point(12, 122);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
             this.btnSupprimer.TabIndex = 16;
@@ -85,7 +85,7 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(294, 227);
+            this.btnAjouter.Location = new System.Drawing.Point(12, 93);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(75, 23);
             this.btnAjouter.TabIndex = 15;
@@ -95,7 +95,7 @@
             // lblEtudiants
             // 
             this.lblEtudiants.AutoSize = true;
-            this.lblEtudiants.Location = new System.Drawing.Point(294, 143);
+            this.lblEtudiants.Location = new System.Drawing.Point(12, 9);
             this.lblEtudiants.Name = "lblEtudiants";
             this.lblEtudiants.Size = new System.Drawing.Size(51, 13);
             this.lblEtudiants.TabIndex = 14;
@@ -104,7 +104,7 @@
             // cbxEtudiants
             // 
             this.cbxEtudiants.FormattingEnabled = true;
-            this.cbxEtudiants.Location = new System.Drawing.Point(297, 171);
+            this.cbxEtudiants.Location = new System.Drawing.Point(15, 37);
             this.cbxEtudiants.Name = "cbxEtudiants";
             this.cbxEtudiants.Size = new System.Drawing.Size(121, 21);
             this.cbxEtudiants.TabIndex = 13;
@@ -113,7 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(252, 203);
             this.Controls.Add(this.btnAccueil);
             this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.btnFiche);

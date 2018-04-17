@@ -45,8 +45,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAccueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccueil.Designer.cs">
+      <DependentUpon>frmAccueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEtudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEtudiant.Designer.cs">
+      <DependentUpon>frmEtudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestionEtudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionEtudiant.Designer.cs">
+      <DependentUpon>frmGestionEtudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestionMatiere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionMatiere.Designer.cs">
+      <DependentUpon>frmGestionMatiere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestionSalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionSalle.Designer.cs">
+      <DependentUpon>frmGestionSalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMatiere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMatiere.Designer.cs">
+      <DependentUpon>frmMatiere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalle.Designer.cs">
+      <DependentUpon>frmSalle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAccueil.resx">
+      <DependentUpon>frmAccueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEtudiant.resx">
+      <DependentUpon>frmEtudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionEtudiant.resx">
+      <DependentUpon>frmGestionEtudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionMatiere.resx">
+      <DependentUpon>frmGestionMatiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionSalle.resx">
+      <DependentUpon>frmGestionSalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMatiere.resx">
+      <DependentUpon>frmMatiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalle.resx">
+      <DependentUpon>frmSalle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

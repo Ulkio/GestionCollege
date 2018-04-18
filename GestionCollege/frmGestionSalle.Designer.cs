@@ -68,7 +68,7 @@
             this.pnlModifierSalle.Controls.Add(this.btnValiderModifier);
             this.pnlModifierSalle.Controls.Add(this.txtModifierSalle);
             this.pnlModifierSalle.Controls.Add(this.lblModifierSalle);
-            this.pnlModifierSalle.Location = new System.Drawing.Point(0, 21);
+            this.pnlModifierSalle.Location = new System.Drawing.Point(0, 0);
             this.pnlModifierSalle.Name = "pnlModifierSalle";
             this.pnlModifierSalle.Size = new System.Drawing.Size(168, 95);
             this.pnlModifierSalle.TabIndex = 15;
@@ -144,7 +144,7 @@
             // 
             // btnRetour
             // 
-            this.btnRetour.Location = new System.Drawing.Point(105, 251);
+            this.btnRetour.Location = new System.Drawing.Point(111, 261);
             this.btnRetour.Name = "btnRetour";
             this.btnRetour.Size = new System.Drawing.Size(75, 23);
             this.btnRetour.TabIndex = 21;
@@ -153,7 +153,7 @@
             // 
             // btnAccueil
             // 
-            this.btnAccueil.Location = new System.Drawing.Point(105, 280);
+            this.btnAccueil.Location = new System.Drawing.Point(111, 290);
             this.btnAccueil.Name = "btnAccueil";
             this.btnAccueil.Size = new System.Drawing.Size(75, 23);
             this.btnAccueil.TabIndex = 20;
@@ -208,7 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(204, 330);
+            this.ClientSize = new System.Drawing.Size(198, 319);
             this.Controls.Add(this.pnlNouvelleSalle);
             this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.btnAccueil);
@@ -218,7 +218,7 @@
             this.Controls.Add(this.btnModifier);
             this.Controls.Add(this.btnAjouter);
             this.Name = "frmGestionSalle";
-            this.Text = "frmGestionSalle";
+            this.Text = "Gestion Salle";
             this.pnlNouvelleSalle.ResumeLayout(false);
             this.pnlNouvelleSalle.PerformLayout();
             this.pnlModifierSalle.ResumeLayout(false);

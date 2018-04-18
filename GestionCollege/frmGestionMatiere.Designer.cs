@@ -56,7 +56,7 @@
             // 
             // btnRetour
             // 
-            this.btnRetour.Location = new System.Drawing.Point(485, 313);
+            this.btnRetour.Location = new System.Drawing.Point(257, 237);
             this.btnRetour.Name = "btnRetour";
             this.btnRetour.Size = new System.Drawing.Size(75, 23);
             this.btnRetour.TabIndex = 19;
@@ -65,7 +65,7 @@
             // 
             // btnAccueil
             // 
-            this.btnAccueil.Location = new System.Drawing.Point(485, 342);
+            this.btnAccueil.Location = new System.Drawing.Point(257, 266);
             this.btnAccueil.Name = "btnAccueil";
             this.btnAccueil.Size = new System.Drawing.Size(75, 23);
             this.btnAccueil.TabIndex = 18;
@@ -74,14 +74,13 @@
             // 
             // pnlModifierMatieres
             // 
-            this.pnlModifierMatieres.Controls.Add(this.pnlNouvelleMatieres);
             this.pnlModifierMatieres.Controls.Add(this.txtModifierSalle);
             this.pnlModifierMatieres.Controls.Add(this.lblSalle);
             this.pnlModifierMatieres.Controls.Add(this.btnAnnulerModifierMatiere);
             this.pnlModifierMatieres.Controls.Add(this.btnValiderModifierMatiere);
             this.pnlModifierMatieres.Controls.Add(this.txtMatiere);
             this.pnlModifierMatieres.Controls.Add(this.lblModifierMatiere);
-            this.pnlModifierMatieres.Location = new System.Drawing.Point(243, 241);
+            this.pnlModifierMatieres.Location = new System.Drawing.Point(15, 165);
             this.pnlModifierMatieres.Name = "pnlModifierMatieres";
             this.pnlModifierMatieres.Size = new System.Drawing.Size(172, 124);
             this.pnlModifierMatieres.TabIndex = 17;
@@ -95,7 +94,7 @@
             this.pnlNouvelleMatieres.Controls.Add(this.lblNouvelleSalle);
             this.pnlNouvelleMatieres.Controls.Add(this.txtAjouter);
             this.pnlNouvelleMatieres.Controls.Add(this.lblNouvelleMatieres);
-            this.pnlNouvelleMatieres.Location = new System.Drawing.Point(0, 0);
+            this.pnlNouvelleMatieres.Location = new System.Drawing.Point(18, 165);
             this.pnlNouvelleMatieres.Name = "pnlNouvelleMatieres";
             this.pnlNouvelleMatieres.Size = new System.Drawing.Size(172, 124);
             this.pnlNouvelleMatieres.TabIndex = 9;
@@ -203,7 +202,7 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(485, 169);
+            this.btnSupprimer.Location = new System.Drawing.Point(257, 93);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
             this.btnSupprimer.TabIndex = 16;
@@ -212,7 +211,7 @@
             // 
             // btnModifier
             // 
-            this.btnModifier.Location = new System.Drawing.Point(485, 140);
+            this.btnModifier.Location = new System.Drawing.Point(257, 64);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(75, 23);
             this.btnModifier.TabIndex = 15;
@@ -222,7 +221,7 @@
             // lblMatieres
             // 
             this.lblMatieres.AutoSize = true;
-            this.lblMatieres.Location = new System.Drawing.Point(240, 85);
+            this.lblMatieres.Location = new System.Drawing.Point(12, 9);
             this.lblMatieres.Name = "lblMatieres";
             this.lblMatieres.Size = new System.Drawing.Size(97, 13);
             this.lblMatieres.TabIndex = 14;
@@ -230,7 +229,7 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(486, 111);
+            this.btnAjouter.Location = new System.Drawing.Point(258, 35);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(75, 23);
             this.btnAjouter.TabIndex = 13;
@@ -239,7 +238,7 @@
             // 
             // btnConfirmer
             // 
-            this.btnConfirmer.Location = new System.Drawing.Point(243, 212);
+            this.btnConfirmer.Location = new System.Drawing.Point(15, 136);
             this.btnConfirmer.Name = "btnConfirmer";
             this.btnConfirmer.Size = new System.Drawing.Size(75, 23);
             this.btnConfirmer.TabIndex = 12;
@@ -249,7 +248,7 @@
             // lstMatieres
             // 
             this.lstMatieres.FormattingEnabled = true;
-            this.lstMatieres.Location = new System.Drawing.Point(243, 111);
+            this.lstMatieres.Location = new System.Drawing.Point(15, 35);
             this.lstMatieres.Name = "lstMatieres";
             this.lstMatieres.Size = new System.Drawing.Size(236, 95);
             this.lstMatieres.TabIndex = 11;
@@ -258,7 +257,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(346, 298);
+            this.Controls.Add(this.pnlNouvelleMatieres);
             this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.btnAccueil);
             this.Controls.Add(this.pnlModifierMatieres);
@@ -269,7 +269,7 @@
             this.Controls.Add(this.btnConfirmer);
             this.Controls.Add(this.lstMatieres);
             this.Name = "frmGestionMatiere";
-            this.Text = "GestionMatiere";
+            this.Text = "Gestion Matiere";
             this.pnlModifierMatieres.ResumeLayout(false);
             this.pnlModifierMatieres.PerformLayout();
             this.pnlNouvelleMatieres.ResumeLayout(false);

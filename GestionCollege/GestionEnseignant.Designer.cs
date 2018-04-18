@@ -31,7 +31,6 @@
             this.btnOK = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnConfirmer = new System.Windows.Forms.Button();
-            this.cbxSalle = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbxMatiere = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,11 +44,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNom = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtSalleDeCours = new System.Windows.Forms.TextBox();
+            this.btnValiderEnseignant = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(543, 387);
+            this.btnOK.Location = new System.Drawing.Point(206, 361);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 33;
@@ -59,7 +62,7 @@
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(462, 398);
+            this.btnAnnuler.Location = new System.Drawing.Point(287, 367);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
             this.btnAnnuler.TabIndex = 32;
@@ -68,26 +71,17 @@
             // 
             // btnConfirmer
             // 
-            this.btnConfirmer.Location = new System.Drawing.Point(543, 398);
+            this.btnConfirmer.Location = new System.Drawing.Point(206, 367);
             this.btnConfirmer.Name = "btnConfirmer";
             this.btnConfirmer.Size = new System.Drawing.Size(75, 23);
             this.btnConfirmer.TabIndex = 31;
             this.btnConfirmer.Text = "Confirmer";
             this.btnConfirmer.UseVisualStyleBackColor = true;
             // 
-            // cbxSalle
-            // 
-            this.cbxSalle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxSalle.FormattingEnabled = true;
-            this.cbxSalle.Location = new System.Drawing.Point(149, 286);
-            this.cbxSalle.Name = "cbxSalle";
-            this.cbxSalle.Size = new System.Drawing.Size(196, 21);
-            this.cbxSalle.TabIndex = 30;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 286);
+            this.label7.Location = new System.Drawing.Point(4, 63);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 13);
             this.label7.TabIndex = 29;
@@ -97,7 +91,7 @@
             // 
             this.cbxMatiere.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxMatiere.FormattingEnabled = true;
-            this.cbxMatiere.Location = new System.Drawing.Point(149, 242);
+            this.cbxMatiere.Location = new System.Drawing.Point(140, 14);
             this.cbxMatiere.Name = "cbxMatiere";
             this.cbxMatiere.Size = new System.Drawing.Size(196, 21);
             this.cbxMatiere.TabIndex = 28;
@@ -105,7 +99,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 242);
+            this.label5.Location = new System.Drawing.Point(3, 14);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 13);
             this.label5.TabIndex = 27;
@@ -191,18 +185,45 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Nom : ";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.txtSalleDeCours);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.cbxMatiere);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(8, 223);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(354, 103);
+            this.panel1.TabIndex = 34;
+            this.panel1.Visible = false;
+            // 
+            // txtSalleDeCours
+            // 
+            this.txtSalleDeCours.Location = new System.Drawing.Point(141, 60);
+            this.txtSalleDeCours.Name = "txtSalleDeCours";
+            this.txtSalleDeCours.ReadOnly = true;
+            this.txtSalleDeCours.Size = new System.Drawing.Size(196, 20);
+            this.txtSalleDeCours.TabIndex = 30;
+            // 
+            // btnValiderEnseignant
+            // 
+            this.btnValiderEnseignant.Location = new System.Drawing.Point(356, 173);
+            this.btnValiderEnseignant.Name = "btnValiderEnseignant";
+            this.btnValiderEnseignant.Size = new System.Drawing.Size(103, 23);
+            this.btnValiderEnseignant.TabIndex = 35;
+            this.btnValiderEnseignant.Text = "Valider enseignant";
+            this.btnValiderEnseignant.UseVisualStyleBackColor = true;
+            // 
             // GestionEnseignant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 431);
+            this.ClientSize = new System.Drawing.Size(465, 396);
+            this.Controls.Add(this.btnValiderEnseignant);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnConfirmer);
-            this.Controls.Add(this.cbxSalle);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.cbxMatiere);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtDate);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtMail);
@@ -214,7 +235,9 @@
             this.Controls.Add(this.txtNom);
             this.Controls.Add(this.label1);
             this.Name = "GestionEnseignant";
-            this.Text = "GestionEnseignant";
+            this.Text = "Gestion Enseignant";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,7 +248,6 @@
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.Button btnConfirmer;
-        private System.Windows.Forms.ComboBox cbxSalle;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbxMatiere;
         private System.Windows.Forms.Label label5;
@@ -239,5 +261,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtSalleDeCours;
+        private System.Windows.Forms.Button btnValiderEnseignant;
     }
 }

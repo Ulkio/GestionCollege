@@ -61,10 +61,16 @@
             this.btnEditerSalle.TabIndex = 18;
             this.btnEditerSalle.Text = "Editer";
             this.btnEditerSalle.UseVisualStyleBackColor = true;
+            this.btnEditerSalle.Click += new System.EventHandler(this.btnEditerSalle_Click);
             // 
             // lstSalle
             // 
             this.lstSalle.FormattingEnabled = true;
+            this.lstSalle.Items.AddRange(new object[] {
+            "101",
+            "201",
+            "301",
+            "404"});
             this.lstSalle.Location = new System.Drawing.Point(12, 32);
             this.lstSalle.Name = "lstSalle";
             this.lstSalle.Size = new System.Drawing.Size(87, 95);
@@ -87,6 +93,7 @@
             this.btnAccueil.TabIndex = 37;
             this.btnAccueil.Text = "ACCUEIL";
             this.btnAccueil.UseVisualStyleBackColor = true;
+            this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
             // frmSalle
             // 

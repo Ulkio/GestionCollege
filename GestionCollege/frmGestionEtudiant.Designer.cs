@@ -51,13 +51,20 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pnlMatiereEtudiant = new System.Windows.Forms.Panel();
             this.btnValiderEtudiant = new System.Windows.Forms.Button();
+            this.lblMatiereFiche = new System.Windows.Forms.Label();
             this.pnlMatiereEtudiant.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstCloneMatiereEtudiante
             // 
+            this.lstCloneMatiereEtudiante.Enabled = false;
             this.lstCloneMatiereEtudiante.FormattingEnabled = true;
-            this.lstCloneMatiereEtudiante.Location = new System.Drawing.Point(112, 27);
+            this.lstCloneMatiereEtudiante.Items.AddRange(new object[] {
+            "Français",
+            "Anglais",
+            "Mathématique",
+            "EPS"});
+            this.lstCloneMatiereEtudiante.Location = new System.Drawing.Point(331, 69);
             this.lstCloneMatiereEtudiante.Name = "lstCloneMatiereEtudiante";
             this.lstCloneMatiereEtudiante.Size = new System.Drawing.Size(120, 108);
             this.lstCloneMatiereEtudiante.TabIndex = 42;
@@ -71,6 +78,7 @@
             this.btnSupprimeTout.TabIndex = 41;
             this.btnSupprimeTout.Text = "<<";
             this.btnSupprimeTout.UseVisualStyleBackColor = true;
+            this.btnSupprimeTout.Click += new System.EventHandler(this.btnSupprimeTout_Click);
             // 
             // btnSupprime
             // 
@@ -81,6 +89,7 @@
             this.btnSupprime.TabIndex = 40;
             this.btnSupprime.Text = "<";
             this.btnSupprime.UseVisualStyleBackColor = true;
+            this.btnSupprime.Click += new System.EventHandler(this.btnSupprime_Click);
             // 
             // btnAjouteTout
             // 
@@ -90,6 +99,7 @@
             this.btnAjouteTout.TabIndex = 39;
             this.btnAjouteTout.Text = ">>";
             this.btnAjouteTout.UseVisualStyleBackColor = true;
+            this.btnAjouteTout.Click += new System.EventHandler(this.btnAjouteTout_Click);
             // 
             // btnAjoute
             // 
@@ -100,14 +110,21 @@
             this.btnAjoute.TabIndex = 38;
             this.btnAjoute.Text = ">";
             this.btnAjoute.UseVisualStyleBackColor = true;
+            this.btnAjoute.Click += new System.EventHandler(this.btnAjoute_Click);
             // 
             // cbxMatieres
             // 
             this.cbxMatieres.FormattingEnabled = true;
+            this.cbxMatieres.Items.AddRange(new object[] {
+            "Français",
+            "Anglais",
+            "Mathématique",
+            "EPS"});
             this.cbxMatieres.Location = new System.Drawing.Point(111, 10);
             this.cbxMatieres.Name = "cbxMatieres";
             this.cbxMatieres.Size = new System.Drawing.Size(121, 21);
             this.cbxMatieres.TabIndex = 37;
+            this.cbxMatieres.SelectedIndexChanged += new System.EventHandler(this.cbxMatieres_SelectedIndexChanged);
             // 
             // lstMatiereEtudiant
             // 
@@ -116,6 +133,7 @@
             this.lstMatiereEtudiant.Name = "lstMatiereEtudiant";
             this.lstMatiereEtudiant.Size = new System.Drawing.Size(120, 108);
             this.lstMatiereEtudiant.TabIndex = 36;
+            this.lstMatiereEtudiant.SelectedIndexChanged += new System.EventHandler(this.lstMatiereEtudiant_SelectedIndexChanged);
             // 
             // lblMatieres
             // 
@@ -134,6 +152,7 @@
             this.btnOk.TabIndex = 34;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnAnnuler
             // 
@@ -143,6 +162,8 @@
             this.btnAnnuler.TabIndex = 33;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Visible = false;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // btnConfirmer
             // 
@@ -153,6 +174,7 @@
             this.btnConfirmer.Text = "Confirmer";
             this.btnConfirmer.UseVisualStyleBackColor = true;
             this.btnConfirmer.Visible = false;
+            this.btnConfirmer.Click += new System.EventHandler(this.btnConfirmer_Click);
             // 
             // lblDateEntree
             // 
@@ -237,7 +259,6 @@
             // pnlMatiereEtudiant
             // 
             this.pnlMatiereEtudiant.Controls.Add(this.btnSupprimeTout);
-            this.pnlMatiereEtudiant.Controls.Add(this.lstCloneMatiereEtudiante);
             this.pnlMatiereEtudiant.Controls.Add(this.btnSupprime);
             this.pnlMatiereEtudiant.Controls.Add(this.btnAjouteTout);
             this.pnlMatiereEtudiant.Controls.Add(this.btnAjoute);
@@ -258,13 +279,26 @@
             this.btnValiderEtudiant.TabIndex = 44;
             this.btnValiderEtudiant.Text = "Valider l\'étudiant";
             this.btnValiderEtudiant.UseVisualStyleBackColor = true;
+            this.btnValiderEtudiant.Visible = false;
+            this.btnValiderEtudiant.Click += new System.EventHandler(this.btnValiderEtudiant_Click);
+            // 
+            // lblMatiereFiche
+            // 
+            this.lblMatiereFiche.AutoSize = true;
+            this.lblMatiereFiche.Location = new System.Drawing.Point(328, 53);
+            this.lblMatiereFiche.Name = "lblMatiereFiche";
+            this.lblMatiereFiche.Size = new System.Drawing.Size(53, 13);
+            this.lblMatiereFiche.TabIndex = 45;
+            this.lblMatiereFiche.Text = "Matières :";
             // 
             // frmGestionEtudiant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(472, 424);
+            this.Controls.Add(this.lblMatiereFiche);
             this.Controls.Add(this.btnValiderEtudiant);
+            this.Controls.Add(this.lstCloneMatiereEtudiante);
             this.Controls.Add(this.pnlMatiereEtudiant);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.btnAnnuler);
@@ -313,5 +347,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel pnlMatiereEtudiant;
         private System.Windows.Forms.Button btnValiderEtudiant;
+        private System.Windows.Forms.Label lblMatiereFiche;
     }
 }

@@ -49,12 +49,15 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pnlMatiereEtudiant = new System.Windows.Forms.Panel();
+            this.btnValiderEtudiant = new System.Windows.Forms.Button();
+            this.pnlMatiereEtudiant.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstCloneMatiereEtudiante
             // 
             this.lstCloneMatiereEtudiante.FormattingEnabled = true;
-            this.lstCloneMatiereEtudiante.Location = new System.Drawing.Point(291, 281);
+            this.lstCloneMatiereEtudiante.Location = new System.Drawing.Point(112, 27);
             this.lstCloneMatiereEtudiante.Name = "lstCloneMatiereEtudiante";
             this.lstCloneMatiereEtudiante.Size = new System.Drawing.Size(120, 108);
             this.lstCloneMatiereEtudiante.TabIndex = 42;
@@ -62,7 +65,7 @@
             // btnSupprimeTout
             // 
             this.btnSupprimeTout.Enabled = false;
-            this.btnSupprimeTout.Location = new System.Drawing.Point(418, 353);
+            this.btnSupprimeTout.Location = new System.Drawing.Point(238, 95);
             this.btnSupprimeTout.Name = "btnSupprimeTout";
             this.btnSupprimeTout.Size = new System.Drawing.Size(75, 23);
             this.btnSupprimeTout.TabIndex = 41;
@@ -72,7 +75,7 @@
             // btnSupprime
             // 
             this.btnSupprime.Enabled = false;
-            this.btnSupprime.Location = new System.Drawing.Point(418, 324);
+            this.btnSupprime.Location = new System.Drawing.Point(238, 66);
             this.btnSupprime.Name = "btnSupprime";
             this.btnSupprime.Size = new System.Drawing.Size(75, 23);
             this.btnSupprime.TabIndex = 40;
@@ -81,7 +84,7 @@
             // 
             // btnAjouteTout
             // 
-            this.btnAjouteTout.Location = new System.Drawing.Point(418, 295);
+            this.btnAjouteTout.Location = new System.Drawing.Point(238, 37);
             this.btnAjouteTout.Name = "btnAjouteTout";
             this.btnAjouteTout.Size = new System.Drawing.Size(75, 23);
             this.btnAjouteTout.TabIndex = 39;
@@ -91,7 +94,7 @@
             // btnAjoute
             // 
             this.btnAjoute.Enabled = false;
-            this.btnAjoute.Location = new System.Drawing.Point(418, 268);
+            this.btnAjoute.Location = new System.Drawing.Point(238, 10);
             this.btnAjoute.Name = "btnAjoute";
             this.btnAjoute.Size = new System.Drawing.Size(75, 23);
             this.btnAjoute.TabIndex = 38;
@@ -101,7 +104,7 @@
             // cbxMatieres
             // 
             this.cbxMatieres.FormattingEnabled = true;
-            this.cbxMatieres.Location = new System.Drawing.Point(291, 268);
+            this.cbxMatieres.Location = new System.Drawing.Point(111, 10);
             this.cbxMatieres.Name = "cbxMatieres";
             this.cbxMatieres.Size = new System.Drawing.Size(121, 21);
             this.cbxMatieres.TabIndex = 37;
@@ -109,7 +112,7 @@
             // lstMatiereEtudiant
             // 
             this.lstMatiereEtudiant.FormattingEnabled = true;
-            this.lstMatiereEtudiant.Location = new System.Drawing.Point(499, 268);
+            this.lstMatiereEtudiant.Location = new System.Drawing.Point(319, 10);
             this.lstMatiereEtudiant.Name = "lstMatiereEtudiant";
             this.lstMatiereEtudiant.Size = new System.Drawing.Size(120, 108);
             this.lstMatiereEtudiant.TabIndex = 36;
@@ -117,7 +120,7 @@
             // lblMatieres
             // 
             this.lblMatieres.AutoSize = true;
-            this.lblMatieres.Location = new System.Drawing.Point(182, 271);
+            this.lblMatieres.Location = new System.Drawing.Point(2, 13);
             this.lblMatieres.Name = "lblMatieres";
             this.lblMatieres.Size = new System.Drawing.Size(53, 13);
             this.lblMatieres.TabIndex = 35;
@@ -125,7 +128,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(395, 407);
+            this.btnOk.Location = new System.Drawing.Point(246, 392);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 34;
@@ -134,7 +137,7 @@
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(462, 407);
+            this.btnAnnuler.Location = new System.Drawing.Point(313, 392);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
             this.btnAnnuler.TabIndex = 33;
@@ -143,17 +146,18 @@
             // 
             // btnConfirmer
             // 
-            this.btnConfirmer.Location = new System.Drawing.Point(543, 407);
+            this.btnConfirmer.Location = new System.Drawing.Point(394, 392);
             this.btnConfirmer.Name = "btnConfirmer";
             this.btnConfirmer.Size = new System.Drawing.Size(75, 23);
             this.btnConfirmer.TabIndex = 32;
             this.btnConfirmer.Text = "Confirmer";
             this.btnConfirmer.UseVisualStyleBackColor = true;
+            this.btnConfirmer.Visible = false;
             // 
             // lblDateEntree
             // 
             this.lblDateEntree.AutoSize = true;
-            this.lblDateEntree.Location = new System.Drawing.Point(182, 220);
+            this.lblDateEntree.Location = new System.Drawing.Point(12, 205);
             this.lblDateEntree.Name = "lblDateEntree";
             this.lblDateEntree.Size = new System.Drawing.Size(77, 13);
             this.lblDateEntree.TabIndex = 31;
@@ -162,7 +166,7 @@
             // lblMail
             // 
             this.lblMail.AutoSize = true;
-            this.lblMail.Location = new System.Drawing.Point(182, 171);
+            this.lblMail.Location = new System.Drawing.Point(12, 156);
             this.lblMail.Name = "lblMail";
             this.lblMail.Size = new System.Drawing.Size(32, 13);
             this.lblMail.TabIndex = 30;
@@ -171,7 +175,7 @@
             // lblTelephone
             // 
             this.lblTelephone.AutoSize = true;
-            this.lblTelephone.Location = new System.Drawing.Point(182, 119);
+            this.lblTelephone.Location = new System.Drawing.Point(12, 104);
             this.lblTelephone.Name = "lblTelephone";
             this.lblTelephone.Size = new System.Drawing.Size(64, 13);
             this.lblTelephone.TabIndex = 29;
@@ -180,7 +184,7 @@
             // lblPrenom
             // 
             this.lblPrenom.AutoSize = true;
-            this.lblPrenom.Location = new System.Drawing.Point(182, 68);
+            this.lblPrenom.Location = new System.Drawing.Point(12, 53);
             this.lblPrenom.Name = "lblPrenom";
             this.lblPrenom.Size = new System.Drawing.Size(49, 13);
             this.lblPrenom.TabIndex = 28;
@@ -189,7 +193,7 @@
             // lblNom
             // 
             this.lblNom.AutoSize = true;
-            this.lblNom.Location = new System.Drawing.Point(182, 24);
+            this.lblNom.Location = new System.Drawing.Point(12, 9);
             this.lblNom.Name = "lblNom";
             this.lblNom.Size = new System.Drawing.Size(35, 13);
             this.lblNom.TabIndex = 27;
@@ -197,52 +201,71 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(291, 217);
+            this.textBox5.Location = new System.Drawing.Point(121, 202);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(166, 20);
             this.textBox5.TabIndex = 26;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(291, 168);
+            this.textBox4.Location = new System.Drawing.Point(121, 153);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(166, 20);
             this.textBox4.TabIndex = 25;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(291, 116);
+            this.textBox3.Location = new System.Drawing.Point(121, 101);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(166, 20);
             this.textBox3.TabIndex = 24;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(291, 65);
+            this.textBox2.Location = new System.Drawing.Point(121, 50);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(166, 20);
             this.textBox2.TabIndex = 23;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(291, 21);
+            this.textBox1.Location = new System.Drawing.Point(121, 6);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(166, 20);
             this.textBox1.TabIndex = 22;
+            // 
+            // pnlMatiereEtudiant
+            // 
+            this.pnlMatiereEtudiant.Controls.Add(this.btnSupprimeTout);
+            this.pnlMatiereEtudiant.Controls.Add(this.lstCloneMatiereEtudiante);
+            this.pnlMatiereEtudiant.Controls.Add(this.btnSupprime);
+            this.pnlMatiereEtudiant.Controls.Add(this.btnAjouteTout);
+            this.pnlMatiereEtudiant.Controls.Add(this.btnAjoute);
+            this.pnlMatiereEtudiant.Controls.Add(this.cbxMatieres);
+            this.pnlMatiereEtudiant.Controls.Add(this.lstMatiereEtudiant);
+            this.pnlMatiereEtudiant.Controls.Add(this.lblMatieres);
+            this.pnlMatiereEtudiant.Location = new System.Drawing.Point(12, 248);
+            this.pnlMatiereEtudiant.Name = "pnlMatiereEtudiant";
+            this.pnlMatiereEtudiant.Size = new System.Drawing.Size(454, 138);
+            this.pnlMatiereEtudiant.TabIndex = 43;
+            this.pnlMatiereEtudiant.Visible = false;
+            // 
+            // btnValiderEtudiant
+            // 
+            this.btnValiderEtudiant.Location = new System.Drawing.Point(325, 200);
+            this.btnValiderEtudiant.Name = "btnValiderEtudiant";
+            this.btnValiderEtudiant.Size = new System.Drawing.Size(96, 23);
+            this.btnValiderEtudiant.TabIndex = 44;
+            this.btnValiderEtudiant.Text = "Valider l\'étudiant";
+            this.btnValiderEtudiant.UseVisualStyleBackColor = true;
             // 
             // frmGestionEtudiant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lstCloneMatiereEtudiante);
-            this.Controls.Add(this.btnSupprimeTout);
-            this.Controls.Add(this.btnSupprime);
-            this.Controls.Add(this.btnAjouteTout);
-            this.Controls.Add(this.btnAjoute);
-            this.Controls.Add(this.cbxMatieres);
-            this.Controls.Add(this.lstMatiereEtudiant);
-            this.Controls.Add(this.lblMatieres);
+            this.ClientSize = new System.Drawing.Size(472, 424);
+            this.Controls.Add(this.btnValiderEtudiant);
+            this.Controls.Add(this.pnlMatiereEtudiant);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnConfirmer);
@@ -257,7 +280,9 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "frmGestionEtudiant";
-            this.Text = "GestionEtudiant";
+            this.Text = "Gestion Etudiant";
+            this.pnlMatiereEtudiant.ResumeLayout(false);
+            this.pnlMatiereEtudiant.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,5 +311,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel pnlMatiereEtudiant;
+        private System.Windows.Forms.Button btnValiderEtudiant;
     }
 }

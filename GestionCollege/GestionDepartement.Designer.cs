@@ -35,11 +35,15 @@
             this.cbxMatiere = new System.Windows.Forms.ComboBox();
             this.btnOK = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnSupprimer = new System.Windows.Forms.Button();
+            this.btnConfirmer = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(140, 90);
+            this.btnAjouter.Location = new System.Drawing.Point(131, 25);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(75, 23);
             this.btnAjouter.TabIndex = 13;
@@ -49,7 +53,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 74);
+            this.label2.Location = new System.Drawing.Point(3, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 13);
             this.label2.TabIndex = 12;
@@ -77,7 +81,7 @@
             // 
             this.cbxMatiere.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxMatiere.FormattingEnabled = true;
-            this.cbxMatiere.Location = new System.Drawing.Point(12, 90);
+            this.cbxMatiere.Location = new System.Drawing.Point(3, 25);
             this.cbxMatiere.Name = "cbxMatiere";
             this.cbxMatiere.Size = new System.Drawing.Size(121, 21);
             this.cbxMatiere.TabIndex = 9;
@@ -98,20 +102,51 @@
             this.textBox1.Size = new System.Drawing.Size(162, 20);
             this.textBox1.TabIndex = 7;
             // 
+            // btnSupprimer
+            // 
+            this.btnSupprimer.Location = new System.Drawing.Point(212, 25);
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
+            this.btnSupprimer.TabIndex = 17;
+            this.btnSupprimer.Text = "Supprimer";
+            this.btnSupprimer.UseVisualStyleBackColor = true;
+            // 
+            // btnConfirmer
+            // 
+            this.btnConfirmer.Location = new System.Drawing.Point(180, 30);
+            this.btnConfirmer.Name = "btnConfirmer";
+            this.btnConfirmer.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirmer.TabIndex = 18;
+            this.btnConfirmer.Text = "Confirmer";
+            this.btnConfirmer.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.cbxMatiere);
+            this.panel1.Controls.Add(this.btnSupprimer);
+            this.panel1.Controls.Add(this.btnAjouter);
+            this.panel1.Location = new System.Drawing.Point(12, 62);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(294, 55);
+            this.panel1.TabIndex = 19;
+            this.panel1.Visible = false;
+            // 
             // GestionDepartement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 173);
-            this.Controls.Add(this.btnAjouter);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnConfirmer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAnnuler);
-            this.Controls.Add(this.cbxMatiere);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.textBox1);
             this.Name = "GestionDepartement";
-            this.Text = "GestionDepartement";
+            this.Text = "Gestion Departement";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,5 +161,8 @@
         private System.Windows.Forms.ComboBox cbxMatiere;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnSupprimer;
+        private System.Windows.Forms.Button btnConfirmer;
+        private System.Windows.Forms.Panel panel1;
     }
 }

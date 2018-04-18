@@ -43,6 +43,7 @@
             this.btnMatieres.TabIndex = 9;
             this.btnMatieres.Text = "Matières";
             this.btnMatieres.UseVisualStyleBackColor = true;
+            this.btnMatieres.Click += new System.EventHandler(this.btnMatieres_Click);
             // 
             // btnSalle
             // 
@@ -52,6 +53,7 @@
             this.btnSalle.TabIndex = 8;
             this.btnSalle.Text = "Salle";
             this.btnSalle.UseVisualStyleBackColor = true;
+            this.btnSalle.Click += new System.EventHandler(this.btnSalle_Click);
             // 
             // btnEtudiants
             // 
@@ -61,6 +63,7 @@
             this.btnEtudiants.TabIndex = 7;
             this.btnEtudiants.Text = "Étudiants";
             this.btnEtudiants.UseVisualStyleBackColor = true;
+            this.btnEtudiants.Click += new System.EventHandler(this.btnEtudiants_Click);
             // 
             // btnEnseignants
             // 
@@ -70,6 +73,7 @@
             this.btnEnseignants.TabIndex = 6;
             this.btnEnseignants.Text = "Enseignants";
             this.btnEnseignants.UseVisualStyleBackColor = true;
+            this.btnEnseignants.Click += new System.EventHandler(this.btnEnseignants_Click);
             // 
             // btnDepartements
             // 
@@ -79,6 +83,7 @@
             this.btnDepartements.TabIndex = 5;
             this.btnDepartements.Text = "Départements";
             this.btnDepartements.UseVisualStyleBackColor = true;
+            this.btnDepartements.Click += new System.EventHandler(this.btnDepartements_Click);
             // 
             // frmAccueil
             // 

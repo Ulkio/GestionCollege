@@ -31,6 +31,12 @@
             this.btnRetour = new System.Windows.Forms.Button();
             this.btnAccueil = new System.Windows.Forms.Button();
             this.pnlModifierMatieres = new System.Windows.Forms.Panel();
+            this.txtModifierSalle = new System.Windows.Forms.TextBox();
+            this.lblSalle = new System.Windows.Forms.Label();
+            this.btnAnnulerModifierMatiere = new System.Windows.Forms.Button();
+            this.btnValiderModifierMatiere = new System.Windows.Forms.Button();
+            this.txtMatiere = new System.Windows.Forms.TextBox();
+            this.lblModifierMatiere = new System.Windows.Forms.Label();
             this.pnlNouvelleMatieres = new System.Windows.Forms.Panel();
             this.btnAnnulerNouvelleMatiere = new System.Windows.Forms.Button();
             this.btnValiderNouvelleMatiere = new System.Windows.Forms.Button();
@@ -38,12 +44,6 @@
             this.lblNouvelleSalle = new System.Windows.Forms.Label();
             this.txtAjouter = new System.Windows.Forms.TextBox();
             this.lblNouvelleMatieres = new System.Windows.Forms.Label();
-            this.txtModifierSalle = new System.Windows.Forms.TextBox();
-            this.lblSalle = new System.Windows.Forms.Label();
-            this.btnAnnulerModifierMatiere = new System.Windows.Forms.Button();
-            this.btnValiderModifierMatiere = new System.Windows.Forms.Button();
-            this.txtMatiere = new System.Windows.Forms.TextBox();
-            this.lblModifierMatiere = new System.Windows.Forms.Label();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnModifier = new System.Windows.Forms.Button();
             this.lblMatieres = new System.Windows.Forms.Label();
@@ -85,6 +85,56 @@
             this.pnlModifierMatieres.Size = new System.Drawing.Size(172, 124);
             this.pnlModifierMatieres.TabIndex = 17;
             this.pnlModifierMatieres.Visible = false;
+            // 
+            // txtModifierSalle
+            // 
+            this.txtModifierSalle.Location = new System.Drawing.Point(7, 69);
+            this.txtModifierSalle.Name = "txtModifierSalle";
+            this.txtModifierSalle.Size = new System.Drawing.Size(156, 20);
+            this.txtModifierSalle.TabIndex = 5;
+            // 
+            // lblSalle
+            // 
+            this.lblSalle.AutoSize = true;
+            this.lblSalle.Location = new System.Drawing.Point(4, 53);
+            this.lblSalle.Name = "lblSalle";
+            this.lblSalle.Size = new System.Drawing.Size(123, 13);
+            this.lblSalle.TabIndex = 4;
+            this.lblSalle.Text = "Modifier Salle de cours : ";
+            // 
+            // btnAnnulerModifierMatiere
+            // 
+            this.btnAnnulerModifierMatiere.Location = new System.Drawing.Point(88, 95);
+            this.btnAnnulerModifierMatiere.Name = "btnAnnulerModifierMatiere";
+            this.btnAnnulerModifierMatiere.Size = new System.Drawing.Size(75, 23);
+            this.btnAnnulerModifierMatiere.TabIndex = 3;
+            this.btnAnnulerModifierMatiere.Text = "Annuler";
+            this.btnAnnulerModifierMatiere.UseVisualStyleBackColor = true;
+            // 
+            // btnValiderModifierMatiere
+            // 
+            this.btnValiderModifierMatiere.Location = new System.Drawing.Point(7, 95);
+            this.btnValiderModifierMatiere.Name = "btnValiderModifierMatiere";
+            this.btnValiderModifierMatiere.Size = new System.Drawing.Size(75, 23);
+            this.btnValiderModifierMatiere.TabIndex = 2;
+            this.btnValiderModifierMatiere.Text = "Valider";
+            this.btnValiderModifierMatiere.UseVisualStyleBackColor = true;
+            // 
+            // txtMatiere
+            // 
+            this.txtMatiere.Location = new System.Drawing.Point(7, 30);
+            this.txtMatiere.Name = "txtMatiere";
+            this.txtMatiere.Size = new System.Drawing.Size(156, 20);
+            this.txtMatiere.TabIndex = 1;
+            // 
+            // lblModifierMatiere
+            // 
+            this.lblModifierMatiere.AutoSize = true;
+            this.lblModifierMatiere.Location = new System.Drawing.Point(4, 7);
+            this.lblModifierMatiere.Name = "lblModifierMatiere";
+            this.lblModifierMatiere.Size = new System.Drawing.Size(113, 13);
+            this.lblModifierMatiere.TabIndex = 0;
+            this.lblModifierMatiere.Text = "Modifier nom matière : ";
             // 
             // pnlNouvelleMatieres
             // 
@@ -149,56 +199,6 @@
             this.lblNouvelleMatieres.Size = new System.Drawing.Size(92, 13);
             this.lblNouvelleMatieres.TabIndex = 7;
             this.lblNouvelleMatieres.Text = "Nouvelle matière :";
-            // 
-            // txtModifierSalle
-            // 
-            this.txtModifierSalle.Location = new System.Drawing.Point(7, 69);
-            this.txtModifierSalle.Name = "txtModifierSalle";
-            this.txtModifierSalle.Size = new System.Drawing.Size(156, 20);
-            this.txtModifierSalle.TabIndex = 5;
-            // 
-            // lblSalle
-            // 
-            this.lblSalle.AutoSize = true;
-            this.lblSalle.Location = new System.Drawing.Point(4, 53);
-            this.lblSalle.Name = "lblSalle";
-            this.lblSalle.Size = new System.Drawing.Size(123, 13);
-            this.lblSalle.TabIndex = 4;
-            this.lblSalle.Text = "Modifier Salle de cours : ";
-            // 
-            // btnAnnulerModifierMatiere
-            // 
-            this.btnAnnulerModifierMatiere.Location = new System.Drawing.Point(88, 95);
-            this.btnAnnulerModifierMatiere.Name = "btnAnnulerModifierMatiere";
-            this.btnAnnulerModifierMatiere.Size = new System.Drawing.Size(75, 23);
-            this.btnAnnulerModifierMatiere.TabIndex = 3;
-            this.btnAnnulerModifierMatiere.Text = "Annuler";
-            this.btnAnnulerModifierMatiere.UseVisualStyleBackColor = true;
-            // 
-            // btnValiderModifierMatiere
-            // 
-            this.btnValiderModifierMatiere.Location = new System.Drawing.Point(7, 95);
-            this.btnValiderModifierMatiere.Name = "btnValiderModifierMatiere";
-            this.btnValiderModifierMatiere.Size = new System.Drawing.Size(75, 23);
-            this.btnValiderModifierMatiere.TabIndex = 2;
-            this.btnValiderModifierMatiere.Text = "Valider";
-            this.btnValiderModifierMatiere.UseVisualStyleBackColor = true;
-            // 
-            // txtMatiere
-            // 
-            this.txtMatiere.Location = new System.Drawing.Point(7, 30);
-            this.txtMatiere.Name = "txtMatiere";
-            this.txtMatiere.Size = new System.Drawing.Size(156, 20);
-            this.txtMatiere.TabIndex = 1;
-            // 
-            // lblModifierMatiere
-            // 
-            this.lblModifierMatiere.AutoSize = true;
-            this.lblModifierMatiere.Location = new System.Drawing.Point(4, 7);
-            this.lblModifierMatiere.Name = "lblModifierMatiere";
-            this.lblModifierMatiere.Size = new System.Drawing.Size(113, 13);
-            this.lblModifierMatiere.TabIndex = 0;
-            this.lblModifierMatiere.Text = "Modifier nom matière : ";
             // 
             // btnSupprimer
             // 

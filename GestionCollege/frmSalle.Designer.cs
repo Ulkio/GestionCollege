@@ -34,7 +34,6 @@
             this.lstSalle = new System.Windows.Forms.ListBox();
             this.lblSalle = new System.Windows.Forms.Label();
             this.btnAccueil = new System.Windows.Forms.Button();
-            this.btnRetour = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstMatieres
@@ -89,22 +88,12 @@
             this.btnAccueil.Text = "ACCUEIL";
             this.btnAccueil.UseVisualStyleBackColor = true;
             // 
-            // btnRetour
-            // 
-            this.btnRetour.Location = new System.Drawing.Point(173, 174);
-            this.btnRetour.Name = "btnRetour";
-            this.btnRetour.Size = new System.Drawing.Size(75, 23);
-            this.btnRetour.TabIndex = 36;
-            this.btnRetour.Text = "Retour";
-            this.btnRetour.UseVisualStyleBackColor = true;
-            // 
             // frmSalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(255, 229);
             this.Controls.Add(this.btnAccueil);
-            this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.lstMatieres);
             this.Controls.Add(this.lblMatieres);
             this.Controls.Add(this.btnEditerSalle);
@@ -125,6 +114,5 @@
         private System.Windows.Forms.ListBox lstSalle;
         private System.Windows.Forms.Label lblSalle;
         private System.Windows.Forms.Button btnAccueil;
-        private System.Windows.Forms.Button btnRetour;
     }
 }

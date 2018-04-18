@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             this.btnAccueil = new System.Windows.Forms.Button();
-            this.btnRetour = new System.Windows.Forms.Button();
             this.btnFiche = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEditer = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.lblEtudiants = new System.Windows.Forms.Label();
@@ -46,15 +45,7 @@
             this.btnAccueil.TabIndex = 20;
             this.btnAccueil.Text = "ACCUEIL";
             this.btnAccueil.UseVisualStyleBackColor = true;
-            // 
-            // btnRetour
-            // 
-            this.btnRetour.Location = new System.Drawing.Point(150, 122);
-            this.btnRetour.Name = "btnRetour";
-            this.btnRetour.Size = new System.Drawing.Size(75, 23);
-            this.btnRetour.TabIndex = 19;
-            this.btnRetour.Text = "Retour";
-            this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
             // btnFiche
             // 
@@ -64,15 +55,17 @@
             this.btnFiche.TabIndex = 18;
             this.btnFiche.Text = "Fiche";
             this.btnFiche.UseVisualStyleBackColor = true;
+            this.btnFiche.Click += new System.EventHandler(this.btnFiche_Click);
             // 
-            // button1
+            // btnEditer
             // 
-            this.button1.Location = new System.Drawing.Point(12, 151);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Éditer";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEditer.Location = new System.Drawing.Point(12, 151);
+            this.btnEditer.Name = "btnEditer";
+            this.btnEditer.Size = new System.Drawing.Size(75, 23);
+            this.btnEditer.TabIndex = 17;
+            this.btnEditer.Text = "Éditer";
+            this.btnEditer.UseVisualStyleBackColor = true;
+            this.btnEditer.Click += new System.EventHandler(this.btnEditer_Click);
             // 
             // btnSupprimer
             // 
@@ -82,6 +75,7 @@
             this.btnSupprimer.TabIndex = 16;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // btnAjouter
             // 
@@ -91,6 +85,7 @@
             this.btnAjouter.TabIndex = 15;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // lblEtudiants
             // 
@@ -115,9 +110,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(252, 203);
             this.Controls.Add(this.btnAccueil);
-            this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.btnFiche);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEditer);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.lblEtudiants);
@@ -132,9 +126,8 @@
         #endregion
 
         private System.Windows.Forms.Button btnAccueil;
-        private System.Windows.Forms.Button btnRetour;
         private System.Windows.Forms.Button btnFiche;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEditer;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Label lblEtudiants;

@@ -16,5 +16,19 @@ namespace GestionCollege
         {
             InitializeComponent();
         }
+
+        private void btnAccueil_Click(object sender, EventArgs e)
+        {
+            frmAccueil accueil = new frmAccueil();
+            this.Hide();
+            accueil.ShowDialog();
+            this.Close();
+        }
+
+        private void btnEditerSalle_Click(object sender, EventArgs e)
+        {
+            frmGestionSalle gestionSalle = new frmGestionSalle();           
+            gestionSalle.ShowDialog();   
+        }
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnAccueil = new System.Windows.Forms.Button();
-            this.btnRetour = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.lblMoyenne = new System.Windows.Forms.Label();
             this.btnEditerMatiere = new System.Windows.Forms.Button();
@@ -40,7 +39,6 @@
             this.lvlSalleDeCours = new System.Windows.Forms.Label();
             this.lstEtudiants = new System.Windows.Forms.ListBox();
             this.lstEnseignants = new System.Windows.Forms.ListBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblEtudiants = new System.Windows.Forms.Label();
             this.lblEnseignants = new System.Windows.Forms.Label();
@@ -52,6 +50,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
+            this.cbxMatiere = new System.Windows.Forms.ComboBox();
             this.pnlAjouterNote.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,15 +62,7 @@
             this.btnAccueil.TabIndex = 35;
             this.btnAccueil.Text = "ACCUEIL";
             this.btnAccueil.UseVisualStyleBackColor = true;
-            // 
-            // btnRetour
-            // 
-            this.btnRetour.Location = new System.Drawing.Point(378, 389);
-            this.btnRetour.Name = "btnRetour";
-            this.btnRetour.Size = new System.Drawing.Size(75, 23);
-            this.btnRetour.TabIndex = 34;
-            this.btnRetour.Text = "Retour";
-            this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
             // textBox4
             // 
@@ -98,6 +89,7 @@
             this.btnEditerMatiere.TabIndex = 31;
             this.btnEditerMatiere.Text = "Editer";
             this.btnEditerMatiere.UseVisualStyleBackColor = true;
+            this.btnEditerMatiere.Click += new System.EventHandler(this.btnEditerMatiere_Click);
             // 
             // btnEditerDepartement
             // 
@@ -107,15 +99,17 @@
             this.btnEditerDepartement.TabIndex = 30;
             this.btnEditerDepartement.Text = "Editer";
             this.btnEditerDepartement.UseVisualStyleBackColor = true;
+            this.btnEditerDepartement.Click += new System.EventHandler(this.btnEditerDepartement_Click);
             // 
             // btnFicheEtudiants
             // 
-            this.btnFicheEtudiants.Location = new System.Drawing.Point(89, 331);
+            this.btnFicheEtudiants.Location = new System.Drawing.Point(4, 331);
             this.btnFicheEtudiants.Name = "btnFicheEtudiants";
-            this.btnFicheEtudiants.Size = new System.Drawing.Size(112, 23);
+            this.btnFicheEtudiants.Size = new System.Drawing.Size(91, 23);
             this.btnFicheEtudiants.TabIndex = 29;
             this.btnFicheEtudiants.Text = "Fiche étudiant";
             this.btnFicheEtudiants.UseVisualStyleBackColor = true;
+            this.btnFicheEtudiants.Click += new System.EventHandler(this.btnFicheEtudiants_Click);
             // 
             // btnFicheEnseignants
             // 
@@ -125,6 +119,7 @@
             this.btnFicheEnseignants.TabIndex = 28;
             this.btnFicheEnseignants.Text = "Fiche enseignant";
             this.btnFicheEnseignants.UseVisualStyleBackColor = true;
+            this.btnFicheEnseignants.Click += new System.EventHandler(this.btnFicheEnseignants_Click);
             // 
             // textBox3
             // 
@@ -146,6 +141,10 @@
             // lstEtudiants
             // 
             this.lstEtudiants.FormattingEnabled = true;
+            this.lstEtudiants.Items.AddRange(new object[] {
+            "Jean",
+            "Guillaume",
+            "Maxence"});
             this.lstEtudiants.Location = new System.Drawing.Point(75, 178);
             this.lstEtudiants.Name = "lstEtudiants";
             this.lstEtudiants.Size = new System.Drawing.Size(126, 147);
@@ -154,18 +153,14 @@
             // lstEnseignants
             // 
             this.lstEnseignants.FormattingEnabled = true;
+            this.lstEnseignants.Items.AddRange(new object[] {
+            "Jackie Chan",
+            "Jean Claude Van Damne",
+            "Bruce Lee"});
             this.lstEnseignants.Location = new System.Drawing.Point(327, 178);
             this.lstEnseignants.Name = "lstEnseignants";
             this.lstEnseignants.Size = new System.Drawing.Size(126, 147);
             this.lstEnseignants.TabIndex = 24;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(110, 45);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 23;
             // 
             // textBox1
             // 
@@ -213,17 +208,17 @@
             // 
             // btnAjouterNote
             // 
-            this.btnAjouterNote.Location = new System.Drawing.Point(14, 0);
+            this.btnAjouterNote.Location = new System.Drawing.Point(101, 331);
             this.btnAjouterNote.Name = "btnAjouterNote";
-            this.btnAjouterNote.Size = new System.Drawing.Size(99, 23);
+            this.btnAjouterNote.Size = new System.Drawing.Size(100, 23);
             this.btnAjouterNote.TabIndex = 36;
             this.btnAjouterNote.Text = "Ajouter une note";
             this.btnAjouterNote.UseVisualStyleBackColor = true;
+            this.btnAjouterNote.Click += new System.EventHandler(this.btnAjouterNote_Click);
             // 
             // pnlAjouterNote
             // 
             this.pnlAjouterNote.Controls.Add(this.lblNote);
-            this.pnlAjouterNote.Controls.Add(this.btnAjouterNote);
             this.pnlAjouterNote.Controls.Add(this.textBox5);
             this.pnlAjouterNote.Controls.Add(this.btnAnnuler);
             this.pnlAjouterNote.Controls.Add(this.btnAjouter);
@@ -257,6 +252,7 @@
             this.btnAnnuler.TabIndex = 1;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // btnAjouter
             // 
@@ -266,15 +262,30 @@
             this.btnAjouter.TabIndex = 0;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
+            // 
+            // cbxMatiere
+            // 
+            this.cbxMatiere.FormattingEnabled = true;
+            this.cbxMatiere.Items.AddRange(new object[] {
+            "Français",
+            "Anglais",
+            "Mathématiques",
+            "EPS"});
+            this.cbxMatiere.Location = new System.Drawing.Point(110, 45);
+            this.cbxMatiere.Name = "cbxMatiere";
+            this.cbxMatiere.Size = new System.Drawing.Size(100, 21);
+            this.cbxMatiere.TabIndex = 38;
             // 
             // frmMatiere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(462, 444);
+            this.Controls.Add(this.cbxMatiere);
+            this.Controls.Add(this.btnAjouterNote);
             this.Controls.Add(this.pnlAjouterNote);
             this.Controls.Add(this.btnAccueil);
-            this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.lblMoyenne);
             this.Controls.Add(this.btnEditerMatiere);
@@ -285,7 +296,6 @@
             this.Controls.Add(this.lvlSalleDeCours);
             this.Controls.Add(this.lstEtudiants);
             this.Controls.Add(this.lstEnseignants);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblEtudiants);
             this.Controls.Add(this.lblEnseignants);
@@ -303,7 +313,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnAccueil;
-        private System.Windows.Forms.Button btnRetour;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label lblMoyenne;
         private System.Windows.Forms.Button btnEditerMatiere;
@@ -314,7 +323,6 @@
         private System.Windows.Forms.Label lvlSalleDeCours;
         private System.Windows.Forms.ListBox lstEtudiants;
         private System.Windows.Forms.ListBox lstEnseignants;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblEtudiants;
         private System.Windows.Forms.Label lblEnseignants;
@@ -326,5 +334,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.ComboBox cbxMatiere;
     }
 }

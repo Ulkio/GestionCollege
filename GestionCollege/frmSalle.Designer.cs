@@ -34,7 +34,6 @@
             this.lstSalle = new System.Windows.Forms.ListBox();
             this.lblSalle = new System.Windows.Forms.Label();
             this.btnAccueil = new System.Windows.Forms.Button();
-            this.btnRetour = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstMatieres
@@ -62,10 +61,16 @@
             this.btnEditerSalle.TabIndex = 18;
             this.btnEditerSalle.Text = "Editer";
             this.btnEditerSalle.UseVisualStyleBackColor = true;
+            this.btnEditerSalle.Click += new System.EventHandler(this.btnEditerSalle_Click);
             // 
             // lstSalle
             // 
             this.lstSalle.FormattingEnabled = true;
+            this.lstSalle.Items.AddRange(new object[] {
+            "101",
+            "201",
+            "301",
+            "404"});
             this.lstSalle.Location = new System.Drawing.Point(12, 32);
             this.lstSalle.Name = "lstSalle";
             this.lstSalle.Size = new System.Drawing.Size(87, 95);
@@ -88,15 +93,7 @@
             this.btnAccueil.TabIndex = 37;
             this.btnAccueil.Text = "ACCUEIL";
             this.btnAccueil.UseVisualStyleBackColor = true;
-            // 
-            // btnRetour
-            // 
-            this.btnRetour.Location = new System.Drawing.Point(173, 174);
-            this.btnRetour.Name = "btnRetour";
-            this.btnRetour.Size = new System.Drawing.Size(75, 23);
-            this.btnRetour.TabIndex = 36;
-            this.btnRetour.Text = "Retour";
-            this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
             // frmSalle
             // 
@@ -104,7 +101,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(255, 229);
             this.Controls.Add(this.btnAccueil);
-            this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.lstMatieres);
             this.Controls.Add(this.lblMatieres);
             this.Controls.Add(this.btnEditerSalle);
@@ -125,6 +121,5 @@
         private System.Windows.Forms.ListBox lstSalle;
         private System.Windows.Forms.Label lblSalle;
         private System.Windows.Forms.Button btnAccueil;
-        private System.Windows.Forms.Button btnRetour;
     }
 }

@@ -28,9 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRetour = new System.Windows.Forms.Button();
-            this.btnAccueil = new System.Windows.Forms.Button();
+            this.btnFermer = new System.Windows.Forms.Button();
             this.pnlModifierMatieres = new System.Windows.Forms.Panel();
+            this.txtModifierSalle = new System.Windows.Forms.TextBox();
+            this.lblSalle = new System.Windows.Forms.Label();
+            this.btnAnnulerModifierMatiere = new System.Windows.Forms.Button();
+            this.btnValiderModifierMatiere = new System.Windows.Forms.Button();
+            this.txtMatiere = new System.Windows.Forms.TextBox();
+            this.lblModifierMatiere = new System.Windows.Forms.Label();
             this.pnlNouvelleMatieres = new System.Windows.Forms.Panel();
             this.btnAnnulerNouvelleMatiere = new System.Windows.Forms.Button();
             this.btnValiderNouvelleMatiere = new System.Windows.Forms.Button();
@@ -38,39 +43,27 @@
             this.lblNouvelleSalle = new System.Windows.Forms.Label();
             this.txtAjouter = new System.Windows.Forms.TextBox();
             this.lblNouvelleMatieres = new System.Windows.Forms.Label();
-            this.txtModifierSalle = new System.Windows.Forms.TextBox();
-            this.lblSalle = new System.Windows.Forms.Label();
-            this.btnAnnulerModifierMatiere = new System.Windows.Forms.Button();
-            this.btnValiderModifierMatiere = new System.Windows.Forms.Button();
-            this.txtMatiere = new System.Windows.Forms.TextBox();
-            this.lblModifierMatiere = new System.Windows.Forms.Label();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnModifier = new System.Windows.Forms.Button();
             this.lblMatieres = new System.Windows.Forms.Label();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnConfirmer = new System.Windows.Forms.Button();
             this.lstMatieres = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pnlModifierMatieres.SuspendLayout();
             this.pnlNouvelleMatieres.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnRetour
+            // btnFermer
             // 
-            this.btnRetour.Location = new System.Drawing.Point(257, 237);
-            this.btnRetour.Name = "btnRetour";
-            this.btnRetour.Size = new System.Drawing.Size(75, 23);
-            this.btnRetour.TabIndex = 19;
-            this.btnRetour.Text = "Retour";
-            this.btnRetour.UseVisualStyleBackColor = true;
-            // 
-            // btnAccueil
-            // 
-            this.btnAccueil.Location = new System.Drawing.Point(257, 266);
-            this.btnAccueil.Name = "btnAccueil";
-            this.btnAccueil.Size = new System.Drawing.Size(75, 23);
-            this.btnAccueil.TabIndex = 18;
-            this.btnAccueil.Text = "ACCUEIL";
-            this.btnAccueil.UseVisualStyleBackColor = true;
+            this.btnFermer.Location = new System.Drawing.Point(284, 324);
+            this.btnFermer.Name = "btnFermer";
+            this.btnFermer.Size = new System.Drawing.Size(75, 23);
+            this.btnFermer.TabIndex = 18;
+            this.btnFermer.Text = "Fermer";
+            this.btnFermer.UseVisualStyleBackColor = true;
+            this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
             // 
             // pnlModifierMatieres
             // 
@@ -80,11 +73,63 @@
             this.pnlModifierMatieres.Controls.Add(this.btnValiderModifierMatiere);
             this.pnlModifierMatieres.Controls.Add(this.txtMatiere);
             this.pnlModifierMatieres.Controls.Add(this.lblModifierMatiere);
-            this.pnlModifierMatieres.Location = new System.Drawing.Point(15, 165);
+            this.pnlModifierMatieres.Location = new System.Drawing.Point(187, 189);
             this.pnlModifierMatieres.Name = "pnlModifierMatieres";
             this.pnlModifierMatieres.Size = new System.Drawing.Size(172, 124);
             this.pnlModifierMatieres.TabIndex = 17;
             this.pnlModifierMatieres.Visible = false;
+            // 
+            // txtModifierSalle
+            // 
+            this.txtModifierSalle.Location = new System.Drawing.Point(7, 69);
+            this.txtModifierSalle.Name = "txtModifierSalle";
+            this.txtModifierSalle.Size = new System.Drawing.Size(156, 20);
+            this.txtModifierSalle.TabIndex = 5;
+            // 
+            // lblSalle
+            // 
+            this.lblSalle.AutoSize = true;
+            this.lblSalle.Location = new System.Drawing.Point(4, 53);
+            this.lblSalle.Name = "lblSalle";
+            this.lblSalle.Size = new System.Drawing.Size(123, 13);
+            this.lblSalle.TabIndex = 4;
+            this.lblSalle.Text = "Modifier Salle de cours : ";
+            // 
+            // btnAnnulerModifierMatiere
+            // 
+            this.btnAnnulerModifierMatiere.Location = new System.Drawing.Point(88, 95);
+            this.btnAnnulerModifierMatiere.Name = "btnAnnulerModifierMatiere";
+            this.btnAnnulerModifierMatiere.Size = new System.Drawing.Size(75, 23);
+            this.btnAnnulerModifierMatiere.TabIndex = 3;
+            this.btnAnnulerModifierMatiere.Text = "Annuler";
+            this.btnAnnulerModifierMatiere.UseVisualStyleBackColor = true;
+            this.btnAnnulerModifierMatiere.Click += new System.EventHandler(this.btnAnnulerModifierMatiere_Click);
+            // 
+            // btnValiderModifierMatiere
+            // 
+            this.btnValiderModifierMatiere.Location = new System.Drawing.Point(7, 95);
+            this.btnValiderModifierMatiere.Name = "btnValiderModifierMatiere";
+            this.btnValiderModifierMatiere.Size = new System.Drawing.Size(75, 23);
+            this.btnValiderModifierMatiere.TabIndex = 2;
+            this.btnValiderModifierMatiere.Text = "Valider";
+            this.btnValiderModifierMatiere.UseVisualStyleBackColor = true;
+            this.btnValiderModifierMatiere.Click += new System.EventHandler(this.btnValiderModifierMatiere_Click);
+            // 
+            // txtMatiere
+            // 
+            this.txtMatiere.Location = new System.Drawing.Point(7, 30);
+            this.txtMatiere.Name = "txtMatiere";
+            this.txtMatiere.Size = new System.Drawing.Size(156, 20);
+            this.txtMatiere.TabIndex = 1;
+            // 
+            // lblModifierMatiere
+            // 
+            this.lblModifierMatiere.AutoSize = true;
+            this.lblModifierMatiere.Location = new System.Drawing.Point(4, 7);
+            this.lblModifierMatiere.Name = "lblModifierMatiere";
+            this.lblModifierMatiere.Size = new System.Drawing.Size(113, 13);
+            this.lblModifierMatiere.TabIndex = 0;
+            this.lblModifierMatiere.Text = "Modifier nom matière : ";
             // 
             // pnlNouvelleMatieres
             // 
@@ -94,9 +139,9 @@
             this.pnlNouvelleMatieres.Controls.Add(this.lblNouvelleSalle);
             this.pnlNouvelleMatieres.Controls.Add(this.txtAjouter);
             this.pnlNouvelleMatieres.Controls.Add(this.lblNouvelleMatieres);
-            this.pnlNouvelleMatieres.Location = new System.Drawing.Point(18, 165);
+            this.pnlNouvelleMatieres.Location = new System.Drawing.Point(12, 189);
             this.pnlNouvelleMatieres.Name = "pnlNouvelleMatieres";
-            this.pnlNouvelleMatieres.Size = new System.Drawing.Size(172, 124);
+            this.pnlNouvelleMatieres.Size = new System.Drawing.Size(169, 124);
             this.pnlNouvelleMatieres.TabIndex = 9;
             this.pnlNouvelleMatieres.Visible = false;
             // 
@@ -108,6 +153,7 @@
             this.btnAnnulerNouvelleMatiere.TabIndex = 11;
             this.btnAnnulerNouvelleMatiere.Text = "Annuler";
             this.btnAnnulerNouvelleMatiere.UseVisualStyleBackColor = true;
+            this.btnAnnulerNouvelleMatiere.Click += new System.EventHandler(this.btnAnnulerNouvelleMatiere_Click);
             // 
             // btnValiderNouvelleMatiere
             // 
@@ -117,6 +163,7 @@
             this.btnValiderNouvelleMatiere.TabIndex = 10;
             this.btnValiderNouvelleMatiere.Text = "Valider";
             this.btnValiderNouvelleMatiere.UseVisualStyleBackColor = true;
+            this.btnValiderNouvelleMatiere.Click += new System.EventHandler(this.btnValiderNouvelleMatiere_Click);
             // 
             // txtNouvelleSalle
             // 
@@ -150,73 +197,25 @@
             this.lblNouvelleMatieres.TabIndex = 7;
             this.lblNouvelleMatieres.Text = "Nouvelle matière :";
             // 
-            // txtModifierSalle
-            // 
-            this.txtModifierSalle.Location = new System.Drawing.Point(7, 69);
-            this.txtModifierSalle.Name = "txtModifierSalle";
-            this.txtModifierSalle.Size = new System.Drawing.Size(156, 20);
-            this.txtModifierSalle.TabIndex = 5;
-            // 
-            // lblSalle
-            // 
-            this.lblSalle.AutoSize = true;
-            this.lblSalle.Location = new System.Drawing.Point(4, 53);
-            this.lblSalle.Name = "lblSalle";
-            this.lblSalle.Size = new System.Drawing.Size(123, 13);
-            this.lblSalle.TabIndex = 4;
-            this.lblSalle.Text = "Modifier Salle de cours : ";
-            // 
-            // btnAnnulerModifierMatiere
-            // 
-            this.btnAnnulerModifierMatiere.Location = new System.Drawing.Point(88, 95);
-            this.btnAnnulerModifierMatiere.Name = "btnAnnulerModifierMatiere";
-            this.btnAnnulerModifierMatiere.Size = new System.Drawing.Size(75, 23);
-            this.btnAnnulerModifierMatiere.TabIndex = 3;
-            this.btnAnnulerModifierMatiere.Text = "Annuler";
-            this.btnAnnulerModifierMatiere.UseVisualStyleBackColor = true;
-            // 
-            // btnValiderModifierMatiere
-            // 
-            this.btnValiderModifierMatiere.Location = new System.Drawing.Point(7, 95);
-            this.btnValiderModifierMatiere.Name = "btnValiderModifierMatiere";
-            this.btnValiderModifierMatiere.Size = new System.Drawing.Size(75, 23);
-            this.btnValiderModifierMatiere.TabIndex = 2;
-            this.btnValiderModifierMatiere.Text = "Valider";
-            this.btnValiderModifierMatiere.UseVisualStyleBackColor = true;
-            // 
-            // txtMatiere
-            // 
-            this.txtMatiere.Location = new System.Drawing.Point(7, 30);
-            this.txtMatiere.Name = "txtMatiere";
-            this.txtMatiere.Size = new System.Drawing.Size(156, 20);
-            this.txtMatiere.TabIndex = 1;
-            // 
-            // lblModifierMatiere
-            // 
-            this.lblModifierMatiere.AutoSize = true;
-            this.lblModifierMatiere.Location = new System.Drawing.Point(4, 7);
-            this.lblModifierMatiere.Name = "lblModifierMatiere";
-            this.lblModifierMatiere.Size = new System.Drawing.Size(113, 13);
-            this.lblModifierMatiere.TabIndex = 0;
-            this.lblModifierMatiere.Text = "Modifier nom matière : ";
-            // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(257, 93);
+            this.btnSupprimer.Location = new System.Drawing.Point(274, 93);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
             this.btnSupprimer.TabIndex = 16;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // btnModifier
             // 
-            this.btnModifier.Location = new System.Drawing.Point(257, 64);
+            this.btnModifier.Location = new System.Drawing.Point(274, 64);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(75, 23);
             this.btnModifier.TabIndex = 15;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // lblMatieres
             // 
@@ -229,12 +228,13 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(258, 35);
+            this.btnAjouter.Location = new System.Drawing.Point(275, 35);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(75, 23);
             this.btnAjouter.TabIndex = 13;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnConfirmer
             // 
@@ -248,19 +248,47 @@
             // lstMatieres
             // 
             this.lstMatieres.FormattingEnabled = true;
+            this.lstMatieres.Items.AddRange(new object[] {
+            "Français",
+            "Anglais",
+            "Mathématiques",
+            "EPS"});
             this.lstMatieres.Location = new System.Drawing.Point(15, 35);
             this.lstMatieres.Name = "lstMatieres";
-            this.lstMatieres.Size = new System.Drawing.Size(236, 95);
+            this.lstMatieres.Size = new System.Drawing.Size(98, 95);
             this.lstMatieres.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(135, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Departement associé :";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Sciences",
+            "Langue",
+            "Histoire géo",
+            "Activité Sportive et Culturelle"});
+            this.comboBox1.Location = new System.Drawing.Point(138, 37);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 20;
             // 
             // frmGestionMatiere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(346, 298);
+            this.ClientSize = new System.Drawing.Size(362, 352);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlNouvelleMatieres);
-            this.Controls.Add(this.btnRetour);
-            this.Controls.Add(this.btnAccueil);
+            this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.pnlModifierMatieres);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnModifier);
@@ -280,9 +308,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnRetour;
-        private System.Windows.Forms.Button btnAccueil;
+        private System.Windows.Forms.Button btnFermer;
         private System.Windows.Forms.Panel pnlModifierMatieres;
         private System.Windows.Forms.Panel pnlNouvelleMatieres;
         private System.Windows.Forms.Button btnAnnulerNouvelleMatiere;
@@ -303,5 +329,7 @@
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnConfirmer;
         private System.Windows.Forms.ListBox lstMatieres;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

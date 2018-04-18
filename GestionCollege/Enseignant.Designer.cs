@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnAccueil = new System.Windows.Forms.Button();
-            this.btnRetour = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnFiche = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
@@ -46,15 +45,6 @@
             this.btnAccueil.TabIndex = 15;
             this.btnAccueil.Text = "ACCUEIL";
             this.btnAccueil.UseVisualStyleBackColor = true;
-            // 
-            // btnRetour
-            // 
-            this.btnRetour.Location = new System.Drawing.Point(259, 210);
-            this.btnRetour.Name = "btnRetour";
-            this.btnRetour.Size = new System.Drawing.Size(75, 23);
-            this.btnRetour.TabIndex = 14;
-            this.btnRetour.Text = "Retour";
-            this.btnRetour.UseVisualStyleBackColor = true;
             // 
             // btnAjouter
             // 
@@ -116,7 +106,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 269);
             this.Controls.Add(this.btnAccueil);
-            this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.btnFiche);
             this.Controls.Add(this.btnSupprimer);
@@ -133,7 +122,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnAccueil;
-        private System.Windows.Forms.Button btnRetour;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnFiche;
         private System.Windows.Forms.Button btnSupprimer;

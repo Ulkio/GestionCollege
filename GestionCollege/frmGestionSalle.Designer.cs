@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.pnlNouvelleSalle = new System.Windows.Forms.Panel();
+            this.btnAnnulerNouvelleSalle = new System.Windows.Forms.Button();
+            this.btnValiderNouvelleSalle = new System.Windows.Forms.Button();
+            this.txtAjouterSalle = new System.Windows.Forms.TextBox();
+            this.lblNouvelleSalle = new System.Windows.Forms.Label();
             this.pnlModifierSalle = new System.Windows.Forms.Panel();
             this.btnAnnulerModifier = new System.Windows.Forms.Button();
             this.btnValiderModifier = new System.Windows.Forms.Button();
             this.txtModifierSalle = new System.Windows.Forms.TextBox();
             this.lblModifierSalle = new System.Windows.Forms.Label();
-            this.btnAnnulerNouvelleSalle = new System.Windows.Forms.Button();
-            this.btnValiderNouvelleSalle = new System.Windows.Forms.Button();
-            this.txtAjouterSalle = new System.Windows.Forms.TextBox();
-            this.lblNouvelleSalle = new System.Windows.Forms.Label();
             this.btnFermer = new System.Windows.Forms.Button();
             this.lstSalle = new System.Windows.Forms.ListBox();
             this.lblSalle = new System.Windows.Forms.Label();
@@ -59,6 +59,42 @@
             this.pnlNouvelleSalle.Size = new System.Drawing.Size(168, 95);
             this.pnlNouvelleSalle.TabIndex = 22;
             this.pnlNouvelleSalle.Visible = false;
+            // 
+            // btnAnnulerNouvelleSalle
+            // 
+            this.btnAnnulerNouvelleSalle.Location = new System.Drawing.Point(89, 55);
+            this.btnAnnulerNouvelleSalle.Name = "btnAnnulerNouvelleSalle";
+            this.btnAnnulerNouvelleSalle.Size = new System.Drawing.Size(75, 23);
+            this.btnAnnulerNouvelleSalle.TabIndex = 11;
+            this.btnAnnulerNouvelleSalle.Text = "Annuler";
+            this.btnAnnulerNouvelleSalle.UseVisualStyleBackColor = true;
+            this.btnAnnulerNouvelleSalle.Click += new System.EventHandler(this.btnAnnulerNouvelleSalle_Click);
+            // 
+            // btnValiderNouvelleSalle
+            // 
+            this.btnValiderNouvelleSalle.Location = new System.Drawing.Point(6, 55);
+            this.btnValiderNouvelleSalle.Name = "btnValiderNouvelleSalle";
+            this.btnValiderNouvelleSalle.Size = new System.Drawing.Size(75, 23);
+            this.btnValiderNouvelleSalle.TabIndex = 10;
+            this.btnValiderNouvelleSalle.Text = "Valider";
+            this.btnValiderNouvelleSalle.UseVisualStyleBackColor = true;
+            this.btnValiderNouvelleSalle.Click += new System.EventHandler(this.btnValiderNouvelleSalle_Click);
+            // 
+            // txtAjouterSalle
+            // 
+            this.txtAjouterSalle.Location = new System.Drawing.Point(7, 29);
+            this.txtAjouterSalle.Name = "txtAjouterSalle";
+            this.txtAjouterSalle.Size = new System.Drawing.Size(157, 20);
+            this.txtAjouterSalle.TabIndex = 4;
+            // 
+            // lblNouvelleSalle
+            // 
+            this.lblNouvelleSalle.AutoSize = true;
+            this.lblNouvelleSalle.Location = new System.Drawing.Point(3, 5);
+            this.lblNouvelleSalle.Name = "lblNouvelleSalle";
+            this.lblNouvelleSalle.Size = new System.Drawing.Size(79, 13);
+            this.lblNouvelleSalle.TabIndex = 7;
+            this.lblNouvelleSalle.Text = "Nouvelle salle :";
             // 
             // pnlModifierSalle
             // 
@@ -107,42 +143,6 @@
             this.lblModifierSalle.Size = new System.Drawing.Size(74, 13);
             this.lblModifierSalle.TabIndex = 7;
             this.lblModifierSalle.Text = "Modifier salle :";
-            // 
-            // btnAnnulerNouvelleSalle
-            // 
-            this.btnAnnulerNouvelleSalle.Location = new System.Drawing.Point(89, 55);
-            this.btnAnnulerNouvelleSalle.Name = "btnAnnulerNouvelleSalle";
-            this.btnAnnulerNouvelleSalle.Size = new System.Drawing.Size(75, 23);
-            this.btnAnnulerNouvelleSalle.TabIndex = 11;
-            this.btnAnnulerNouvelleSalle.Text = "Annuler";
-            this.btnAnnulerNouvelleSalle.UseVisualStyleBackColor = true;
-            this.btnAnnulerNouvelleSalle.Click += new System.EventHandler(this.btnAnnulerNouvelleSalle_Click);
-            // 
-            // btnValiderNouvelleSalle
-            // 
-            this.btnValiderNouvelleSalle.Location = new System.Drawing.Point(6, 55);
-            this.btnValiderNouvelleSalle.Name = "btnValiderNouvelleSalle";
-            this.btnValiderNouvelleSalle.Size = new System.Drawing.Size(75, 23);
-            this.btnValiderNouvelleSalle.TabIndex = 10;
-            this.btnValiderNouvelleSalle.Text = "Valider";
-            this.btnValiderNouvelleSalle.UseVisualStyleBackColor = true;
-            this.btnValiderNouvelleSalle.Click += new System.EventHandler(this.btnValiderNouvelleSalle_Click);
-            // 
-            // txtAjouterSalle
-            // 
-            this.txtAjouterSalle.Location = new System.Drawing.Point(7, 29);
-            this.txtAjouterSalle.Name = "txtAjouterSalle";
-            this.txtAjouterSalle.Size = new System.Drawing.Size(157, 20);
-            this.txtAjouterSalle.TabIndex = 4;
-            // 
-            // lblNouvelleSalle
-            // 
-            this.lblNouvelleSalle.AutoSize = true;
-            this.lblNouvelleSalle.Location = new System.Drawing.Point(3, 5);
-            this.lblNouvelleSalle.Name = "lblNouvelleSalle";
-            this.lblNouvelleSalle.Size = new System.Drawing.Size(79, 13);
-            this.lblNouvelleSalle.TabIndex = 7;
-            this.lblNouvelleSalle.Text = "Nouvelle salle :";
             // 
             // btnFermer
             // 
@@ -210,6 +210,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GestionCollege.Properties.Resources.GestionSalleFond1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(358, 323);
             this.Controls.Add(this.pnlModifierSalle);
             this.Controls.Add(this.pnlNouvelleSalle);

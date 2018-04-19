@@ -47,9 +47,10 @@
             // lblMatieres
             // 
             this.lblMatieres.AutoSize = true;
+            this.lblMatieres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMatieres.Location = new System.Drawing.Point(125, 7);
             this.lblMatieres.Name = "lblMatieres";
-            this.lblMatieres.Size = new System.Drawing.Size(114, 13);
+            this.lblMatieres.Size = new System.Drawing.Size(133, 15);
             this.lblMatieres.TabIndex = 19;
             this.lblMatieres.Text = "Matières dans la salle :";
             // 
@@ -79,9 +80,10 @@
             // lblSalle
             // 
             this.lblSalle.AutoSize = true;
+            this.lblSalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalle.Location = new System.Drawing.Point(9, 7);
             this.lblSalle.Name = "lblSalle";
-            this.lblSalle.Size = new System.Drawing.Size(36, 13);
+            this.lblSalle.Size = new System.Drawing.Size(41, 15);
             this.lblSalle.TabIndex = 16;
             this.lblSalle.Text = "Salle :";
             // 
@@ -99,7 +101,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(255, 229);
+            this.BackgroundImage = global::GestionCollege.Properties.Resources.Sallefond;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(260, 238);
             this.Controls.Add(this.btnAccueil);
             this.Controls.Add(this.lstMatieres);
             this.Controls.Add(this.lblMatieres);

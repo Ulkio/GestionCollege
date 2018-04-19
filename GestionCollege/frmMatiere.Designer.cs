@@ -56,12 +56,13 @@
             // 
             // btnAccueil
             // 
+            this.btnAccueil.BackColor = System.Drawing.Color.Transparent;
             this.btnAccueil.Location = new System.Drawing.Point(378, 418);
             this.btnAccueil.Name = "btnAccueil";
             this.btnAccueil.Size = new System.Drawing.Size(75, 23);
             this.btnAccueil.TabIndex = 35;
             this.btnAccueil.Text = "ACCUEIL";
-            this.btnAccueil.UseVisualStyleBackColor = true;
+            this.btnAccueil.UseVisualStyleBackColor = false;
             this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
             // textBox4
@@ -75,50 +76,57 @@
             // lblMoyenne
             // 
             this.lblMoyenne.AutoSize = true;
-            this.lblMoyenne.Location = new System.Drawing.Point(12, 128);
+            this.lblMoyenne.BackColor = System.Drawing.Color.Transparent;
+            this.lblMoyenne.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoyenne.Location = new System.Drawing.Point(12, 125);
             this.lblMoyenne.Name = "lblMoyenne";
-            this.lblMoyenne.Size = new System.Drawing.Size(95, 13);
+            this.lblMoyenne.Size = new System.Drawing.Size(101, 16);
             this.lblMoyenne.TabIndex = 32;
             this.lblMoyenne.Text = "Moyenne Matiere :";
             // 
             // btnEditerMatiere
             // 
+            this.btnEditerMatiere.BackColor = System.Drawing.Color.Transparent;
             this.btnEditerMatiere.Location = new System.Drawing.Point(216, 45);
             this.btnEditerMatiere.Name = "btnEditerMatiere";
             this.btnEditerMatiere.Size = new System.Drawing.Size(75, 20);
             this.btnEditerMatiere.TabIndex = 31;
             this.btnEditerMatiere.Text = "Editer";
-            this.btnEditerMatiere.UseVisualStyleBackColor = true;
+            this.btnEditerMatiere.UseVisualStyleBackColor = false;
             this.btnEditerMatiere.Click += new System.EventHandler(this.btnEditerMatiere_Click);
             // 
             // btnEditerDepartement
             // 
+            this.btnEditerDepartement.BackColor = System.Drawing.Color.Transparent;
             this.btnEditerDepartement.Location = new System.Drawing.Point(216, 5);
             this.btnEditerDepartement.Name = "btnEditerDepartement";
             this.btnEditerDepartement.Size = new System.Drawing.Size(75, 20);
             this.btnEditerDepartement.TabIndex = 30;
             this.btnEditerDepartement.Text = "Editer";
-            this.btnEditerDepartement.UseVisualStyleBackColor = true;
+            this.btnEditerDepartement.UseVisualStyleBackColor = false;
             this.btnEditerDepartement.Click += new System.EventHandler(this.btnEditerDepartement_Click);
             // 
             // btnFicheEtudiants
             // 
+            this.btnFicheEtudiants.BackColor = System.Drawing.SystemColors.Control;
+            this.btnFicheEtudiants.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnFicheEtudiants.Location = new System.Drawing.Point(4, 331);
             this.btnFicheEtudiants.Name = "btnFicheEtudiants";
             this.btnFicheEtudiants.Size = new System.Drawing.Size(91, 23);
             this.btnFicheEtudiants.TabIndex = 29;
             this.btnFicheEtudiants.Text = "Fiche étudiant";
-            this.btnFicheEtudiants.UseVisualStyleBackColor = true;
+            this.btnFicheEtudiants.UseVisualStyleBackColor = false;
             this.btnFicheEtudiants.Click += new System.EventHandler(this.btnFicheEtudiants_Click);
             // 
             // btnFicheEnseignants
             // 
+            this.btnFicheEnseignants.BackColor = System.Drawing.Color.Transparent;
             this.btnFicheEnseignants.Location = new System.Drawing.Point(341, 331);
             this.btnFicheEnseignants.Name = "btnFicheEnseignants";
             this.btnFicheEnseignants.Size = new System.Drawing.Size(112, 23);
             this.btnFicheEnseignants.TabIndex = 28;
             this.btnFicheEnseignants.Text = "Fiche enseignant";
-            this.btnFicheEnseignants.UseVisualStyleBackColor = true;
+            this.btnFicheEnseignants.UseVisualStyleBackColor = false;
             this.btnFicheEnseignants.Click += new System.EventHandler(this.btnFicheEnseignants_Click);
             // 
             // textBox3
@@ -132,9 +140,11 @@
             // lvlSalleDeCours
             // 
             this.lvlSalleDeCours.AutoSize = true;
-            this.lvlSalleDeCours.Location = new System.Drawing.Point(12, 89);
+            this.lvlSalleDeCours.BackColor = System.Drawing.Color.Transparent;
+            this.lvlSalleDeCours.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvlSalleDeCours.Location = new System.Drawing.Point(12, 86);
             this.lvlSalleDeCours.Name = "lvlSalleDeCours";
-            this.lvlSalleDeCours.Size = new System.Drawing.Size(80, 13);
+            this.lvlSalleDeCours.Size = new System.Drawing.Size(82, 16);
             this.lvlSalleDeCours.TabIndex = 26;
             this.lvlSalleDeCours.Text = "Salle de cours :";
             // 
@@ -173,47 +183,57 @@
             // lblEtudiants
             // 
             this.lblEtudiants.AutoSize = true;
-            this.lblEtudiants.Location = new System.Drawing.Point(12, 178);
+            this.lblEtudiants.BackColor = System.Drawing.Color.Transparent;
+            this.lblEtudiants.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEtudiants.Location = new System.Drawing.Point(12, 175);
             this.lblEtudiants.Name = "lblEtudiants";
-            this.lblEtudiants.Size = new System.Drawing.Size(57, 13);
+            this.lblEtudiants.Size = new System.Drawing.Size(63, 16);
             this.lblEtudiants.TabIndex = 21;
             this.lblEtudiants.Text = "Étudiants :";
             // 
             // lblEnseignants
             // 
             this.lblEnseignants.AutoSize = true;
-            this.lblEnseignants.Location = new System.Drawing.Point(244, 178);
+            this.lblEnseignants.BackColor = System.Drawing.Color.Transparent;
+            this.lblEnseignants.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnseignants.Location = new System.Drawing.Point(244, 175);
             this.lblEnseignants.Name = "lblEnseignants";
-            this.lblEnseignants.Size = new System.Drawing.Size(77, 13);
+            this.lblEnseignants.Size = new System.Drawing.Size(83, 16);
             this.lblEnseignants.TabIndex = 20;
             this.lblEnseignants.Text = "Enseignant(s) :";
             // 
             // lblMatiere
             // 
             this.lblMatiere.AutoSize = true;
-            this.lblMatiere.Location = new System.Drawing.Point(12, 48);
+            this.lblMatiere.BackColor = System.Drawing.Color.Transparent;
+            this.lblMatiere.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatiere.Location = new System.Drawing.Point(12, 45);
             this.lblMatiere.Name = "lblMatiere";
-            this.lblMatiere.Size = new System.Drawing.Size(48, 13);
+            this.lblMatiere.Size = new System.Drawing.Size(54, 16);
             this.lblMatiere.TabIndex = 19;
             this.lblMatiere.Text = "Matière :";
             // 
             // lblDepartement
             // 
             this.lblDepartement.AutoSize = true;
-            this.lblDepartement.Location = new System.Drawing.Point(12, 9);
+            this.lblDepartement.BackColor = System.Drawing.Color.Transparent;
+            this.lblDepartement.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDepartement.Location = new System.Drawing.Point(12, 6);
             this.lblDepartement.Name = "lblDepartement";
-            this.lblDepartement.Size = new System.Drawing.Size(74, 13);
+            this.lblDepartement.Size = new System.Drawing.Size(81, 16);
             this.lblDepartement.TabIndex = 18;
             this.lblDepartement.Text = "Département :";
             // 
             // btnAjouterNote
             // 
+            this.btnAjouterNote.BackColor = System.Drawing.SystemColors.Control;
+            this.btnAjouterNote.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAjouterNote.Location = new System.Drawing.Point(101, 331);
             this.btnAjouterNote.Name = "btnAjouterNote";
             this.btnAjouterNote.Size = new System.Drawing.Size(100, 23);
             this.btnAjouterNote.TabIndex = 36;
             this.btnAjouterNote.Text = "Ajouter une note";
-            this.btnAjouterNote.UseVisualStyleBackColor = true;
+            this.btnAjouterNote.UseVisualStyleBackColor = false;
             this.btnAjouterNote.Click += new System.EventHandler(this.btnAjouterNote_Click);
             // 
             // pnlAjouterNote
@@ -281,6 +301,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GestionCollege.Properties.Resources.MatiereFond1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(462, 444);
             this.Controls.Add(this.cbxMatiere);
             this.Controls.Add(this.btnAjouterNote);

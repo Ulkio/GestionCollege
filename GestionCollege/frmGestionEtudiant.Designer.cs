@@ -64,7 +64,7 @@
             "Anglais",
             "Mathématique",
             "EPS"});
-            this.lstCloneMatiereEtudiante.Location = new System.Drawing.Point(331, 69);
+            this.lstCloneMatiereEtudiante.Location = new System.Drawing.Point(346, 69);
             this.lstCloneMatiereEtudiante.Name = "lstCloneMatiereEtudiante";
             this.lstCloneMatiereEtudiante.Size = new System.Drawing.Size(120, 108);
             this.lstCloneMatiereEtudiante.TabIndex = 42;
@@ -138,15 +138,18 @@
             // lblMatieres
             // 
             this.lblMatieres.AutoSize = true;
-            this.lblMatieres.Location = new System.Drawing.Point(2, 13);
+            this.lblMatieres.BackColor = System.Drawing.Color.Black;
+            this.lblMatieres.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatieres.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblMatieres.Location = new System.Drawing.Point(3, 13);
             this.lblMatieres.Name = "lblMatieres";
-            this.lblMatieres.Size = new System.Drawing.Size(53, 13);
+            this.lblMatieres.Size = new System.Drawing.Size(66, 17);
             this.lblMatieres.TabIndex = 35;
             this.lblMatieres.Text = "Matières :";
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(246, 392);
+            this.btnOk.Location = new System.Drawing.Point(270, 426);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 34;
@@ -156,7 +159,7 @@
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(313, 392);
+            this.btnAnnuler.Location = new System.Drawing.Point(337, 426);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
             this.btnAnnuler.TabIndex = 33;
@@ -167,7 +170,7 @@
             // 
             // btnConfirmer
             // 
-            this.btnConfirmer.Location = new System.Drawing.Point(394, 392);
+            this.btnConfirmer.Location = new System.Drawing.Point(418, 426);
             this.btnConfirmer.Name = "btnConfirmer";
             this.btnConfirmer.Size = new System.Drawing.Size(75, 23);
             this.btnConfirmer.TabIndex = 32;
@@ -179,45 +182,60 @@
             // lblDateEntree
             // 
             this.lblDateEntree.AutoSize = true;
+            this.lblDateEntree.BackColor = System.Drawing.Color.Black;
+            this.lblDateEntree.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateEntree.ForeColor = System.Drawing.SystemColors.Control;
             this.lblDateEntree.Location = new System.Drawing.Point(12, 205);
             this.lblDateEntree.Name = "lblDateEntree";
-            this.lblDateEntree.Size = new System.Drawing.Size(77, 13);
+            this.lblDateEntree.Size = new System.Drawing.Size(94, 17);
             this.lblDateEntree.TabIndex = 31;
             this.lblDateEntree.Text = "Date d\'entrée :";
             // 
             // lblMail
             // 
             this.lblMail.AutoSize = true;
+            this.lblMail.BackColor = System.Drawing.Color.Black;
+            this.lblMail.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMail.ForeColor = System.Drawing.SystemColors.Control;
             this.lblMail.Location = new System.Drawing.Point(12, 156);
             this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(32, 13);
+            this.lblMail.Size = new System.Drawing.Size(40, 17);
             this.lblMail.TabIndex = 30;
             this.lblMail.Text = "Mail :";
             // 
             // lblTelephone
             // 
             this.lblTelephone.AutoSize = true;
+            this.lblTelephone.BackColor = System.Drawing.Color.Black;
+            this.lblTelephone.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelephone.ForeColor = System.Drawing.SystemColors.Control;
             this.lblTelephone.Location = new System.Drawing.Point(12, 104);
             this.lblTelephone.Name = "lblTelephone";
-            this.lblTelephone.Size = new System.Drawing.Size(64, 13);
+            this.lblTelephone.Size = new System.Drawing.Size(70, 17);
             this.lblTelephone.TabIndex = 29;
             this.lblTelephone.Text = "Téléphone :";
             // 
             // lblPrenom
             // 
             this.lblPrenom.AutoSize = true;
+            this.lblPrenom.BackColor = System.Drawing.Color.Black;
+            this.lblPrenom.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrenom.ForeColor = System.Drawing.SystemColors.Control;
             this.lblPrenom.Location = new System.Drawing.Point(12, 53);
             this.lblPrenom.Name = "lblPrenom";
-            this.lblPrenom.Size = new System.Drawing.Size(49, 13);
+            this.lblPrenom.Size = new System.Drawing.Size(54, 17);
             this.lblPrenom.TabIndex = 28;
             this.lblPrenom.Text = "Prénom :";
             // 
             // lblNom
             // 
             this.lblNom.AutoSize = true;
+            this.lblNom.BackColor = System.Drawing.Color.Black;
+            this.lblNom.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNom.ForeColor = System.Drawing.SystemColors.Control;
             this.lblNom.Location = new System.Drawing.Point(12, 9);
             this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(35, 13);
+            this.lblNom.Size = new System.Drawing.Size(40, 17);
             this.lblNom.TabIndex = 27;
             this.lblNom.Text = "Nom :";
             // 
@@ -258,6 +276,7 @@
             // 
             // pnlMatiereEtudiant
             // 
+            this.pnlMatiereEtudiant.BackColor = System.Drawing.Color.Transparent;
             this.pnlMatiereEtudiant.Controls.Add(this.btnSupprimeTout);
             this.pnlMatiereEtudiant.Controls.Add(this.btnSupprime);
             this.pnlMatiereEtudiant.Controls.Add(this.btnAjouteTout);
@@ -285,9 +304,12 @@
             // lblMatiereFiche
             // 
             this.lblMatiereFiche.AutoSize = true;
-            this.lblMatiereFiche.Location = new System.Drawing.Point(328, 53);
+            this.lblMatiereFiche.BackColor = System.Drawing.Color.Black;
+            this.lblMatiereFiche.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatiereFiche.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblMatiereFiche.Location = new System.Drawing.Point(343, 49);
             this.lblMatiereFiche.Name = "lblMatiereFiche";
-            this.lblMatiereFiche.Size = new System.Drawing.Size(53, 13);
+            this.lblMatiereFiche.Size = new System.Drawing.Size(66, 17);
             this.lblMatiereFiche.TabIndex = 45;
             this.lblMatiereFiche.Text = "Matières :";
             // 
@@ -295,7 +317,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 424);
+            this.BackgroundImage = global::GestionCollege.Properties.Resources.GestionEtudiantFond;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(505, 461);
             this.Controls.Add(this.lblMatiereFiche);
             this.Controls.Add(this.btnValiderEtudiant);
             this.Controls.Add(this.lstCloneMatiereEtudiante);

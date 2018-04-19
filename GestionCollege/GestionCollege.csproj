@@ -154,6 +154,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\DataSources\Enseignant.datasource" />
     <None Include="Properties\Settings.settings">
@@ -168,6 +169,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EtudiantImageFond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GestionEtudiantFond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MatiereFond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MatiereFond1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GestionMatiereFond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sallefond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GestionSalleFond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GestionSalleFond1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

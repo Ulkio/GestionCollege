@@ -220,9 +220,12 @@
             // lblMatieres
             // 
             this.lblMatieres.AutoSize = true;
+            this.lblMatieres.BackColor = System.Drawing.Color.Transparent;
+            this.lblMatieres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatieres.ForeColor = System.Drawing.SystemColors.Control;
             this.lblMatieres.Location = new System.Drawing.Point(12, 9);
             this.lblMatieres.Name = "lblMatieres";
-            this.lblMatieres.Size = new System.Drawing.Size(97, 13);
+            this.lblMatieres.Size = new System.Drawing.Size(113, 15);
             this.lblMatieres.TabIndex = 14;
             this.lblMatieres.Text = "Liste des matières :";
             // 
@@ -261,9 +264,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(135, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 13);
+            this.label1.Size = new System.Drawing.Size(130, 15);
             this.label1.TabIndex = 19;
             this.label1.Text = "Departement associé :";
             // 
@@ -284,6 +290,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GestionCollege.Properties.Resources.GestionMatiereFond;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(362, 352);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);

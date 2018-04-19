@@ -39,7 +39,7 @@
             // 
             // btnAccueil
             // 
-            this.btnAccueil.Location = new System.Drawing.Point(150, 151);
+            this.btnAccueil.Location = new System.Drawing.Point(237, 256);
             this.btnAccueil.Name = "btnAccueil";
             this.btnAccueil.Size = new System.Drawing.Size(75, 23);
             this.btnAccueil.TabIndex = 20;
@@ -49,9 +49,9 @@
             // 
             // btnFiche
             // 
-            this.btnFiche.Location = new System.Drawing.Point(12, 64);
+            this.btnFiche.Location = new System.Drawing.Point(12, 32);
             this.btnFiche.Name = "btnFiche";
-            this.btnFiche.Size = new System.Drawing.Size(75, 23);
+            this.btnFiche.Size = new System.Drawing.Size(68, 23);
             this.btnFiche.TabIndex = 18;
             this.btnFiche.Text = "Fiche";
             this.btnFiche.UseVisualStyleBackColor = true;
@@ -59,9 +59,9 @@
             // 
             // btnEditer
             // 
-            this.btnEditer.Location = new System.Drawing.Point(12, 151);
+            this.btnEditer.Location = new System.Drawing.Point(12, 119);
             this.btnEditer.Name = "btnEditer";
-            this.btnEditer.Size = new System.Drawing.Size(75, 23);
+            this.btnEditer.Size = new System.Drawing.Size(68, 23);
             this.btnEditer.TabIndex = 17;
             this.btnEditer.Text = "Éditer";
             this.btnEditer.UseVisualStyleBackColor = true;
@@ -69,9 +69,9 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(12, 122);
+            this.btnSupprimer.Location = new System.Drawing.Point(12, 90);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
+            this.btnSupprimer.Size = new System.Drawing.Size(68, 23);
             this.btnSupprimer.TabIndex = 16;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
@@ -79,9 +79,9 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(12, 93);
+            this.btnAjouter.Location = new System.Drawing.Point(12, 61);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(75, 23);
+            this.btnAjouter.Size = new System.Drawing.Size(68, 23);
             this.btnAjouter.TabIndex = 15;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
@@ -90,16 +90,18 @@
             // lblEtudiants
             // 
             this.lblEtudiants.AutoSize = true;
-            this.lblEtudiants.Location = new System.Drawing.Point(12, 9);
+            this.lblEtudiants.BackColor = System.Drawing.Color.Transparent;
+            this.lblEtudiants.Font = new System.Drawing.Font("Lucida Calligraphy", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEtudiants.Location = new System.Drawing.Point(9, 5);
             this.lblEtudiants.Name = "lblEtudiants";
-            this.lblEtudiants.Size = new System.Drawing.Size(51, 13);
+            this.lblEtudiants.Size = new System.Drawing.Size(111, 24);
             this.lblEtudiants.TabIndex = 14;
             this.lblEtudiants.Text = "Étudiants";
             // 
             // cbxEtudiants
             // 
             this.cbxEtudiants.FormattingEnabled = true;
-            this.cbxEtudiants.Location = new System.Drawing.Point(15, 37);
+            this.cbxEtudiants.Location = new System.Drawing.Point(86, 32);
             this.cbxEtudiants.Name = "cbxEtudiants";
             this.cbxEtudiants.Size = new System.Drawing.Size(121, 21);
             this.cbxEtudiants.TabIndex = 13;
@@ -108,7 +110,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(252, 203);
+            this.BackgroundImage = global::GestionCollege.Properties.Resources.EtudiantImageFond;
+            this.ClientSize = new System.Drawing.Size(324, 291);
             this.Controls.Add(this.btnAccueil);
             this.Controls.Add(this.btnFiche);
             this.Controls.Add(this.btnEditer);

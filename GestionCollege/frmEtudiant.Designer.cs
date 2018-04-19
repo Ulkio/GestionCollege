@@ -121,6 +121,7 @@
             this.Controls.Add(this.cbxEtudiants);
             this.Name = "frmEtudiant";
             this.Text = "Etudiant";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEtudiant_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

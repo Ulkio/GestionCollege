@@ -131,6 +131,7 @@
             this.Controls.Add(this.btnDepartements);
             this.Name = "frmAccueil";
             this.Text = "Accueil";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAccueil_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

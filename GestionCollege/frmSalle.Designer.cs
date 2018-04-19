@@ -47,8 +47,9 @@
             // lblMatieres
             // 
             this.lblMatieres.AutoSize = true;
+            this.lblMatieres.BackColor = System.Drawing.Color.Transparent;
             this.lblMatieres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatieres.Location = new System.Drawing.Point(125, 7);
+            this.lblMatieres.Location = new System.Drawing.Point(125, 2);
             this.lblMatieres.Name = "lblMatieres";
             this.lblMatieres.Size = new System.Drawing.Size(133, 15);
             this.lblMatieres.TabIndex = 19;
@@ -80,8 +81,9 @@
             // lblSalle
             // 
             this.lblSalle.AutoSize = true;
+            this.lblSalle.BackColor = System.Drawing.Color.Transparent;
             this.lblSalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalle.Location = new System.Drawing.Point(9, 7);
+            this.lblSalle.Location = new System.Drawing.Point(12, 2);
             this.lblSalle.Name = "lblSalle";
             this.lblSalle.Size = new System.Drawing.Size(41, 15);
             this.lblSalle.TabIndex = 16;
@@ -103,7 +105,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GestionCollege.Properties.Resources.Sallefond;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(260, 238);
+            this.ClientSize = new System.Drawing.Size(284, 256);
             this.Controls.Add(this.btnAccueil);
             this.Controls.Add(this.lstMatieres);
             this.Controls.Add(this.lblMatieres);
@@ -112,6 +114,7 @@
             this.Controls.Add(this.lblSalle);
             this.Name = "frmSalle";
             this.Text = "Salle de cours";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSalle_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

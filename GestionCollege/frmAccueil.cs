@@ -57,5 +57,18 @@ namespace GestionCollege
             salle.ShowDialog();
             this.Close();
         }
+
+        private void frmAccueil_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult rep;
+
+            rep = MessageBox.Show("Voulez vous vraiment quitter", "Terminer?",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (rep == DialogResult.No) //si l’arrêt est annulé par l'opérateur
+            {
+                e.Cancel = true; // annuler l'événement en cours
+            };
+        }
     }
 }

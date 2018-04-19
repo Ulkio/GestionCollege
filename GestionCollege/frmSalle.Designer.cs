@@ -114,7 +114,6 @@
             this.Controls.Add(this.lblSalle);
             this.Name = "frmSalle";
             this.Text = "Salle de cours";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSalle_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

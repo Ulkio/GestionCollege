@@ -325,7 +325,6 @@
             this.Controls.Add(this.lblDepartement);
             this.Name = "frmMatiere";
             this.Text = "Matiere";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMatiere_FormClosing);
             this.pnlAjouterNote.ResumeLayout(false);
             this.pnlAjouterNote.PerformLayout();
             this.ResumeLayout(false);

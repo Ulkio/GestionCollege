@@ -280,7 +280,6 @@
             this.DoubleBuffered = true;
             this.Name = "Departement";
             this.Text = "Departement";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Departement_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

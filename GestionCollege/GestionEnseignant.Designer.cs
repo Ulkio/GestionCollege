@@ -59,6 +59,7 @@
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Visible = false;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnAnnuler
             // 
@@ -68,6 +69,7 @@
             this.btnAnnuler.TabIndex = 32;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // btnConfirmer
             // 
@@ -171,7 +173,7 @@
             // 
             // txtNom
             // 
-            this.txtNom.Location = new System.Drawing.Point(149, 6);
+            this.txtNom.Location = new System.Drawing.Point(149, 8);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(196, 20);
             this.txtNom.TabIndex = 18;
@@ -236,6 +238,7 @@
             this.Controls.Add(this.label1);
             this.Name = "GestionEnseignant";
             this.Text = "Gestion Enseignant";
+            this.Load += new System.EventHandler(this.GestionEnseignant_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

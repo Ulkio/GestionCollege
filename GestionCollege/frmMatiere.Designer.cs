@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnAccueil = new System.Windows.Forms.Button();
-            this.btnRetour = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.lblMoyenne = new System.Windows.Forms.Label();
             this.btnEditerMatiere = new System.Windows.Forms.Button();
@@ -63,15 +62,6 @@
             this.btnAccueil.TabIndex = 35;
             this.btnAccueil.Text = "ACCUEIL";
             this.btnAccueil.UseVisualStyleBackColor = true;
-            // 
-            // btnRetour
-            // 
-            this.btnRetour.Location = new System.Drawing.Point(378, 389);
-            this.btnRetour.Name = "btnRetour";
-            this.btnRetour.Size = new System.Drawing.Size(75, 23);
-            this.btnRetour.TabIndex = 34;
-            this.btnRetour.Text = "Retour";
-            this.btnRetour.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
@@ -274,7 +264,6 @@
             this.ClientSize = new System.Drawing.Size(462, 444);
             this.Controls.Add(this.pnlAjouterNote);
             this.Controls.Add(this.btnAccueil);
-            this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.lblMoyenne);
             this.Controls.Add(this.btnEditerMatiere);
@@ -303,7 +292,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnAccueil;
-        private System.Windows.Forms.Button btnRetour;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label lblMoyenne;
         private System.Windows.Forms.Button btnEditerMatiere;

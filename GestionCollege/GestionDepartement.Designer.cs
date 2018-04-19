@@ -34,7 +34,7 @@
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.cbxMatiere = new System.Windows.Forms.ComboBox();
             this.btnOK = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDepartement = new System.Windows.Forms.TextBox();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnConfirmer = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -76,6 +76,7 @@
             this.btnAnnuler.TabIndex = 10;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // cbxMatiere
             // 
@@ -95,12 +96,12 @@
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtDepartement
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtDepartement.Location = new System.Drawing.Point(12, 32);
+            this.txtDepartement.Name = "txtDepartement";
+            this.txtDepartement.Size = new System.Drawing.Size(162, 20);
+            this.txtDepartement.TabIndex = 7;
             // 
             // btnSupprimer
             // 
@@ -119,6 +120,7 @@
             this.btnConfirmer.TabIndex = 18;
             this.btnConfirmer.Text = "Confirmer";
             this.btnConfirmer.UseVisualStyleBackColor = true;
+            this.btnConfirmer.Click += new System.EventHandler(this.btnConfirmer_Click);
             // 
             // panel1
             // 
@@ -142,7 +144,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDepartement);
             this.Name = "GestionDepartement";
             this.Text = "Gestion Departement";
             this.panel1.ResumeLayout(false);
@@ -160,7 +162,7 @@
         private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.ComboBox cbxMatiere;
         private System.Windows.Forms.Button btnOK;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDepartement;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button btnConfirmer;
         private System.Windows.Forms.Panel panel1;

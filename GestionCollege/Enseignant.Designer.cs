@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnAccueil = new System.Windows.Forms.Button();
-            this.btnRetour = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnFiche = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
@@ -46,15 +45,7 @@
             this.btnAccueil.TabIndex = 15;
             this.btnAccueil.Text = "ACCUEIL";
             this.btnAccueil.UseVisualStyleBackColor = true;
-            // 
-            // btnRetour
-            // 
-            this.btnRetour.Location = new System.Drawing.Point(259, 210);
-            this.btnRetour.Name = "btnRetour";
-            this.btnRetour.Size = new System.Drawing.Size(75, 23);
-            this.btnRetour.TabIndex = 14;
-            this.btnRetour.Text = "Retour";
-            this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
             // btnAjouter
             // 
@@ -64,6 +55,7 @@
             this.btnAjouter.TabIndex = 13;
             this.btnAjouter.Text = "Ajouter Enseignant";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnFiche
             // 
@@ -73,6 +65,7 @@
             this.btnFiche.TabIndex = 12;
             this.btnFiche.Text = "Fiche";
             this.btnFiche.UseVisualStyleBackColor = true;
+            this.btnFiche.Click += new System.EventHandler(this.btnFiche_Click);
             // 
             // btnSupprimer
             // 
@@ -82,6 +75,7 @@
             this.btnSupprimer.TabIndex = 11;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // btnModifier
             // 
@@ -91,6 +85,7 @@
             this.btnModifier.TabIndex = 10;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // label1
             // 
@@ -104,6 +99,9 @@
             // lstEnseignants
             // 
             this.lstEnseignants.FormattingEnabled = true;
+            this.lstEnseignants.Items.AddRange(new object[] {
+            "Pierre KIROUL",
+            "Jacques OUILLE"});
             this.lstEnseignants.Location = new System.Drawing.Point(12, 28);
             this.lstEnseignants.Name = "lstEnseignants";
             this.lstEnseignants.ScrollAlwaysVisible = true;
@@ -116,7 +114,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 269);
             this.Controls.Add(this.btnAccueil);
-            this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.btnFiche);
             this.Controls.Add(this.btnSupprimer);
@@ -133,7 +130,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnAccueil;
-        private System.Windows.Forms.Button btnRetour;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnFiche;
         private System.Windows.Forms.Button btnSupprimer;

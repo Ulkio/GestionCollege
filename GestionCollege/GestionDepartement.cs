@@ -16,5 +16,15 @@ namespace GestionCollege
         {
             InitializeComponent();
         }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnConfirmer_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+        }
     }
 }

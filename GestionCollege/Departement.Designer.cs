@@ -44,7 +44,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lstDepartement = new System.Windows.Forms.ListBox();
             this.btnAccueil = new System.Windows.Forms.Button();
-            this.btnRetour = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtMoyenne
@@ -89,6 +88,7 @@
             this.btnAjouter.TabIndex = 40;
             this.btnAjouter.Text = "Ajouter département";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnSupprimer
             // 
@@ -98,6 +98,7 @@
             this.btnSupprimer.TabIndex = 39;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // btnModifier
             // 
@@ -107,24 +108,29 @@
             this.btnModifier.TabIndex = 38;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // btnAcceder
             // 
+            this.btnAcceder.Enabled = false;
             this.btnAcceder.Location = new System.Drawing.Point(571, 182);
             this.btnAcceder.Name = "btnAcceder";
             this.btnAcceder.Size = new System.Drawing.Size(75, 23);
             this.btnAcceder.TabIndex = 37;
             this.btnAcceder.Text = "Accéder";
             this.btnAcceder.UseVisualStyleBackColor = true;
+            this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
             // btnFiche
             // 
+            this.btnFiche.Enabled = false;
             this.btnFiche.Location = new System.Drawing.Point(350, 182);
             this.btnFiche.Name = "btnFiche";
             this.btnFiche.Size = new System.Drawing.Size(75, 23);
             this.btnFiche.TabIndex = 36;
             this.btnFiche.Text = "Fiche";
             this.btnFiche.UseVisualStyleBackColor = true;
+            this.btnFiche.Click += new System.EventHandler(this.btnFiche_Click);
             // 
             // label3
             // 
@@ -143,6 +149,7 @@
             this.lstMatieres.ScrollAlwaysVisible = true;
             this.lstMatieres.Size = new System.Drawing.Size(176, 147);
             this.lstMatieres.TabIndex = 34;
+            this.lstMatieres.SelectedIndexChanged += new System.EventHandler(this.lstMatieres_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -161,6 +168,7 @@
             this.lstEnseignants.ScrollAlwaysVisible = true;
             this.lstEnseignants.Size = new System.Drawing.Size(176, 147);
             this.lstEnseignants.TabIndex = 32;
+            this.lstEnseignants.SelectedIndexChanged += new System.EventHandler(this.lstEnseignants_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -188,15 +196,7 @@
             this.btnAccueil.TabIndex = 46;
             this.btnAccueil.Text = "ACCUEIL";
             this.btnAccueil.UseVisualStyleBackColor = true;
-            // 
-            // btnRetour
-            // 
-            this.btnRetour.Location = new System.Drawing.Point(690, 279);
-            this.btnRetour.Name = "btnRetour";
-            this.btnRetour.Size = new System.Drawing.Size(75, 23);
-            this.btnRetour.TabIndex = 45;
-            this.btnRetour.Text = "Retour";
-            this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
             // Departement
             // 
@@ -204,7 +204,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(769, 335);
             this.Controls.Add(this.btnAccueil);
-            this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.txtMoyenne);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtResponsable);
@@ -245,6 +244,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lstDepartement;
         private System.Windows.Forms.Button btnAccueil;
-        private System.Windows.Forms.Button btnRetour;
     }
 }

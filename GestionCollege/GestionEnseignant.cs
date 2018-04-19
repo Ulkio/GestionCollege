@@ -16,5 +16,20 @@ namespace GestionCollege
         {
             InitializeComponent();
         }
+
+        private void GestionEnseignant_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

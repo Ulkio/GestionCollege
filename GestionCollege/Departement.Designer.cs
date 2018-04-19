@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Departement));
             this.txtMoyenne = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtResponsable = new System.Windows.Forms.TextBox();
@@ -48,103 +49,144 @@
             // 
             // txtMoyenne
             // 
-            this.txtMoyenne.Location = new System.Drawing.Point(11, 298);
+            this.txtMoyenne.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtMoyenne.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMoyenne.Location = new System.Drawing.Point(40, 328);
             this.txtMoyenne.Name = "txtMoyenne";
             this.txtMoyenne.ReadOnly = true;
-            this.txtMoyenne.Size = new System.Drawing.Size(56, 20);
+            this.txtMoyenne.Size = new System.Drawing.Size(56, 21);
             this.txtMoyenne.TabIndex = 44;
+            this.txtMoyenne.Text = "12";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 279);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Bradley Hand ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.Location = new System.Drawing.Point(36, 301);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 13);
+            this.label5.Size = new System.Drawing.Size(218, 24);
             this.label5.TabIndex = 43;
             this.label5.Text = "Moyenne département :";
             // 
             // txtResponsable
             // 
-            this.txtResponsable.Location = new System.Drawing.Point(11, 248);
+            this.txtResponsable.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtResponsable.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtResponsable.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResponsable.Location = new System.Drawing.Point(40, 278);
             this.txtResponsable.Name = "txtResponsable";
             this.txtResponsable.ReadOnly = true;
-            this.txtResponsable.Size = new System.Drawing.Size(100, 20);
+            this.txtResponsable.Size = new System.Drawing.Size(100, 21);
             this.txtResponsable.TabIndex = 42;
+            this.txtResponsable.Text = "DUPONT Paul";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 232);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Bradley Hand ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.Location = new System.Drawing.Point(36, 254);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 13);
+            this.label4.Size = new System.Drawing.Size(245, 24);
             this.label4.TabIndex = 41;
             this.label4.Text = "Responsable département :";
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(11, 182);
+            this.btnAjouter.BackColor = System.Drawing.Color.Transparent;
+            this.btnAjouter.FlatAppearance.BorderSize = 0;
+            this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAjouter.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouter.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnAjouter.Location = new System.Drawing.Point(40, 219);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(114, 23);
+            this.btnAjouter.Size = new System.Drawing.Size(126, 31);
             this.btnAjouter.TabIndex = 40;
             this.btnAjouter.Text = "Ajouter département";
-            this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.UseVisualStyleBackColor = false;
             this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(193, 57);
+            this.btnSupprimer.BackColor = System.Drawing.Color.Transparent;
+            this.btnSupprimer.FlatAppearance.BorderSize = 0;
+            this.btnSupprimer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSupprimer.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupprimer.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSupprimer.Location = new System.Drawing.Point(222, 94);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
+            this.btnSupprimer.Size = new System.Drawing.Size(87, 31);
             this.btnSupprimer.TabIndex = 39;
             this.btnSupprimer.Text = "Supprimer";
-            this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.UseVisualStyleBackColor = false;
             this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // btnModifier
             // 
-            this.btnModifier.Location = new System.Drawing.Point(193, 28);
+            this.btnModifier.BackColor = System.Drawing.Color.Transparent;
+            this.btnModifier.FlatAppearance.BorderSize = 0;
+            this.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnModifier.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModifier.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnModifier.Location = new System.Drawing.Point(222, 65);
             this.btnModifier.Name = "btnModifier";
-            this.btnModifier.Size = new System.Drawing.Size(75, 23);
+            this.btnModifier.Size = new System.Drawing.Size(87, 31);
             this.btnModifier.TabIndex = 38;
             this.btnModifier.Text = "Modifier";
-            this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.UseVisualStyleBackColor = false;
             this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // btnAcceder
             // 
+            this.btnAcceder.BackColor = System.Drawing.Color.Transparent;
             this.btnAcceder.Enabled = false;
-            this.btnAcceder.Location = new System.Drawing.Point(571, 182);
+            this.btnAcceder.FlatAppearance.BorderSize = 0;
+            this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAcceder.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcceder.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnAcceder.Location = new System.Drawing.Point(631, 219);
             this.btnAcceder.Name = "btnAcceder";
-            this.btnAcceder.Size = new System.Drawing.Size(75, 23);
+            this.btnAcceder.Size = new System.Drawing.Size(87, 31);
             this.btnAcceder.TabIndex = 37;
             this.btnAcceder.Text = "Accéder";
-            this.btnAcceder.UseVisualStyleBackColor = true;
+            this.btnAcceder.UseVisualStyleBackColor = false;
             this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
             // btnFiche
             // 
+            this.btnFiche.BackColor = System.Drawing.Color.Transparent;
             this.btnFiche.Enabled = false;
-            this.btnFiche.Location = new System.Drawing.Point(350, 182);
+            this.btnFiche.FlatAppearance.BorderSize = 0;
+            this.btnFiche.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnFiche.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiche.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnFiche.Location = new System.Drawing.Point(407, 219);
             this.btnFiche.Name = "btnFiche";
-            this.btnFiche.Size = new System.Drawing.Size(75, 23);
+            this.btnFiche.Size = new System.Drawing.Size(87, 31);
             this.btnFiche.TabIndex = 36;
             this.btnFiche.Text = "Fiche";
-            this.btnFiche.UseVisualStyleBackColor = true;
+            this.btnFiche.UseVisualStyleBackColor = false;
             this.btnFiche.Click += new System.EventHandler(this.btnFiche_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(572, 9);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Bradley Hand ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(628, 38);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.Size = new System.Drawing.Size(97, 24);
             this.label3.TabIndex = 35;
             this.label3.Text = "Matières :";
             // 
             // lstMatieres
             // 
             this.lstMatieres.FormattingEnabled = true;
-            this.lstMatieres.Location = new System.Drawing.Point(571, 28);
+            this.lstMatieres.Location = new System.Drawing.Point(631, 65);
             this.lstMatieres.Name = "lstMatieres";
             this.lstMatieres.ScrollAlwaysVisible = true;
             this.lstMatieres.Size = new System.Drawing.Size(176, 147);
@@ -154,16 +196,19 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(347, 9);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Bradley Hand ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(403, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.Size = new System.Drawing.Size(124, 24);
             this.label2.TabIndex = 33;
             this.label2.Text = "Enseignants";
             // 
             // lstEnseignants
             // 
             this.lstEnseignants.FormattingEnabled = true;
-            this.lstEnseignants.Location = new System.Drawing.Point(350, 28);
+            this.lstEnseignants.Location = new System.Drawing.Point(407, 65);
             this.lstEnseignants.Name = "lstEnseignants";
             this.lstEnseignants.ScrollAlwaysVisible = true;
             this.lstEnseignants.Size = new System.Drawing.Size(176, 147);
@@ -173,16 +218,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Bradley Hand ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(36, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.Size = new System.Drawing.Size(133, 24);
             this.label1.TabIndex = 31;
             this.label1.Text = "Département :";
             // 
             // lstDepartement
             // 
             this.lstDepartement.FormattingEnabled = true;
-            this.lstDepartement.Location = new System.Drawing.Point(11, 28);
+            this.lstDepartement.Location = new System.Drawing.Point(40, 65);
             this.lstDepartement.Name = "lstDepartement";
             this.lstDepartement.ScrollAlwaysVisible = true;
             this.lstDepartement.Size = new System.Drawing.Size(176, 147);
@@ -190,19 +238,29 @@
             // 
             // btnAccueil
             // 
-            this.btnAccueil.Location = new System.Drawing.Point(690, 308);
+            this.btnAccueil.BackColor = System.Drawing.Color.Transparent;
+            this.btnAccueil.FlatAppearance.BorderSize = 0;
+            this.btnAccueil.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAccueil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAccueil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAccueil.Font = new System.Drawing.Font("Bradley Hand ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccueil.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnAccueil.Location = new System.Drawing.Point(688, 317);
             this.btnAccueil.Name = "btnAccueil";
-            this.btnAccueil.Size = new System.Drawing.Size(75, 23);
+            this.btnAccueil.Size = new System.Drawing.Size(119, 31);
             this.btnAccueil.TabIndex = 46;
             this.btnAccueil.Text = "ACCUEIL";
-            this.btnAccueil.UseVisualStyleBackColor = true;
+            this.btnAccueil.UseVisualStyleBackColor = false;
             this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
             // Departement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 335);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(845, 389);
             this.Controls.Add(this.btnAccueil);
             this.Controls.Add(this.txtMoyenne);
             this.Controls.Add(this.label5);
@@ -219,6 +277,7 @@
             this.Controls.Add(this.lstEnseignants);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstDepartement);
+            this.DoubleBuffered = true;
             this.Name = "Departement";
             this.Text = "Departement";
             this.ResumeLayout(false);

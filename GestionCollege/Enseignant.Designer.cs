@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Enseignant));
             this.btnAccueil = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnFiche = new System.Windows.Forms.Button();
@@ -39,9 +40,11 @@
             // 
             // btnAccueil
             // 
-            this.btnAccueil.Location = new System.Drawing.Point(259, 239);
+            this.btnAccueil.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccueil.Location = new System.Drawing.Point(559, 476);
+            this.btnAccueil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAccueil.Name = "btnAccueil";
-            this.btnAccueil.Size = new System.Drawing.Size(75, 23);
+            this.btnAccueil.Size = new System.Drawing.Size(113, 44);
             this.btnAccueil.TabIndex = 15;
             this.btnAccueil.Text = "ACCUEIL";
             this.btnAccueil.UseVisualStyleBackColor = true;
@@ -49,9 +52,11 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(15, 164);
+            this.btnAjouter.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouter.Location = new System.Drawing.Point(63, 195);
+            this.btnAjouter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(113, 23);
+            this.btnAjouter.Size = new System.Drawing.Size(132, 32);
             this.btnAjouter.TabIndex = 13;
             this.btnAjouter.Text = "Ajouter Enseignant";
             this.btnAjouter.UseVisualStyleBackColor = true;
@@ -59,9 +64,11 @@
             // 
             // btnFiche
             // 
-            this.btnFiche.Location = new System.Drawing.Point(185, 92);
+            this.btnFiche.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiche.Location = new System.Drawing.Point(263, 119);
+            this.btnFiche.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnFiche.Name = "btnFiche";
-            this.btnFiche.Size = new System.Drawing.Size(75, 23);
+            this.btnFiche.Size = new System.Drawing.Size(87, 32);
             this.btnFiche.TabIndex = 12;
             this.btnFiche.Text = "Fiche";
             this.btnFiche.UseVisualStyleBackColor = true;
@@ -69,9 +76,11 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(185, 63);
+            this.btnSupprimer.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupprimer.Location = new System.Drawing.Point(263, 79);
+            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
+            this.btnSupprimer.Size = new System.Drawing.Size(87, 32);
             this.btnSupprimer.TabIndex = 11;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
@@ -79,9 +88,11 @@
             // 
             // btnModifier
             // 
-            this.btnModifier.Location = new System.Drawing.Point(185, 34);
+            this.btnModifier.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModifier.Location = new System.Drawing.Point(263, 39);
+            this.btnModifier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnModifier.Name = "btnModifier";
-            this.btnModifier.Size = new System.Drawing.Size(75, 23);
+            this.btnModifier.Size = new System.Drawing.Size(87, 32);
             this.btnModifier.TabIndex = 10;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
@@ -90,29 +101,36 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(63, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.Size = new System.Drawing.Size(90, 18);
             this.label1.TabIndex = 9;
             this.label1.Text = "Enseignants :";
             // 
             // lstEnseignants
             // 
             this.lstEnseignants.FormattingEnabled = true;
+            this.lstEnseignants.ItemHeight = 18;
             this.lstEnseignants.Items.AddRange(new object[] {
             "Pierre KIROUL",
             "Jacques OUILLE"});
-            this.lstEnseignants.Location = new System.Drawing.Point(12, 28);
+            this.lstEnseignants.Location = new System.Drawing.Point(63, 39);
+            this.lstEnseignants.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lstEnseignants.Name = "lstEnseignants";
             this.lstEnseignants.ScrollAlwaysVisible = true;
-            this.lstEnseignants.Size = new System.Drawing.Size(167, 134);
+            this.lstEnseignants.Size = new System.Drawing.Size(194, 148);
             this.lstEnseignants.TabIndex = 8;
             // 
             // Enseignant
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 269);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(684, 533);
             this.Controls.Add(this.btnAccueil);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.btnFiche);
@@ -120,6 +138,8 @@
             this.Controls.Add(this.btnModifier);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstEnseignants);
+            this.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Enseignant";
             this.Text = "Enseignant";
             this.ResumeLayout(false);

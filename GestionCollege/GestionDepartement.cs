@@ -21,10 +21,5 @@ namespace GestionCollege
         {
             this.Close();
         }
-
-        private void btnConfirmer_Click(object sender, EventArgs e)
-        {
-            panel1.Visible = true;
-        }
     }
 }

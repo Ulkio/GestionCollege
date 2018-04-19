@@ -57,6 +57,5 @@ namespace GestionCollege
             salle.ShowDialog();
             this.Close();
         }
-
     }
 }

@@ -31,5 +31,10 @@ namespace GestionCollege
         {
             this.Close();
         }
+
+        private void btnValiderEnseignant_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+        }
     }
 }

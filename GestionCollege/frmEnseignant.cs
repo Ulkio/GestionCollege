@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace GestionCollege
 {
-    public partial class Enseignant : Form
+    public partial class frmEnseignant : Form
     {
-        public Enseignant()
+        public frmEnseignant()
         {
             InitializeComponent();
         }
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
-            GestionEnseignant gestion = new GestionEnseignant();
+            frmGestionEnseignant gestion = new frmGestionEnseignant();
             try
             {
                 gestion.Controls["txtNom"].Text = lstEnseignants.SelectedItem.ToString();
@@ -41,7 +41,7 @@ namespace GestionCollege
 
         private void btnFiche_Click(object sender, EventArgs e)
         {
-            GestionEnseignant gestion = new GestionEnseignant();
+            frmGestionEnseignant gestion = new frmGestionEnseignant();
             gestion.Show();
             gestion.Controls["txtNom"].Enabled = false;
             gestion.Controls["txtPrenom"].Enabled = false;
@@ -59,7 +59,7 @@ namespace GestionCollege
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            GestionEnseignant gestion = new GestionEnseignant();
+            frmGestionEnseignant gestion = new frmGestionEnseignant();
             gestion.Show();
 
         }

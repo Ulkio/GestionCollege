@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GestionCollege
 {
-    public partial class Departement : Form
+    public partial class frmDepartement : Form
     {
-        public Departement()
+        public frmDepartement()
         {
             InitializeComponent();
 
@@ -40,7 +40,7 @@ namespace GestionCollege
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
-            GestionDepartement gestion = new GestionDepartement();
+            frmGestionDepartement gestion = new frmGestionDepartement();
             try
             {
                 gestion.Controls["txtDepartement"].Text = lstDepartement.SelectedItem.ToString();
@@ -59,13 +59,13 @@ namespace GestionCollege
         }
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            GestionDepartement gestion = new GestionDepartement();
+            frmGestionDepartement gestion = new frmGestionDepartement();
             gestion.Show();
         }
 
         private void btnFiche_Click(object sender, EventArgs e)
         {
-            GestionEnseignant gestion = new GestionEnseignant();
+            frmGestionEnseignant gestion = new frmGestionEnseignant();
             gestion.Show();
             gestion.Controls["txtNom"].Enabled = false;
             gestion.Controls["txtPrenom"].Enabled = false;

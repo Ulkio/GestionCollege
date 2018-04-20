@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GestionCollege
 {
-    public partial class GestionEnseignant : Form
+    public partial class frmGestionEnseignant : Form
     {
-        public GestionEnseignant()
+        public frmGestionEnseignant()
         {
             InitializeComponent();
         }

@@ -19,7 +19,7 @@ namespace GestionCollege
 
         private void btnEditerDepartement_Click(object sender, EventArgs e)
         {
-            GestionDepartement gestionDepartement = new GestionDepartement();
+            frmGestionDepartement gestionDepartement = new frmGestionDepartement();
             gestionDepartement.ShowDialog();        
         }
 
@@ -57,7 +57,7 @@ namespace GestionCollege
 
         private void btnFicheEnseignants_Click(object sender, EventArgs e)
         {
-            GestionEnseignant gestion = new GestionEnseignant();
+            frmGestionEnseignant gestion = new frmGestionEnseignant();
             gestion.Show();
             gestion.Controls["txtNom"].Enabled = false;
             gestion.Controls["txtPrenom"].Enabled = false;

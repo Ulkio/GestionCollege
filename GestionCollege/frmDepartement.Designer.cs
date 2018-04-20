@@ -1,6 +1,6 @@
 ﻿namespace GestionCollege
 {
-    partial class Departement
+    partial class frmDepartement
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Departement));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDepartement));
             this.txtMoyenne = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtResponsable = new System.Windows.Forms.TextBox();

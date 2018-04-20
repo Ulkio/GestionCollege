@@ -20,7 +20,7 @@ namespace GestionCollege
 
         private void btnDepartements_Click(object sender, EventArgs e)
         {
-            Departement dpt = new Departement();
+            frmDepartement dpt = new frmDepartement();
             this.Hide();
             dpt.ShowDialog();
             this.Close();
@@ -28,7 +28,7 @@ namespace GestionCollege
 
         private void btnEnseignants_Click(object sender, EventArgs e)
         {
-            Enseignant enseignant = new Enseignant();
+            frmEnseignant enseignant = new frmEnseignant();
             this.Hide();
             enseignant.ShowDialog();
             this.Close();

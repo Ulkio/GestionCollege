@@ -45,17 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Departement.cs">
+    <Compile Include="frmDepartement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Departement.Designer.cs">
-      <DependentUpon>Departement.cs</DependentUpon>
+    <Compile Include="frmDepartement.Designer.cs">
+      <DependentUpon>frmDepartement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Enseignant.cs">
+    <Compile Include="frmEnseignant.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Enseignant.Designer.cs">
-      <DependentUpon>Enseignant.cs</DependentUpon>
+    <Compile Include="frmEnseignant.Designer.cs">
+      <DependentUpon>frmEnseignant.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAccueil.cs">
       <SubType>Form</SubType>
@@ -99,25 +99,25 @@
     <Compile Include="frmSalle.Designer.cs">
       <DependentUpon>frmSalle.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionDepartement.cs">
+    <Compile Include="frmGestionDepartement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionDepartement.Designer.cs">
-      <DependentUpon>GestionDepartement.cs</DependentUpon>
+    <Compile Include="frmGestionDepartement.Designer.cs">
+      <DependentUpon>frmGestionDepartement.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionEnseignant.cs">
+    <Compile Include="frmGestionEnseignant.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionEnseignant.Designer.cs">
-      <DependentUpon>GestionEnseignant.cs</DependentUpon>
+    <Compile Include="frmGestionEnseignant.Designer.cs">
+      <DependentUpon>frmGestionEnseignant.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Departement.resx">
-      <DependentUpon>Departement.cs</DependentUpon>
+    <EmbeddedResource Include="frmDepartement.resx">
+      <DependentUpon>frmDepartement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Enseignant.resx">
-      <DependentUpon>Enseignant.cs</DependentUpon>
+    <EmbeddedResource Include="frmEnseignant.resx">
+      <DependentUpon>frmEnseignant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAccueil.resx">
       <DependentUpon>frmAccueil.cs</DependentUpon>
@@ -140,11 +140,11 @@
     <EmbeddedResource Include="frmSalle.resx">
       <DependentUpon>frmSalle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionDepartement.resx">
-      <DependentUpon>GestionDepartement.cs</DependentUpon>
+    <EmbeddedResource Include="frmGestionDepartement.resx">
+      <DependentUpon>frmGestionDepartement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionEnseignant.resx">
-      <DependentUpon>GestionEnseignant.cs</DependentUpon>
+    <EmbeddedResource Include="frmGestionEnseignant.resx">
+      <DependentUpon>frmGestionEnseignant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

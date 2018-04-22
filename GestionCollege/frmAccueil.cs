@@ -58,28 +58,22 @@ namespace GestionCollege
             this.Close();
         }
 
-        bool flag = true;
         private void frmAccueil_FormClosing(object sender, FormClosingEventArgs e)
         {
-            while (flag == true)
+            DialogResult rep;
+
+            rep = MessageBox.Show("Voulez vous vraiment quitter", "Terminer?",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (rep == DialogResult.Yes) //si l’arrêt est annulé par l'opérateur
             {
-                DialogResult rep;
+                Application.ExitThread();
 
-                rep = MessageBox.Show("Voulez vous vraiment quitter", "Terminer?",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rep == DialogResult.Yes) //si l’arrêt est annulé par l'opérateur
-                {
-                    flag = false;
-                    Application.ExitThread();
-
-                }
-                if (rep == DialogResult.No) //si l’arrêt est annulé par l'opérateur
-                {
-                    flag = false;
-                    e.Cancel = true; // annuler l'événement en cours
-                }
             }
-
+            if (rep == DialogResult.No) //si l’arrêt est annulé par l'opérateur
+            {
+                e.Cancel = true; // annuler l'événement en cours
+            }
         }
     }
 }
+

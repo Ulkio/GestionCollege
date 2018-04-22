@@ -223,6 +223,7 @@
             this.Controls.Add(this.btnAjouter);
             this.Name = "frmGestionSalle";
             this.Text = "Gestion Salle";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGestionSalle_FormClosing);
             this.pnlNouvelleSalle.ResumeLayout(false);
             this.pnlNouvelleSalle.PerformLayout();
             this.pnlModifierSalle.ResumeLayout(false);

@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionDepartement));
             this.label1 = new System.Windows.Forms.Label();
-            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.btnQuitter = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
             this.txtDepartement = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -46,16 +46,16 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Nom du département :";
             // 
-            // btnAnnuler
+            // btnQuitter
             // 
-            this.btnAnnuler.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnnuler.Location = new System.Drawing.Point(331, 125);
-            this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(80, 26);
-            this.btnAnnuler.TabIndex = 10;
-            this.btnAnnuler.Text = "Quitter";
-            this.btnAnnuler.UseVisualStyleBackColor = true;
-            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
+            this.btnQuitter.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuitter.Location = new System.Drawing.Point(331, 125);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(80, 26);
+            this.btnQuitter.TabIndex = 10;
+            this.btnQuitter.Text = "Quitter";
+            this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
             // btnOK
             // 
@@ -74,7 +74,7 @@
             this.txtDepartement.Size = new System.Drawing.Size(162, 20);
             this.txtDepartement.TabIndex = 7;
             // 
-            // GestionDepartement
+            // frmGestionDepartement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -82,11 +82,12 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(415, 157);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.txtDepartement);
-            this.Name = "GestionDepartement";
+            this.Name = "frmGestionDepartement";
             this.Text = "Gestion Departement";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGestionDepartement_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,7 +95,7 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAnnuler;
+        private System.Windows.Forms.Button btnQuitter;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.TextBox txtDepartement;
     }

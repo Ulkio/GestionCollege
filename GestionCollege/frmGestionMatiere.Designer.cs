@@ -306,6 +306,7 @@
             this.Controls.Add(this.lstMatieres);
             this.Name = "frmGestionMatiere";
             this.Text = "Gestion Matiere";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGestionMatiere_FormClosing);
             this.pnlModifierMatieres.ResumeLayout(false);
             this.pnlModifierMatieres.PerformLayout();
             this.pnlNouvelleMatieres.ResumeLayout(false);

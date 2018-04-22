@@ -20,13 +20,13 @@ namespace GestionCollege
         private void btnEditerDepartement_Click(object sender, EventArgs e)
         {
             frmGestionDepartement gestionDepartement = new frmGestionDepartement();
-            gestionDepartement.ShowDialog();        
+            gestionDepartement.ShowDialog();
         }
 
         private void btnEditerMatiere_Click(object sender, EventArgs e)
         {
             frmGestionMatiere gestionMatiere = new frmGestionMatiere();
-            gestionMatiere.ShowDialog();    
+            gestionMatiere.ShowDialog();
         }
 
         private void btnFicheEtudiants_Click(object sender, EventArgs e)
@@ -79,5 +79,23 @@ namespace GestionCollege
             this.Close();
         }
 
+        private void frmMatiere_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            DialogResult rep;
+
+            rep = MessageBox.Show("Voulez vous vraiment quitter", "Terminer?",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (rep == DialogResult.Yes) //si l’arrêt est annulé par l'opérateur
+            {
+                Application.ExitThread();
+
+            }
+            if (rep == DialogResult.No) //si l’arrêt est annulé par l'opérateur
+            {
+                e.Cancel = true; // annuler l'événement en cours
+            }
+
+        }
     }
 }

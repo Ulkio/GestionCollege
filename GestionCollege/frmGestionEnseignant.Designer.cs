@@ -254,7 +254,7 @@
             this.btnValiderEnseignant.UseVisualStyleBackColor = true;
             this.btnValiderEnseignant.Click += new System.EventHandler(this.btnValiderEnseignant_Click);
             // 
-            // GestionEnseignant
+            // frmGestionEnseignant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -279,8 +279,9 @@
             this.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "GestionEnseignant";
+            this.Name = "frmGestionEnseignant";
             this.Text = "Gestion Enseignant";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGestionEnseignant_FormClosing);
             this.Load += new System.EventHandler(this.GestionEnseignant_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

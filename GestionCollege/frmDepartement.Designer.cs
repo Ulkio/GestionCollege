@@ -253,7 +253,7 @@
             this.btnAccueil.UseVisualStyleBackColor = false;
             this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
-            // Departement
+            // frmDepartement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -278,8 +278,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstDepartement);
             this.DoubleBuffered = true;
-            this.Name = "Departement";
+            this.Name = "frmDepartement";
             this.Text = "Departement";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDepartement_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

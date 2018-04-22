@@ -339,6 +339,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "frmGestionEtudiant";
             this.Text = "Gestion Etudiant";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGestionEtudiant_FormClosing);
             this.pnlMatiereEtudiant.ResumeLayout(false);
             this.pnlMatiereEtudiant.PerformLayout();
             this.ResumeLayout(false);

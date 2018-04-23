@@ -36,6 +36,7 @@
             this.btnModifier = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lstEnseignants = new System.Windows.Forms.ListBox();
+            this.btnQuitter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAccueil
@@ -124,6 +125,18 @@
             this.lstEnseignants.Size = new System.Drawing.Size(194, 148);
             this.lstEnseignants.TabIndex = 8;
             // 
+            // btnQuitter
+            // 
+            this.btnQuitter.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuitter.Location = new System.Drawing.Point(440, 476);
+            this.btnQuitter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(113, 44);
+            this.btnQuitter.TabIndex = 16;
+            this.btnQuitter.Text = "QUITTER";
+            this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
+            // 
             // frmEnseignant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
@@ -131,6 +144,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(684, 533);
+            this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnAccueil);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.btnFiche);
@@ -139,11 +153,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstEnseignants);
             this.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmEnseignant";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Enseignant";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Enseignant_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,5 +172,6 @@
         private System.Windows.Forms.Button btnModifier;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lstEnseignants;
+        private System.Windows.Forms.Button btnQuitter;
     }
 }

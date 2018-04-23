@@ -304,6 +304,7 @@
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.btnConfirmer);
             this.Controls.Add(this.lstMatieres);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGestionMatiere";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion Matiere";

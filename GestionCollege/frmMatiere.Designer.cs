@@ -51,6 +51,7 @@
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.cbxMatiere = new System.Windows.Forms.ComboBox();
+            this.btnQuitter = new System.Windows.Forms.Button();
             this.pnlAjouterNote.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -297,6 +298,17 @@
             this.cbxMatiere.Size = new System.Drawing.Size(100, 21);
             this.cbxMatiere.TabIndex = 38;
             // 
+            // btnQuitter
+            // 
+            this.btnQuitter.BackColor = System.Drawing.Color.Transparent;
+            this.btnQuitter.Location = new System.Drawing.Point(297, 418);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(75, 23);
+            this.btnQuitter.TabIndex = 39;
+            this.btnQuitter.Text = "QUITTER";
+            this.btnQuitter.UseVisualStyleBackColor = false;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
+            // 
             // frmMatiere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,6 +316,7 @@
             this.BackgroundImage = global::GestionCollege.Properties.Resources.MatiereFond1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(462, 444);
+            this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.cbxMatiere);
             this.Controls.Add(this.btnAjouterNote);
             this.Controls.Add(this.pnlAjouterNote);
@@ -323,10 +336,10 @@
             this.Controls.Add(this.lblEnseignants);
             this.Controls.Add(this.lblMatiere);
             this.Controls.Add(this.lblDepartement);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMatiere";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Matiere";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMatiere_FormClosing);
             this.pnlAjouterNote.ResumeLayout(false);
             this.pnlAjouterNote.PerformLayout();
             this.ResumeLayout(false);
@@ -359,5 +372,6 @@
         private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.ComboBox cbxMatiere;
+        private System.Windows.Forms.Button btnQuitter;
     }
 }

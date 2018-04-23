@@ -61,6 +61,7 @@ namespace GestionCollege
         {
             frmGestionDepartement gestion = new frmGestionDepartement();
             gestion.Show();
+            
         }
 
         private void btnFiche_Click(object sender, EventArgs e)

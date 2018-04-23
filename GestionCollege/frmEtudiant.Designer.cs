@@ -120,6 +120,7 @@
             this.Controls.Add(this.lblEtudiants);
             this.Controls.Add(this.cbxEtudiants);
             this.Name = "frmEtudiant";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Etudiant";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEtudiant_FormClosing);
             this.ResumeLayout(false);

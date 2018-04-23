@@ -130,6 +130,7 @@
             this.Controls.Add(this.btnEnseignants);
             this.Controls.Add(this.btnDepartements);
             this.Name = "frmAccueil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Accueil";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAccueil_FormClosing);
             this.ResumeLayout(false);

@@ -305,6 +305,7 @@
             this.Controls.Add(this.btnConfirmer);
             this.Controls.Add(this.lstMatieres);
             this.Name = "frmGestionMatiere";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion Matiere";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGestionMatiere_FormClosing);
             this.pnlModifierMatieres.ResumeLayout(false);

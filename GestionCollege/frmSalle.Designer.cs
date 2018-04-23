@@ -113,6 +113,7 @@
             this.Controls.Add(this.lstSalle);
             this.Controls.Add(this.lblSalle);
             this.Name = "frmSalle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Salle de cours";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSalle_FormClosing);
             this.ResumeLayout(false);

@@ -279,6 +279,7 @@
             this.Controls.Add(this.lstDepartement);
             this.DoubleBuffered = true;
             this.Name = "frmDepartement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Departement";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDepartement_FormClosing);
             this.ResumeLayout(false);

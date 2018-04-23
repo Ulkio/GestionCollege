@@ -86,6 +86,7 @@
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.txtDepartement);
             this.Name = "frmGestionDepartement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion Departement";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGestionDepartement_FormClosing);
             this.ResumeLayout(false);

@@ -280,9 +280,9 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmGestionEnseignant";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion Enseignant";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGestionEnseignant_FormClosing);
-            this.Load += new System.EventHandler(this.GestionEnseignant_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

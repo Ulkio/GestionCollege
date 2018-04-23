@@ -338,6 +338,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "frmGestionEtudiant";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion Etudiant";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGestionEtudiant_FormClosing);
             this.pnlMatiereEtudiant.ResumeLayout(false);

@@ -45,6 +45,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lstDepartement = new System.Windows.Forms.ListBox();
             this.btnAccueil = new System.Windows.Forms.Button();
+            this.btnQuitter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtMoyenne
@@ -253,6 +254,20 @@
             this.btnAccueil.UseVisualStyleBackColor = false;
             this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
+            // btnQuitter
+            // 
+            this.btnQuitter.BackColor = System.Drawing.Color.Transparent;
+            this.btnQuitter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnQuitter.Font = new System.Drawing.Font("Bradley Hand ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuitter.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnQuitter.Location = new System.Drawing.Point(577, 316);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(105, 32);
+            this.btnQuitter.TabIndex = 47;
+            this.btnQuitter.Text = "Quitter";
+            this.btnQuitter.UseVisualStyleBackColor = false;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
+            // 
             // frmDepartement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,6 +276,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(845, 389);
+            this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnAccueil);
             this.Controls.Add(this.txtMoyenne);
             this.Controls.Add(this.label5);
@@ -278,10 +294,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstDepartement);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDepartement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Departement";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDepartement_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,5 +321,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lstDepartement;
         private System.Windows.Forms.Button btnAccueil;
+        private System.Windows.Forms.Button btnQuitter;
     }
 }

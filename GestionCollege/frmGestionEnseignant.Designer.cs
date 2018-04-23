@@ -72,7 +72,7 @@
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(99, 32);
             this.btnAnnuler.TabIndex = 32;
-            this.btnAnnuler.Text = "Quitter";
+            this.btnAnnuler.Text = "Fermer";
             this.btnAnnuler.UseVisualStyleBackColor = true;
             this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
@@ -278,6 +278,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmGestionEnseignant";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

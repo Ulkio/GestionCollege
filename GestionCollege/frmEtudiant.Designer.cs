@@ -35,6 +35,7 @@
             this.btnAjouter = new System.Windows.Forms.Button();
             this.lblEtudiants = new System.Windows.Forms.Label();
             this.cbxEtudiants = new System.Windows.Forms.ComboBox();
+            this.btnQuitter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAccueil
@@ -106,12 +107,23 @@
             this.cbxEtudiants.Size = new System.Drawing.Size(121, 21);
             this.cbxEtudiants.TabIndex = 13;
             // 
+            // btnQuitter
+            // 
+            this.btnQuitter.Location = new System.Drawing.Point(156, 256);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(75, 23);
+            this.btnQuitter.TabIndex = 21;
+            this.btnQuitter.Text = "QUITTER";
+            this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
+            // 
             // frmEtudiant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GestionCollege.Properties.Resources.EtudiantImageFond;
             this.ClientSize = new System.Drawing.Size(324, 291);
+            this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnAccueil);
             this.Controls.Add(this.btnFiche);
             this.Controls.Add(this.btnEditer);
@@ -119,10 +131,10 @@
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.lblEtudiants);
             this.Controls.Add(this.cbxEtudiants);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEtudiant";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Etudiant";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEtudiant_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,5 +149,6 @@
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Label lblEtudiants;
         private System.Windows.Forms.ComboBox cbxEtudiants;
+        private System.Windows.Forms.Button btnQuitter;
     }
 }

@@ -77,7 +77,9 @@ namespace GestionCollege
             gestionEtudiant.Controls["btnAnnuler"].Visible = true;
         }
 
-        private void frmEtudiant_FormClosing(object sender, FormClosingEventArgs e)
+
+
+        private void btnQuitter_Click(object sender, EventArgs e)
         {
             DialogResult rep;
 
@@ -90,7 +92,7 @@ namespace GestionCollege
             }
             if (rep == DialogResult.No) //si l’arrêt est annulé par l'opérateur
             {
-                e.Cancel = true; // annuler l'événement en cours
+                return; //annuler le ragequit
             }
         }
     }

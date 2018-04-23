@@ -34,6 +34,7 @@
             this.lstSalle = new System.Windows.Forms.ListBox();
             this.lblSalle = new System.Windows.Forms.Label();
             this.btnAccueil = new System.Windows.Forms.Button();
+            this.btnQuitter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstMatieres
@@ -99,6 +100,16 @@
             this.btnAccueil.UseVisualStyleBackColor = true;
             this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
+            // btnQuitter
+            // 
+            this.btnQuitter.Location = new System.Drawing.Point(92, 203);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(75, 23);
+            this.btnQuitter.TabIndex = 38;
+            this.btnQuitter.Text = "QUITTER";
+            this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
+            // 
             // frmSalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -106,16 +117,17 @@
             this.BackgroundImage = global::GestionCollege.Properties.Resources.Sallefond;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(284, 256);
+            this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnAccueil);
             this.Controls.Add(this.lstMatieres);
             this.Controls.Add(this.lblMatieres);
             this.Controls.Add(this.btnEditerSalle);
             this.Controls.Add(this.lstSalle);
             this.Controls.Add(this.lblSalle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSalle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Salle de cours";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSalle_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,5 +141,6 @@
         private System.Windows.Forms.ListBox lstSalle;
         private System.Windows.Forms.Label lblSalle;
         private System.Windows.Forms.Button btnAccueil;
+        private System.Windows.Forms.Button btnQuitter;
     }
 }

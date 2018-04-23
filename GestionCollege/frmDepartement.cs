@@ -61,7 +61,7 @@ namespace GestionCollege
         {
             frmGestionDepartement gestion = new frmGestionDepartement();
             gestion.Show();
-            
+
         }
 
         private void btnFiche_Click(object sender, EventArgs e)
@@ -112,8 +112,11 @@ namespace GestionCollege
             this.Close();
         }
 
-        private void frmDepartement_FormClosing(object sender, FormClosingEventArgs e)
+
+
+        private void btnQuitter_Click(object sender, EventArgs e)
         {
+
             DialogResult rep;
 
             rep = MessageBox.Show("Voulez vous vraiment quitter", "Terminer?",
@@ -125,7 +128,7 @@ namespace GestionCollege
             }
             if (rep == DialogResult.No) //si l’arrêt est annulé par l'opérateur
             {
-                e.Cancel = true; // annuler l'événement en cours
+                return; //annuler le ragequit
             }
         }
     }

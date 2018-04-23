@@ -163,7 +163,7 @@
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
             this.btnAnnuler.TabIndex = 33;
-            this.btnAnnuler.Text = "Annuler";
+            this.btnAnnuler.Text = "Fermer";
             this.btnAnnuler.UseVisualStyleBackColor = true;
             this.btnAnnuler.Visible = false;
             this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
@@ -337,6 +337,7 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGestionEtudiant";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion Etudiant";

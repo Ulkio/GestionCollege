@@ -53,7 +53,7 @@
             this.btnQuitter.Name = "btnQuitter";
             this.btnQuitter.Size = new System.Drawing.Size(80, 26);
             this.btnQuitter.TabIndex = 10;
-            this.btnQuitter.Text = "Quitter";
+            this.btnQuitter.Text = "Fermer";
             this.btnQuitter.UseVisualStyleBackColor = true;
             this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
@@ -85,6 +85,7 @@
             this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.txtDepartement);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGestionDepartement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion Departement";

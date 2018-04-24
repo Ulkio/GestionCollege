@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace GestionCollege
 {
-    public partial class frmEnseignant : Form
+    public partial class Enseignant : Form
     {
-        public frmEnseignant()
+        public Enseignant()
         {
             InitializeComponent();
         }
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
-            frmGestionEnseignant gestion = new frmGestionEnseignant();
+            GestionEnseignant gestion = new GestionEnseignant();
             try
             {
                 gestion.Controls["txtNom"].Text = lstEnseignants.SelectedItem.ToString();
@@ -41,7 +41,7 @@ namespace GestionCollege
 
         private void btnFiche_Click(object sender, EventArgs e)
         {
-            frmGestionEnseignant gestion = new frmGestionEnseignant();
+            GestionEnseignant gestion = new GestionEnseignant();
             gestion.Show();
             gestion.Controls["txtNom"].Enabled = false;
             gestion.Controls["txtPrenom"].Enabled = false;
@@ -53,12 +53,13 @@ namespace GestionCollege
             gestion.Controls["btnOK"].Visible = true;
             gestion.Controls["btnValiderEnseignant"].Visible = false;
             gestion.Controls["panel1"].Visible = true;
-            gestion.Controls["btnImprimer"].Visible = true;
+
+
         }
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            frmGestionEnseignant gestion = new frmGestionEnseignant();
+            GestionEnseignant gestion = new GestionEnseignant();
             gestion.Show();
 
         }
@@ -69,24 +70,6 @@ namespace GestionCollege
             this.Hide();
             accueil.ShowDialog();
             this.Close();
-        }
-
-
-        private void btnQuitter_Click(object sender, EventArgs e)
-        {
-            DialogResult rep;
-
-            rep = MessageBox.Show("Voulez vous vraiment quitter", "Terminer?",
-            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (rep == DialogResult.Yes) //si l’arrêt est annulé par l'opérateur
-            {
-                Application.ExitThread();
-
-            }
-            if (rep == DialogResult.No) //si l’arrêt est annulé par l'opérateur
-            {
-                return; //annuler le ragequit
-            }
         }
     }
 }

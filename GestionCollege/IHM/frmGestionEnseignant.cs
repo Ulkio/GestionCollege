@@ -17,7 +17,7 @@ namespace GestionCollege
             InitializeComponent();
         }
 
-        private void btnAnnuler_Click(object sender, EventArgs e)
+        private void btnFermer_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -27,14 +27,5 @@ namespace GestionCollege
             this.Close();
         }
 
-        private void btnValiderEnseignant_Click(object sender, EventArgs e)
-        {
-            panel1.Visible = true;
-        }
-
-        private void frmGestionEnseignant_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-        }
     }
 }

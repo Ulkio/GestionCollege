@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\DAOenseignant.cs" />
+    <Compile Include="Enseignant.cs" />
     <Compile Include="IHM\frmDepartement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,7 +116,7 @@
     <Compile Include="IHM\frmGestionEnseignant.Designer.cs">
       <DependentUpon>frmGestionEnseignant.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="MODEL\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="IHM\frmDepartement.resx">
       <DependentUpon>frmDepartement.cs</DependentUpon>
@@ -197,9 +199,6 @@
   <ItemGroup>
     <None Include="Resources\GestionSalleFond1.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAO\" />
-    <Folder Include="MODEL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

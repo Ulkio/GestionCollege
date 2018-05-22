@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionEnseignant));
             this.btnOK = new System.Windows.Forms.Button();
-            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.btnFermer = new System.Windows.Forms.Button();
             this.btnConfirmer = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.cbxMatiere = new System.Windows.Forms.ComboBox();
@@ -47,7 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtSalleDeCours = new System.Windows.Forms.TextBox();
-            this.btnValiderEnseignant = new System.Windows.Forms.Button();
             this.btnImprimer = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,17 +64,17 @@
             this.btnOK.Visible = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
-            // btnAnnuler
+            // btnFermer
             // 
-            this.btnAnnuler.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAnnuler.Location = new System.Drawing.Point(613, 396);
-            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(99, 32);
-            this.btnAnnuler.TabIndex = 32;
-            this.btnAnnuler.Text = "Fermer";
-            this.btnAnnuler.UseVisualStyleBackColor = true;
-            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
+            this.btnFermer.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnFermer.Location = new System.Drawing.Point(613, 396);
+            this.btnFermer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnFermer.Name = "btnFermer";
+            this.btnFermer.Size = new System.Drawing.Size(99, 32);
+            this.btnFermer.TabIndex = 32;
+            this.btnFermer.Text = "Fermer";
+            this.btnFermer.UseVisualStyleBackColor = true;
+            this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
             // 
             // btnConfirmer
             // 
@@ -214,7 +213,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(18, 14);
+            this.label1.Location = new System.Drawing.Point(18, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 18);
             this.label1.TabIndex = 17;
@@ -243,18 +242,6 @@
             this.txtSalleDeCours.Size = new System.Drawing.Size(160, 23);
             this.txtSalleDeCours.TabIndex = 30;
             // 
-            // btnValiderEnseignant
-            // 
-            this.btnValiderEnseignant.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnValiderEnseignant.Location = new System.Drawing.Point(21, 175);
-            this.btnValiderEnseignant.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnValiderEnseignant.Name = "btnValiderEnseignant";
-            this.btnValiderEnseignant.Size = new System.Drawing.Size(111, 53);
-            this.btnValiderEnseignant.TabIndex = 35;
-            this.btnValiderEnseignant.Text = "Valider enseignant";
-            this.btnValiderEnseignant.UseVisualStyleBackColor = true;
-            this.btnValiderEnseignant.Click += new System.EventHandler(this.btnValiderEnseignant_Click);
-            // 
             // btnImprimer
             // 
             this.btnImprimer.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -275,10 +262,9 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(737, 444);
             this.Controls.Add(this.btnImprimer);
-            this.Controls.Add(this.btnValiderEnseignant);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.btnConfirmer);
             this.Controls.Add(this.txtDate);
             this.Controls.Add(this.label6);
@@ -297,7 +283,6 @@
             this.Name = "frmGestionEnseignant";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion Enseignant";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGestionEnseignant_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -308,7 +293,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnOK;
-        private System.Windows.Forms.Button btnAnnuler;
+        private System.Windows.Forms.Button btnFermer;
         private System.Windows.Forms.Button btnConfirmer;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbxMatiere;
@@ -325,7 +310,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtSalleDeCours;
-        private System.Windows.Forms.Button btnValiderEnseignant;
         private System.Windows.Forms.Button btnImprimer;
     }
 }

@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\Connect.cs" />
     <Compile Include="DAO\DAOenseignant.cs" />
     <Compile Include="Enseignant.cs" />
     <Compile Include="IHM\frmDepartement.cs">

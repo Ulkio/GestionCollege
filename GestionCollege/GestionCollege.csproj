@@ -45,105 +45,105 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmDepartement.cs">
+    <Compile Include="IHM\frmDepartement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDepartement.Designer.cs">
+    <Compile Include="IHM\frmDepartement.Designer.cs">
       <DependentUpon>frmDepartement.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEnseignant.cs">
+    <Compile Include="IHM\frmEnseignant.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEnseignant.Designer.cs">
+    <Compile Include="IHM\frmEnseignant.Designer.cs">
       <DependentUpon>frmEnseignant.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAccueil.cs">
+    <Compile Include="IHM\frmAccueil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAccueil.Designer.cs">
+    <Compile Include="IHM\frmAccueil.Designer.cs">
       <DependentUpon>frmAccueil.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEtudiant.cs">
+    <Compile Include="IHM\frmEtudiant.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEtudiant.Designer.cs">
+    <Compile Include="IHM\frmEtudiant.Designer.cs">
       <DependentUpon>frmEtudiant.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGestionEtudiant.cs">
+    <Compile Include="IHM\frmGestionEtudiant.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGestionEtudiant.Designer.cs">
+    <Compile Include="IHM\frmGestionEtudiant.Designer.cs">
       <DependentUpon>frmGestionEtudiant.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGestionMatiere.cs">
+    <Compile Include="IHM\frmGestionMatiere.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGestionMatiere.Designer.cs">
+    <Compile Include="IHM\frmGestionMatiere.Designer.cs">
       <DependentUpon>frmGestionMatiere.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGestionSalle.cs">
+    <Compile Include="IHM\frmGestionSalle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGestionSalle.Designer.cs">
+    <Compile Include="IHM\frmGestionSalle.Designer.cs">
       <DependentUpon>frmGestionSalle.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMatiere.cs">
+    <Compile Include="IHM\frmMatiere.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMatiere.Designer.cs">
+    <Compile Include="IHM\frmMatiere.Designer.cs">
       <DependentUpon>frmMatiere.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSalle.cs">
+    <Compile Include="IHM\frmSalle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSalle.Designer.cs">
+    <Compile Include="IHM\frmSalle.Designer.cs">
       <DependentUpon>frmSalle.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGestionDepartement.cs">
+    <Compile Include="IHM\frmGestionDepartement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGestionDepartement.Designer.cs">
+    <Compile Include="IHM\frmGestionDepartement.Designer.cs">
       <DependentUpon>frmGestionDepartement.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGestionEnseignant.cs">
+    <Compile Include="IHM\frmGestionEnseignant.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGestionEnseignant.Designer.cs">
+    <Compile Include="IHM\frmGestionEnseignant.Designer.cs">
       <DependentUpon>frmGestionEnseignant.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmDepartement.resx">
+    <EmbeddedResource Include="IHM\frmDepartement.resx">
       <DependentUpon>frmDepartement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEnseignant.resx">
+    <EmbeddedResource Include="IHM\frmEnseignant.resx">
       <DependentUpon>frmEnseignant.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAccueil.resx">
+    <EmbeddedResource Include="IHM\frmAccueil.resx">
       <DependentUpon>frmAccueil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEtudiant.resx">
+    <EmbeddedResource Include="IHM\frmEtudiant.resx">
       <DependentUpon>frmEtudiant.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGestionEtudiant.resx">
+    <EmbeddedResource Include="IHM\frmGestionEtudiant.resx">
       <DependentUpon>frmGestionEtudiant.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGestionMatiere.resx">
+    <EmbeddedResource Include="IHM\frmGestionMatiere.resx">
       <DependentUpon>frmGestionMatiere.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGestionSalle.resx">
+    <EmbeddedResource Include="IHM\frmGestionSalle.resx">
       <DependentUpon>frmGestionSalle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMatiere.resx">
+    <EmbeddedResource Include="IHM\frmMatiere.resx">
       <DependentUpon>frmMatiere.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSalle.resx">
+    <EmbeddedResource Include="IHM\frmSalle.resx">
       <DependentUpon>frmSalle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGestionDepartement.resx">
+    <EmbeddedResource Include="IHM\frmGestionDepartement.resx">
       <DependentUpon>frmGestionDepartement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGestionEnseignant.resx">
+    <EmbeddedResource Include="IHM\frmGestionEnseignant.resx">
       <DependentUpon>frmGestionEnseignant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -193,6 +193,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\GestionSalleFond1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DAO\" />
+    <Folder Include="MODEL\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

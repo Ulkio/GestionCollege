@@ -17,51 +17,7 @@ namespace GestionCollege
             InitializeComponent();
         }
 
-        private void btnModifier_Click(object sender, EventArgs e)
-        {
-            frmGestionEnseignant gestion = new frmGestionEnseignant();
-            try
-            {
-                gestion.Controls["txtNom"].Text = lstEnseignants.SelectedItem.ToString();
-                gestion.Show();
-
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Veuillez sélectionner un enseignant à modifier");
-            }
-
-        }
-
-        private void btnSupprimer_Click(object sender, EventArgs e)
-        {
-            lstEnseignants.Items.Remove(lstEnseignants.SelectedItem);
-
-        }
-
-        private void btnFiche_Click(object sender, EventArgs e)
-        {
-            frmGestionEnseignant gestion = new frmGestionEnseignant();
-            gestion.Show();
-            gestion.Controls["txtNom"].Enabled = false;
-            gestion.Controls["txtPrenom"].Enabled = false;
-            gestion.Controls["txtTel"].Enabled = false;
-            gestion.Controls["txtMail"].Enabled = false;
-            gestion.Controls["txtDate"].Enabled = false;
-            gestion.Controls["btnConfirmer"].Visible = false;
-            gestion.Controls["btnAnnuler"].Visible = false;
-            gestion.Controls["btnOK"].Visible = true;
-            gestion.Controls["btnValiderEnseignant"].Visible = false;
-            gestion.Controls["panel1"].Visible = true;
-            gestion.Controls["btnImprimer"].Visible = true;
-        }
-
-        private void btnAjouter_Click(object sender, EventArgs e)
-        {
-            frmGestionEnseignant gestion = new frmGestionEnseignant();
-            gestion.Show();
-
-        }
+        
 
         private void btnAccueil_Click(object sender, EventArgs e)
         {

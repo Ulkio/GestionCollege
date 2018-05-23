@@ -70,6 +70,13 @@ namespace GestionCollege
             ClearBox();
         }
 
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            dgvEnseignant.DataSource = daoEnseignant.Search();
+
+            // daoEnseignant.sqlCommand.Parameters.AddWithValue("_SearchValue", txtSearch.Text);
+            //daoEnseignant.sqlCommand.ExecuteReader();
+        }
 
         // RAFRAÎCHIR DATAGRIDVIEW
         public void refresh()

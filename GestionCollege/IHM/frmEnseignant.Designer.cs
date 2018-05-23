@@ -53,6 +53,8 @@
             this.cbxDpt = new System.Windows.Forms.ComboBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEnseignant)).BeginInit();
             this.SuspendLayout();
             // 
@@ -328,6 +330,25 @@
             this.label9.TabIndex = 55;
             this.label9.Text = "ID : ";
             // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(15, 13);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(192, 23);
+            this.txtSearch.TabIndex = 57;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(213, 9);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(134, 34);
+            this.btnSearch.TabIndex = 58;
+            this.btnSearch.Text = "Recherche par nom";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // frmEnseignant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
@@ -335,6 +356,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
@@ -398,5 +421,7 @@
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView dgvEnseignant;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

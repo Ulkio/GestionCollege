@@ -14,11 +14,6 @@ namespace GestionCollege
     {
         //ATTRIBUTS
         private DAOenseignant daoEnseignant;
-        private List<Enseignant> listEnseignant = new List<Enseignant>();
-       // private DataTable dt = new DataTable();
-
-
-
 
         //CONSTRUCTEUR
         public frmEnseignant()
@@ -34,7 +29,6 @@ namespace GestionCollege
         }
 
 
-
         //BOUTONS CRUD
         private void btnAjouter_Click(object sender, EventArgs e)
         {
@@ -44,12 +38,11 @@ namespace GestionCollege
             daoEnseignant.sqlCommand.Parameters.AddWithValue("@tel", txtTel.Text);
             daoEnseignant.sqlCommand.Parameters.AddWithValue("@mail", txtMail.Text);
             daoEnseignant.sqlCommand.Parameters.AddWithValue("@resp", chkResp.Checked);
-            daoEnseignant.sqlCommand.Parameters.AddWithValue("@date", txtDate.Text);
+            daoEnseignant.sqlCommand.Parameters.AddWithValue("@date", Convert.ToDateTime(txtDate.Text));
             daoEnseignant.sqlCommand.Parameters.AddWithValue("@idDpt", cbxDpt.SelectedItem);
             daoEnseignant.sqlCommand.Parameters.AddWithValue("@idMat", cbxMt.SelectedItem);
             daoEnseignant.sqlCommand.ExecuteNonQuery();
             refresh();
-
         }
 
         private void btnEditer_Click(object sender, EventArgs e)
@@ -68,11 +61,6 @@ namespace GestionCollege
             refresh();
         }
 
-        private void btnFiche_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
             daoEnseignant.Delete();
@@ -83,13 +71,13 @@ namespace GestionCollege
         }
 
 
-
-
+        // RAFRAÎCHIR DATAGRIDVIEW
         public void refresh()
         {
             daoEnseignant = new DAOenseignant();
             dgvEnseignant.DataSource = daoEnseignant.DisplayData();
         }
+        // RESET CONTROLS
         public void ClearBox()
         {
             txtId.Clear();
@@ -105,7 +93,7 @@ namespace GestionCollege
         }
 
 
-
+        // CLIC SUR HEADER -> FICHE ENSEIGNANT
         private void dgvEnseignant_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (dgvEnseignant.Rows[e.RowIndex].Cells[0].Value.ToString() != "")
@@ -125,15 +113,7 @@ namespace GestionCollege
         }
 
 
-
-
-
-
-
-
-
-
-        //ACCUEIL ET QUITTER
+        //ACCUEIL
         private void btnAccueil_Click(object sender, EventArgs e)
         {
             frmAccueil accueil = new frmAccueil();
@@ -142,7 +122,7 @@ namespace GestionCollege
             this.Close();
         }
 
-
+        //QUITTER
         private void btnQuitter_Click(object sender, EventArgs e)
         {
             DialogResult rep;

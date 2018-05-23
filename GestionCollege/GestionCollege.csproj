@@ -75,24 +75,6 @@
     <Compile Include="IHM\frmEtudiant.Designer.cs">
       <DependentUpon>frmEtudiant.cs</DependentUpon>
     </Compile>
-    <Compile Include="IHM\frmGestionEtudiant.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IHM\frmGestionEtudiant.Designer.cs">
-      <DependentUpon>frmGestionEtudiant.cs</DependentUpon>
-    </Compile>
-    <Compile Include="IHM\frmGestionMatiere.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IHM\frmGestionMatiere.Designer.cs">
-      <DependentUpon>frmGestionMatiere.cs</DependentUpon>
-    </Compile>
-    <Compile Include="IHM\frmGestionSalle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IHM\frmGestionSalle.Designer.cs">
-      <DependentUpon>frmGestionSalle.cs</DependentUpon>
-    </Compile>
     <Compile Include="IHM\frmMatiere.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,12 +86,6 @@
     </Compile>
     <Compile Include="IHM\frmSalle.Designer.cs">
       <DependentUpon>frmSalle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="IHM\frmGestionDepartement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IHM\frmGestionDepartement.Designer.cs">
-      <DependentUpon>frmGestionDepartement.cs</DependentUpon>
     </Compile>
     <Compile Include="MODEL\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -125,23 +101,11 @@
     <EmbeddedResource Include="IHM\frmEtudiant.resx">
       <DependentUpon>frmEtudiant.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IHM\frmGestionEtudiant.resx">
-      <DependentUpon>frmGestionEtudiant.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="IHM\frmGestionMatiere.resx">
-      <DependentUpon>frmGestionMatiere.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="IHM\frmGestionSalle.resx">
-      <DependentUpon>frmGestionSalle.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="IHM\frmMatiere.resx">
       <DependentUpon>frmMatiere.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IHM\frmSalle.resx">
       <DependentUpon>frmSalle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="IHM\frmGestionDepartement.resx">
-      <DependentUpon>frmGestionDepartement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -15,7 +15,7 @@ namespace GestionCollege
         //ATTRIBUTS
         private DAOenseignant daoEnseignant;
         private List<Enseignant> listEnseignant = new List<Enseignant>();
-        private DataTable dt = new DataTable();
+       // private DataTable dt = new DataTable();
 
 
 

@@ -40,11 +40,11 @@ namespace GestionCollege
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
-            frmGestionDepartement gestion = new frmGestionDepartement();
+            //frmGestionDepartement gestion = new frmGestionDepartement();
             try
             {
-                gestion.Controls["txtDepartement"].Text = lstDepartement.SelectedItem.ToString();
-                gestion.Show();
+               // gestion.Controls["txtDepartement"].Text = lstDepartement.SelectedItem.ToString();
+                //gestion.Show();
 
             }
             catch (Exception)
@@ -59,8 +59,8 @@ namespace GestionCollege
         }
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            frmGestionDepartement gestion = new frmGestionDepartement();
-            gestion.Show();
+            //frmGestionDepartement gestion = new frmGestionDepartement();
+            //gestion.Show();
 
         }
 

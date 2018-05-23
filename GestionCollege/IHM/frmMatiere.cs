@@ -19,25 +19,25 @@ namespace GestionCollege
 
         private void btnEditerDepartement_Click(object sender, EventArgs e)
         {
-            frmGestionDepartement gestionDepartement = new frmGestionDepartement();
-            gestionDepartement.ShowDialog();
+            //frmGestionDepartement gestionDepartement = new frmGestionDepartement();
+            //gestionDepartement.ShowDialog();
         }
 
         private void btnEditerMatiere_Click(object sender, EventArgs e)
         {
-            frmGestionMatiere gestionMatiere = new frmGestionMatiere();
-            gestionMatiere.ShowDialog();
+            //frmGestionMatiere gestionMatiere = new frmGestionMatiere();
+            //gestionMatiere.ShowDialog();
         }
 
         private void btnFicheEtudiants_Click(object sender, EventArgs e)
         {
-            frmGestionEtudiant gestionEtudiant = new frmGestionEtudiant();
-            gestionEtudiant.Show();
-            gestionEtudiant.Controls["textBox1"].Enabled = false;
-            gestionEtudiant.Controls["textBox2"].Enabled = false;
-            gestionEtudiant.Controls["textBox3"].Enabled = false;
-            gestionEtudiant.Controls["textBox4"].Enabled = false;
-            gestionEtudiant.Controls["textBox5"].Enabled = false;
+            //frmGestionEtudiant gestionEtudiant = new frmGestionEtudiant();
+            //gestionEtudiant.Show();
+            //gestionEtudiant.Controls["textBox1"].Enabled = false;
+            //gestionEtudiant.Controls["textBox2"].Enabled = false;
+            //gestionEtudiant.Controls["textBox3"].Enabled = false;
+            //gestionEtudiant.Controls["textBox4"].Enabled = false;
+            //gestionEtudiant.Controls["textBox5"].Enabled = false;
         }
 
         private void btnAjouterNote_Click(object sender, EventArgs e)

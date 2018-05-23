@@ -27,8 +27,8 @@ namespace GestionCollege
 
         private void btnEditerSalle_Click(object sender, EventArgs e)
         {
-            frmGestionSalle gestionSalle = new frmGestionSalle();           
-            gestionSalle.ShowDialog();   
+            //frmGestionSalle gestionSalle = new frmGestionSalle();           
+            //gestionSalle.ShowDialog();   
         }
 
 

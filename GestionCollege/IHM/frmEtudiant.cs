@@ -25,25 +25,25 @@ namespace GestionCollege
 
         private void btnFiche_Click(object sender, EventArgs e)
         {
-            frmGestionEtudiant gestionEtudiant = new frmGestionEtudiant();
-            gestionEtudiant.Show();
-            gestionEtudiant.Controls["textBox1"].Enabled = false;
-            gestionEtudiant.Controls["textBox2"].Enabled = false;
-            gestionEtudiant.Controls["textBox3"].Enabled = false;
-            gestionEtudiant.Controls["textBox4"].Enabled = false;
-            gestionEtudiant.Controls["textBox5"].Enabled = false;
+            //frmGestionEtudiant gestionEtudiant = new frmGestionEtudiant();
+            //gestionEtudiant.Show();
+            //gestionEtudiant.Controls["textBox1"].Enabled = false;
+            //gestionEtudiant.Controls["textBox2"].Enabled = false;
+            //gestionEtudiant.Controls["textBox3"].Enabled = false;
+            //gestionEtudiant.Controls["textBox4"].Enabled = false;
+            //gestionEtudiant.Controls["textBox5"].Enabled = false;
 
         }
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            frmGestionEtudiant gestionEtudiant = new frmGestionEtudiant();
-            gestionEtudiant.Show();
-            gestionEtudiant.Controls["lblMatiereFiche"].Visible = false;
-            gestionEtudiant.Controls["lstCloneMatiereEtudiante"].Visible = false;
-            gestionEtudiant.Controls["btnOk"].Visible = false;
-            gestionEtudiant.Controls["btnValiderEtudiant"].Visible = true;
-            gestionEtudiant.Controls["btnAnnuler"].Visible = true;
+            //frmGestionEtudiant gestionEtudiant = new frmGestionEtudiant();
+            //gestionEtudiant.Show();
+            //gestionEtudiant.Controls["lblMatiereFiche"].Visible = false;
+            //gestionEtudiant.Controls["lstCloneMatiereEtudiante"].Visible = false;
+            //gestionEtudiant.Controls["btnOk"].Visible = false;
+            //gestionEtudiant.Controls["btnValiderEtudiant"].Visible = true;
+            //gestionEtudiant.Controls["btnAnnuler"].Visible = true;
         }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
@@ -68,13 +68,13 @@ namespace GestionCollege
 
         private void btnEditer_Click(object sender, EventArgs e)
         {
-            frmGestionEtudiant gestionEtudiant = new frmGestionEtudiant();
-            gestionEtudiant.Show();
-            gestionEtudiant.Controls["lblMatiereFiche"].Visible = false;
-            gestionEtudiant.Controls["lstCloneMatiereEtudiante"].Visible = false;
-            gestionEtudiant.Controls["btnOk"].Visible = false;
-            gestionEtudiant.Controls["btnValiderEtudiant"].Visible = true;
-            gestionEtudiant.Controls["btnAnnuler"].Visible = true;
+            //frmGestionEtudiant gestionEtudiant = new frmGestionEtudiant();
+            //gestionEtudiant.Show();
+            //gestionEtudiant.Controls["lblMatiereFiche"].Visible = false;
+            //gestionEtudiant.Controls["lstCloneMatiereEtudiante"].Visible = false;
+            //gestionEtudiant.Controls["btnOk"].Visible = false;
+            //gestionEtudiant.Controls["btnValiderEtudiant"].Visible = true;
+            //gestionEtudiant.Controls["btnAnnuler"].Visible = true;
         }
 
 

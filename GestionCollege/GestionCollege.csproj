@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="DAO\Connect.cs" />
     <Compile Include="DAO\DAOenseignant.cs" />
+    <Compile Include="DAO\DAOEtudiant.cs" />
     <Compile Include="MODEL\Enseignant.cs" />
     <Compile Include="IHM\frmDepartement.cs">
       <SubType>Form</SubType>
@@ -87,6 +88,7 @@
     <Compile Include="IHM\frmSalle.Designer.cs">
       <DependentUpon>frmSalle.cs</DependentUpon>
     </Compile>
+    <Compile Include="MODEL\Etudiant.cs" />
     <Compile Include="MODEL\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="IHM\frmDepartement.resx">

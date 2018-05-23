@@ -7,20 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace GestionCollege
 {
     public partial class frmEtudiant : Form
     {
+
+        
+
         public frmEtudiant()
         {
-            InitializeComponent();
-            List<string> Etudiants = new List<string>();
-            Etudiants.AddRange(new string[] { "Jean", "Guillaume", "Maxence" });
-            foreach (string value in Etudiants)
-            {
-                cbxEtudiants.Items.Add(value);
-            }
+            InitializeComponent();         
         }
 
         private void btnFiche_Click(object sender, EventArgs e)
@@ -48,8 +46,7 @@ namespace GestionCollege
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-            cbxEtudiants.Items.Remove(cbxEtudiants.SelectedItem);
-            cbxEtudiants.Text = ("");
+            
         }
 
 
@@ -95,5 +92,7 @@ namespace GestionCollege
                 return; //annuler le ragequit
             }
         }
+
+
     }
 }

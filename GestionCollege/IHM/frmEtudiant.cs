@@ -14,11 +14,19 @@ namespace GestionCollege
     public partial class frmEtudiant : Form
     {
 
-        
+        private DAO.DAOetudiant daoEtu;
+        private DAO.Connect connect;
+
 
         public frmEtudiant()
         {
-            InitializeComponent();         
+            InitializeComponent();
+        }
+
+        private void frmEtudiant_Load(object sender, EventArgs e)
+        {
+            daoEtu = new DAO.DAOetudiant();    
+            dgvEtudiant.DataSource = daoEtu.DisplayData();
         }
 
         private void btnFiche_Click(object sender, EventArgs e)
@@ -35,18 +43,27 @@ namespace GestionCollege
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            //frmGestionEtudiant gestionEtudiant = new frmGestionEtudiant();
-            //gestionEtudiant.Show();
-            //gestionEtudiant.Controls["lblMatiereFiche"].Visible = false;
-            //gestionEtudiant.Controls["lstCloneMatiereEtudiante"].Visible = false;
-            //gestionEtudiant.Controls["btnOk"].Visible = false;
-            //gestionEtudiant.Controls["btnValiderEtudiant"].Visible = true;
-            //gestionEtudiant.Controls["btnAnnuler"].Visible = true;
+            try
+            {
+                daoEtu.save();
+                daoEtu.sqlCde.Parameters.AddWithValue("@nom", txtNom.Text);
+                daoEtu.sqlCde.Parameters.AddWithValue("@prenom", txtPrenom.Text);
+                daoEtu.sqlCde.Parameters.AddWithValue("@date", txtDateEntree.Text);
+                daoEtu.sqlCde.Parameters.AddWithValue("@tel", txtTel.Text);
+                daoEtu.sqlCde.Parameters.AddWithValue("@mail", txtMail.Text);
+                daoEtu.sqlCde.ExecuteNonQuery();
+                MessageBox.Show("Enregistrement réeussi");
+                dgvEtudiant.DataSource = daoEtu.DisplayData();
+            }
+            catch
+            {
+                MessageBox.Show("Veuillez spécifier les caractéristiques de l'étudiant");
+            }
         }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-            
+
         }
 
 

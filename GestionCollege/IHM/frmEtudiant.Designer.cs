@@ -237,6 +237,7 @@
             this.Name = "frmEtudiant";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Etudiant";
+            this.Load += new System.EventHandler(this.frmEtudiant_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEtudiant)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

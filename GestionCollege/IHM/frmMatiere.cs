@@ -57,18 +57,18 @@ namespace GestionCollege
 
         private void btnFicheEnseignants_Click(object sender, EventArgs e)
         {
-            frmGestionEnseignant gestion = new frmGestionEnseignant();
-            gestion.Show();
-            gestion.Controls["txtNom"].Enabled = false;
-            gestion.Controls["txtPrenom"].Enabled = false;
-            gestion.Controls["txtTel"].Enabled = false;
-            gestion.Controls["txtMail"].Enabled = false;
-            gestion.Controls["txtDate"].Enabled = false;
-            gestion.Controls["btnConfirmer"].Visible = false;
-            gestion.Controls["btnAnnuler"].Visible = false;
-            gestion.Controls["btnOK"].Visible = true;
-            gestion.Controls["btnValiderEnseignant"].Visible = false;
-            gestion.Controls["panel1"].Visible = true;
+            //frmGestionEnseignant gestion = new frmGestionEnseignant();
+            //gestion.Show();
+            //gestion.Controls["txtNom"].Enabled = false;
+            //gestion.Controls["txtPrenom"].Enabled = false;
+            //gestion.Controls["txtTel"].Enabled = false;
+            //gestion.Controls["txtMail"].Enabled = false;
+            //gestion.Controls["txtDate"].Enabled = false;
+            //gestion.Controls["btnConfirmer"].Visible = false;
+            //gestion.Controls["btnAnnuler"].Visible = false;
+            //gestion.Controls["btnOK"].Visible = true;
+            //gestion.Controls["btnValiderEnseignant"].Visible = false;
+            //gestion.Controls["panel1"].Visible = true;
         }
 
         private void btnAccueil_Click(object sender, EventArgs e)

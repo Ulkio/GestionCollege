@@ -50,7 +50,7 @@
   <ItemGroup>
     <Compile Include="DAO\Connect.cs" />
     <Compile Include="DAO\DAOenseignant.cs" />
-    <Compile Include="Enseignant.cs" />
+    <Compile Include="MODEL\Enseignant.cs" />
     <Compile Include="IHM\frmDepartement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,12 +111,6 @@
     <Compile Include="IHM\frmGestionDepartement.Designer.cs">
       <DependentUpon>frmGestionDepartement.cs</DependentUpon>
     </Compile>
-    <Compile Include="IHM\frmGestionEnseignant.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IHM\frmGestionEnseignant.Designer.cs">
-      <DependentUpon>frmGestionEnseignant.cs</DependentUpon>
-    </Compile>
     <Compile Include="MODEL\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="IHM\frmDepartement.resx">
@@ -148,9 +142,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IHM\frmGestionDepartement.resx">
       <DependentUpon>frmGestionDepartement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="IHM\frmGestionEnseignant.resx">
-      <DependentUpon>frmGestionEnseignant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

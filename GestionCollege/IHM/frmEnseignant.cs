@@ -14,6 +14,7 @@ namespace GestionCollege
     {
         //ATTRIBUTS
         private DAOenseignant daoEnseignant;
+        DataTable datatable;
 
         //CONSTRUCTEUR
         public frmEnseignant()
@@ -25,6 +26,7 @@ namespace GestionCollege
         private void frmEnseignant_Load(object sender, EventArgs e)
         {
             daoEnseignant = new DAOenseignant();
+            datatable = new DataTable();
             dgvEnseignant.DataSource = daoEnseignant.DisplayData();
         }
 
@@ -72,10 +74,9 @@ namespace GestionCollege
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            daoEnseignant = new DAOenseignant();
             dgvEnseignant.DataSource = daoEnseignant.Search();
-
-            // daoEnseignant.sqlCommand.Parameters.AddWithValue("_SearchValue", txtSearch.Text);
-            //daoEnseignant.sqlCommand.ExecuteReader();
+            daoEnseignant.sqlCommand.Parameters.AddWithValue("@nom", txtSearch.Text);
         }
 
         // RAFRAÎCHIR DATAGRIDVIEW
@@ -98,7 +99,15 @@ namespace GestionCollege
             cbxMt.SelectedIndex = -1;
 
         }
+         // METHODE POUR FILTRER SELON RECHERCHE
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            DataView DV = new DataView(daoEnseignant.DisplayData());
+            
+            DV.RowFilter = string.Format("Nom LIKE '%{0}%'", txtSearch.Text);
 
+            dgvEnseignant.DataSource = DV;
+        }
 
         // CLIC SUR HEADER -> FICHE ENSEIGNANT
         private void dgvEnseignant_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -146,5 +155,7 @@ namespace GestionCollege
                 return; //annuler le ragequit
             }
         }
+
+
     }
 }

@@ -52,10 +52,10 @@ namespace GestionCollege
         }
         public DataTable Search()
         {
+            DAOconnect = new DAO.Connect();
             DataTable dtSearch = new DataTable();
-            adapter = new MySqlDataAdapter("SELECT * FROM enseignant WHERE nomEnseignant LIKE CONCAT('%',_SearchValue,'%')", DAOconnect.GetSqlConnect());
+            adapter = new MySqlDataAdapter("SELECT * FROM enseignant WHERE nomEnseignant LIKE '@nom')", DAOconnect.GetSqlConnect());
             adapter.Fill(dtSearch);
-            //sqlCommand = new MySqlCommand("SELECT * FROM enseignant WHERE nomEnseignant LIKE CONCAT('%',_SearchValue,'%')", DAOconnect.GetSqlConnect());
             return dtSearch;
         }
     }

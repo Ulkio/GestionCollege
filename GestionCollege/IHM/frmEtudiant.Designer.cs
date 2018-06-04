@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnAccueil = new System.Windows.Forms.Button();
-            this.btnFiche = new System.Windows.Forms.Button();
             this.btnEditer = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
@@ -46,6 +45,8 @@
             this.txtMail = new System.Windows.Forms.TextBox();
             this.txtDateEntree = new System.Windows.Forms.TextBox();
             this.dgvEtudiant = new System.Windows.Forms.DataGridView();
+            this.lblID = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEtudiant)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,16 +59,6 @@
             this.btnAccueil.Text = "ACCUEIL";
             this.btnAccueil.UseVisualStyleBackColor = true;
             this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
-            // 
-            // btnFiche
-            // 
-            this.btnFiche.Location = new System.Drawing.Point(12, 331);
-            this.btnFiche.Name = "btnFiche";
-            this.btnFiche.Size = new System.Drawing.Size(220, 60);
-            this.btnFiche.TabIndex = 18;
-            this.btnFiche.Text = "Fiche";
-            this.btnFiche.UseVisualStyleBackColor = true;
-            this.btnFiche.Click += new System.EventHandler(this.btnFiche_Click);
             // 
             // btnEditer
             // 
@@ -208,6 +199,23 @@
             this.dgvEtudiant.Size = new System.Drawing.Size(439, 191);
             this.dgvEtudiant.TabIndex = 32;
             // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Location = new System.Drawing.Point(15, 247);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(18, 13);
+            this.lblID.TabIndex = 33;
+            this.lblID.Text = "ID";
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(120, 240);
+            this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 34;
+            // 
             // frmEtudiant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,6 +223,8 @@
             this.BackgroundImage = global::GestionCollege.Properties.Resources.EtudiantImageFond;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.lblID);
             this.Controls.Add(this.dgvEtudiant);
             this.Controls.Add(this.txtDateEntree);
             this.Controls.Add(this.txtMail);
@@ -228,7 +238,6 @@
             this.Controls.Add(this.lblNom);
             this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnAccueil);
-            this.Controls.Add(this.btnFiche);
             this.Controls.Add(this.btnEditer);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnAjouter);
@@ -247,7 +256,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnAccueil;
-        private System.Windows.Forms.Button btnFiche;
         private System.Windows.Forms.Button btnEditer;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button btnAjouter;
@@ -264,5 +272,7 @@
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.TextBox txtDateEntree;
         private System.Windows.Forms.DataGridView dgvEtudiant;
+        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.TextBox txtId;
     }
 }

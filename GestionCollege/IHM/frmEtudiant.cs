@@ -63,7 +63,11 @@ namespace GestionCollege
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-
+            daoEtu.delete();
+            daoEtu.sqlCde.Parameters.AddWithValue("@id", txtId.Text);
+            daoEtu.sqlCde.ExecuteNonQuery();
+            refresh();
+            
         }
 
 
@@ -110,6 +114,13 @@ namespace GestionCollege
             }
         }
 
+
+        //Méthode de rafraichissement des données.
+        public void refresh()
+        {
+            daoEtu = new DAO.DAOetudiant();
+            dgvEtudiant.DataSource = daoEtu.DisplayData();
+        }
 
     }
 }

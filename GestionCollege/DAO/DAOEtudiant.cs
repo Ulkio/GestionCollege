@@ -94,5 +94,6 @@ namespace GestionCollege.DAO
         {
             sqlCde = new MySqlCommand("update etudiant set nomEtudiant = @nom, prenomEtudiant = @prenom where idEtudiant = @id", daoConnect.GetSqlConnect());
         }
+
     }
 }

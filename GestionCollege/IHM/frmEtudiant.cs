@@ -122,5 +122,17 @@ namespace GestionCollege
             dgvEtudiant.DataSource = daoEtu.DisplayData();
         }
 
+        private void dgvEtudiant_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (dgvEtudiant.Rows[e.RowIndex].Cells[0].Value.ToString() != "")
+            {
+                txtId.Text = dgvEtudiant.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtDateEntree.Text = dgvEtudiant.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtNom.Text = dgvEtudiant.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtPrenom.Text = dgvEtudiant.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txtTel.Text = dgvEtudiant.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txtMail.Text = dgvEtudiant.Rows[e.RowIndex].Cells[5].Value.ToString();
+            }
+        }
     }
 }

@@ -198,6 +198,7 @@
             this.dgvEtudiant.Name = "dgvEtudiant";
             this.dgvEtudiant.Size = new System.Drawing.Size(439, 191);
             this.dgvEtudiant.TabIndex = 32;
+            this.dgvEtudiant.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvEtudiant_RowHeaderMouseClick);
             // 
             // lblID
             // 

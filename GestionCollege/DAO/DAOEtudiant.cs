@@ -71,7 +71,7 @@ namespace GestionCollege.DAO
             daoConnect = new Connect();//On instancie une connexion
 
             dt = new DataTable();//:On instancie une DataTable
-            adapt = new MySqlDataAdapter("select * from etudiant", daoConnect.GetSqlConnect());//On instancie un adapter avec en paramètres la requête et la connexion)
+            adapt = new MySqlDataAdapter("select idEtudiant AS ID, DATE_FORMAT(dateEntreeEtudiant, '%d/%m/%Y') AS \"Date d'entree\", nomEtudiant AS Nom, prenomEtudiant AS Prenom, telEtudiant AS Telephone, mailEtudiant AS Mail from etudiant", daoConnect.GetSqlConnect());//On instancie un adapter avec en paramètres la requête et la connexion)
             adapt.Fill(dt);//On remplit avec la method fill() de l’adapter, la datatable dt
             return dt;//On retourne le table pour la faire correspondre au datagridview du formulaire
         }

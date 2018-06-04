@@ -92,7 +92,7 @@ namespace GestionCollege.DAO
         //Méthode pour modifier un étudiant en base de données
         public void update()
         {
-            sqlCde = new MySqlCommand("update etudiant set nomEtudiant = @nom, prenomEtudiant = @prenom where idEtudiant = @id", daoConnect.GetSqlConnect());
+            sqlCde = new MySqlCommand("update etudiant set nomEtudiant = @nom, prenomEtudiant = @prenom, dateEntreeEtudiant = @date , telEtudiant = @tel, mailEtudiant = @mail where idEtudiant = @id", daoConnect.GetSqlConnect());
         }
 
     }

@@ -67,7 +67,7 @@ namespace GestionCollege
             daoEtu.sqlCde.Parameters.AddWithValue("@id", txtId.Text);
             daoEtu.sqlCde.ExecuteNonQuery();
             refresh();
-            
+            clearBox();            
         }
 
 
@@ -86,13 +86,17 @@ namespace GestionCollege
 
         private void btnEditer_Click(object sender, EventArgs e)
         {
-            //frmGestionEtudiant gestionEtudiant = new frmGestionEtudiant();
-            //gestionEtudiant.Show();
-            //gestionEtudiant.Controls["lblMatiereFiche"].Visible = false;
-            //gestionEtudiant.Controls["lstCloneMatiereEtudiante"].Visible = false;
-            //gestionEtudiant.Controls["btnOk"].Visible = false;
-            //gestionEtudiant.Controls["btnValiderEtudiant"].Visible = true;
-            //gestionEtudiant.Controls["btnAnnuler"].Visible = true;
+            daoEtu.update();
+            daoEtu.sqlCde.Parameters.AddWithValue("@nom", txtNom.Text);
+            daoEtu.sqlCde.Parameters.AddWithValue("@prenom", txtPrenom.Text);
+            daoEtu.sqlCde.Parameters.AddWithValue("@date", Convert.ToDateTime(txtDateEntree.Text));
+            daoEtu.sqlCde.Parameters.AddWithValue("@tel", txtTel.Text);
+            daoEtu.sqlCde.Parameters.AddWithValue("@mail", txtMail.Text);
+            daoEtu.sqlCde.Parameters.AddWithValue("@id", txtId.Text);
+            daoEtu.sqlCde.ExecuteNonQuery();
+            MessageBox.Show("Modification(s) réeussi");
+            dgvEtudiant.DataSource = daoEtu.DisplayData();
+
         }
 
 
@@ -133,6 +137,16 @@ namespace GestionCollege
                 txtTel.Text = dgvEtudiant.Rows[e.RowIndex].Cells[4].Value.ToString();
                 txtMail.Text = dgvEtudiant.Rows[e.RowIndex].Cells[5].Value.ToString();
             }
+        }
+
+        private void clearBox()
+        {
+            txtId.Clear();
+            txtNom.Clear();
+            txtPrenom.Clear();
+            txtDateEntree.Clear();
+            txtTel.Clear();
+            txtMail.Clear();
         }
     }
 }

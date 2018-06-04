@@ -48,7 +48,7 @@ namespace GestionCollege
                 daoEtu.save();
                 daoEtu.sqlCde.Parameters.AddWithValue("@nom", txtNom.Text);
                 daoEtu.sqlCde.Parameters.AddWithValue("@prenom", txtPrenom.Text);
-                daoEtu.sqlCde.Parameters.AddWithValue("@date", txtDateEntree.Text);
+                daoEtu.sqlCde.Parameters.AddWithValue("@date", Convert.ToDateTime(txtDateEntree.Text));
                 daoEtu.sqlCde.Parameters.AddWithValue("@tel", txtTel.Text);
                 daoEtu.sqlCde.Parameters.AddWithValue("@mail", txtMail.Text);
                 daoEtu.sqlCde.ExecuteNonQuery();

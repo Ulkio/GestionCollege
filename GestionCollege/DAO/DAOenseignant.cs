@@ -50,13 +50,5 @@ namespace GestionCollege
         {
             sqlCommand = new MySqlCommand("DELETE FROM enseignant WHERE idEnseignant = @id", DAOconnect.GetSqlConnect());
         }
-        public DataTable Search()
-        {
-            DAOconnect = new DAO.Connect();
-            DataTable dtSearch = new DataTable();
-            adapter = new MySqlDataAdapter("SELECT * FROM enseignant WHERE nomEnseignant LIKE '@nom')", DAOconnect.GetSqlConnect());
-            adapter.Fill(dtSearch);
-            return dtSearch;
-        }
     }
 }

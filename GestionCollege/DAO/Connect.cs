@@ -20,7 +20,9 @@ namespace GestionCollege.DAO
             //Dans mon constructeur j'instancie mon objet de connexion
             MysqlConnect = new MySqlConnection();
             //Je crée une chaîne de connexion avec la propriété ConnectionString (MySqlConnection)
-            MysqlConnect.ConnectionString = "Server=localhost;Database=gestioncollege;Uid=root;Pwd=";
+           //LOCAL      MysqlConnect.ConnectionString = "Server=localhost;Database=gestioncollege;Uid=root;Pwd=";
+            MysqlConnect.ConnectionString = "Server=93.113.206.101;Database=college;Uid=Guillaume;Pwd=auskur";
+
 
             try
             {

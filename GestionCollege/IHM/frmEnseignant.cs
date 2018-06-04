@@ -72,13 +72,6 @@ namespace GestionCollege
             ClearBox();
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            daoEnseignant = new DAOenseignant();
-            dgvEnseignant.DataSource = daoEnseignant.Search();
-            daoEnseignant.sqlCommand.Parameters.AddWithValue("@nom", txtSearch.Text);
-        }
-
         // RAFRAÎCHIR DATAGRIDVIEW
         public void refresh()
         {
@@ -103,9 +96,7 @@ namespace GestionCollege
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             DataView DV = new DataView(daoEnseignant.DisplayData());
-            
-            DV.RowFilter = string.Format("Nom LIKE '%{0}%'", txtSearch.Text);
-
+            DV.RowFilter = string.Format("Nom LIKE '%{0}%' Or Prenom LIKE '%{0}%'", txtSearch.Text);
             dgvEnseignant.DataSource = DV;
         }
 

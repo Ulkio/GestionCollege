@@ -25,7 +25,7 @@ namespace GestionCollege
 
         private void frmEtudiant_Load(object sender, EventArgs e)
         {
-            daoEtu = new DAO.DAOetudiant();    
+            daoEtu = new DAO.DAOetudiant();
             dgvEtudiant.DataSource = daoEtu.DisplayData();
         }
 
@@ -67,7 +67,7 @@ namespace GestionCollege
             daoEtu.sqlCde.Parameters.AddWithValue("@id", txtId.Text);
             daoEtu.sqlCde.ExecuteNonQuery();
             refresh();
-            clearBox();            
+            clearBox();
         }
 
 

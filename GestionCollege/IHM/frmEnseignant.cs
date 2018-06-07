@@ -92,7 +92,7 @@ namespace GestionCollege
             cbxMt.SelectedIndex = -1;
 
         }
-         // METHODE POUR FILTRER SELON RECHERCHE
+        // METHODE POUR FILTRER SELON RECHERCHE
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             DataView DV = new DataView(daoEnseignant.DisplayData());

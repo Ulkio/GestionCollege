@@ -36,34 +36,6 @@ namespace GestionCollege.DAO
             sqlCde.Connection = daoConnect.GetSqlConnect();
         }
 
-        //Méthode qui récupère toutes les données de la table Etudiant et qui retourne une liste
-        /* public List<MODEL.Etudiant> GetAll()
-         {
-             //La requête (toujours de type chaîne de caractères (string))
-             string strSql = "Select * from etudiant";
-             sqlCde.CommandText = strSql;
-
-             //Execution de ma commande grâce au DataReader (sqlReader) 
-             sqlReader = sqlCde.ExecuteReader();
-             //Je récupère les données dans un while (tant qu'il y a des données à lire)
-             while (sqlReader.Read())
-             {
-                 etu = new MODEL.Etudiant();
-
-                 //Definition Mappage : faire correspondre ta base de données avec ton MODEL.Etudiant (il récupère les infos non
-                 //objet (Données SQL) de la base de donnée et les transforme en language objet (language c#))
-
-                 //Mappage objet relationnel
-                 etu.idEtudiant = sqlReader.GetInt32(0);
-                 etu.nomEtudiant = sqlReader.GetString(1);
-                 etu.prenomEtudiant = sqlReader.GetString(2);
-                 letu.Add(etu);
-             }
-             //Une fois que les données sont récupérées, je ferme la connexion
-             sqlReader.Close();
-             //Je retourne la liste des donées récupérées par le datareader
-             return letu;
-         }/*/
 
         //Méthode DisplayData, qui retourne une DataTable
         public DataTable DisplayData() //Méthode qui retourne une datatable

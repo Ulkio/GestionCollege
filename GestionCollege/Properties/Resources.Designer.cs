@@ -11,7 +11,7 @@
 namespace GestionCollege.Properties {
     using System;
     
-    
+   
     /// <summary>
     ///   Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
     /// </summary>
